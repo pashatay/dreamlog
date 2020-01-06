@@ -95,6 +95,7 @@ button:focus {
   -moz-appearance: none;
   appearance: none;
   border: none;
+  background: inherit;
   font-size: 1.1em;
   font-weight: bold;
   height: 5vh;
