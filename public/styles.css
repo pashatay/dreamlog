@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: #01021b;
   color: rgb(235, 235, 245);
+  overflow-y: auto;
 }
 .div-video-main-page {
   display: flex;
