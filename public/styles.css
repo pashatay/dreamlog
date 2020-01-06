@@ -8,6 +8,8 @@ body {
 }
 .div-main-page {
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 .div-video-main-page {
   display: flex;
