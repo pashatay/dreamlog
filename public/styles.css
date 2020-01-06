@@ -16,9 +16,6 @@ body {
 .video-main-page {
   position: fixed;
   width: auto;
-  height: 45vh;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .app-name {
