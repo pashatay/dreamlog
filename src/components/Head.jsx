@@ -4,7 +4,7 @@ import cosmos from "../images/cosmos.mov";
 
 function Head() {
   return (
-    <div className="div-video-main-page">
+    <>
       <video
         playsinline="playsinline"
         className="video-main-page"
@@ -18,7 +18,7 @@ function Head() {
         <h2>Dream Log - </h2>
         <p>the best dream journal out there.</p>
       </div>
-    </div>
+    </>
   );
 }
 
