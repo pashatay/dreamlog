@@ -24,14 +24,17 @@ body {
   margin-top: 8vh;
   margin-left: 10%;
 }
+.app-name > h2 {
+  font-size: 2em;
+}
 .app-name > p {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 .div-login-form {
   position: fixed;
   z-index: 1;
   height: inherit;
-  margin-top: 35vh;
+  margin-top: 32vh;
   margin-left: 10vw;
   width: 80vw;
 }
