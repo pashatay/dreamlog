@@ -15,8 +15,6 @@ body {
 }
 
 .video-main-page {
-  display: flex;
-  overflow: hidden;
   position: fixed;
   width: auto;
   height: 40vh;
