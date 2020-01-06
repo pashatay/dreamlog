@@ -5,6 +5,7 @@ function Main() {
   return (
     <div className="div-video-main-page">
       <video
+        playsinline="playsinline"
         className="video-main-page"
         autoplay="autoplay"
         muted="muted"
