@@ -90,6 +90,9 @@ button:focus {
   box-shadow: 0 0 10px rgb(235, 235, 245);
 }
 .signup-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 1.1em;
   font-weight: bold;
   height: 5vh;
