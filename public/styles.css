@@ -5,6 +5,8 @@ body {
   padding: 0;
   background: #01021b;
   color: rgb(235, 235, 245);
+}
+.div-main-page {
   overflow-y: auto;
 }
 .div-video-main-page {

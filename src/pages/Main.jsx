@@ -4,7 +4,7 @@ import Login from "../components/Login";
 import cosmos from "../images/cosmos.mov";
 function Main() {
   return (
-    <div>
+    <div className="div-main-page">
       <div className="div-video-main-page">
         <video
           playsinline="playsinline"
