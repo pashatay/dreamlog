@@ -1,7 +1,15 @@
+/* #01021b */
 html,
 body {
   margin: 0;
   padding: 0;
+  background: #01021b;
+  color: rgb(235, 235, 245);
+  box-sizing: border-box;
+}
+.div-video-main-page {
+  display: flex;
+  flex-direction: column;
 }
 
 .video-main-page {
@@ -12,4 +20,91 @@ body {
   height: 50vh;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.app-name {
+  position: absolute;
+  z-index: 1;
+  height: inherit;
+  margin-top: 30vh;
+  margin-left: 10%;
+}
+.app-name > p {
+  font-size: 1.3em;
+}
+.div-login-form {
+  position: fixed;
+  z-index: 1;
+  height: inherit;
+  margin-top: 55vh;
+  margin-left: 10vw;
+  width: 80vw;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 3%;
+  height: 5vh;
+  text-align: center;
+  font-size: 1.2em;
+  background: rgb(235, 235, 245);
+}
+input[type="submit"] {
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #1d2159;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.or {
+  text-align: center;
+  height: auto;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  font-size: 1.1em;
+}
+.div-signup-button {
+  margin: 3%;
+  height: 5vh;
+  text-align: center;
+  font-size: 1.1em;
+  text-align: center;
+  background: #5c258a;
+  color: rgb(235, 235, 245);
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+.signup-button {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.2vh;
+  text-decoration: none;
+  color: rgb(235, 235, 245);
+}
+.about-link {
+  position: fixed;
+  text-align: center;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 95vh;
+  color: rgb(235, 235, 245);
+}
+a {
+  text-decoration: none;
+}
+.signup-button:link,
+.signup-button:visited,
+.about-link:link,
+.about-link:visited {
+  text-decoration: none;
+  color: rgb(235, 235, 245);
 }
