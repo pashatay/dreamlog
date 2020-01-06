@@ -17,7 +17,7 @@ body {
 .video-main-page {
   position: fixed;
   width: auto;
-  height: 40vh;
+  height: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -104,11 +104,11 @@ button:focus {
 }
 .about-link {
   position: fixed;
-  height: 30px;
+  height: 10vh;
   text-align: center;
   width: 50vw;
   margin-left: 25vw;
-  margin-top: 173%;
+  margin-top: 83vh;
   color: rgb(235, 235, 245);
 }
 a {
