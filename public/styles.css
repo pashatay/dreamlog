@@ -23,7 +23,7 @@ body {
 }
 
 .app-name {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   height: inherit;
   margin-top: 30vh;
@@ -45,6 +45,9 @@ body {
   flex-direction: column;
 }
 input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   margin: 3%;
   height: 5vh;
   text-align: center;
