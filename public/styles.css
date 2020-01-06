@@ -104,7 +104,7 @@ button:focus {
 }
 .about-link {
   position: fixed;
-  height: 10vh;
+  height: 30px;
   text-align: center;
   width: 50vw;
   margin-left: 25vw;
