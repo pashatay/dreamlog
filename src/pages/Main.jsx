@@ -4,7 +4,7 @@ import Login from "../components/Login";
 import cosmos from "../images/cosmos.mov";
 function Main() {
   return (
-    <>
+    <div>
       <div className="div-video-main-page">
         <video
           playsinline="playsinline"
@@ -26,7 +26,7 @@ function Main() {
       <Link to="/about">
         <h3 className="about-link">About</h3>
       </Link>
-    </>
+    </div>
   );
 }
 
