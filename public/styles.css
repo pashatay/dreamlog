@@ -92,7 +92,7 @@ button:focus {
 .signup-button {
   font-size: 1.1em;
   font-weight: bold;
-  margin-top: 1.2vh;
+  height: 5vh;
   text-decoration: none;
   color: rgb(235, 235, 245);
 }
@@ -101,7 +101,7 @@ button:focus {
   text-align: center;
   width: 50vw;
   margin-left: 25vw;
-  margin-top: 90vh;
+  margin-top: 83vh;
   color: rgb(235, 235, 245);
 }
 a {

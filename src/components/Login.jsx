@@ -18,7 +18,7 @@ function Login() {
       <h5 className="or">or</h5>
       <div className="div-signup-button">
         <Link to="signup">
-          <h4 className="signup-button">Sign Up</h4>
+          <button className="signup-button">Sign Up</button>
         </Link>
       </div>
     </>
