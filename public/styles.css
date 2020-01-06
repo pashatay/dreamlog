@@ -3,7 +3,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: auto;
   background: #01021b;
   color: rgb(235, 235, 245);
   box-sizing: border-box;
@@ -95,6 +94,7 @@ button:focus {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: none;
   font-size: 1.1em;
   font-weight: bold;
   height: 5vh;
