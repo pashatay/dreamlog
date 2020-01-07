@@ -12,6 +12,7 @@ input[type="checkbox"] {
   justify-content: space-around;
 }
 .adddream-form > input {
+  -webkit-border-radius: 0;
   width: 90vw;
   margin: auto;
   box-sizing: border-box;
