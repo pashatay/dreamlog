@@ -24,7 +24,7 @@ body {
   z-index: 1;
   margin-top: 8vh;
   margin-left: 10%;
-  margin: 10%;
+  margin: 8%;
 }
 .app-name > h2 {
   font-size: 2em;
@@ -36,7 +36,7 @@ body {
   position: fixed;
   z-index: 1;
   height: inherit;
-  margin-top: 32vh;
+  margin-top: 30vh;
   margin-left: 10vw;
   width: 80vw;
 }
@@ -112,7 +112,7 @@ button:focus {
   text-align: center;
   width: 50vw;
   margin-left: 25vw;
-  margin-top: 80vh;
+  margin-top: 78vh;
   color: rgb(235, 235, 245);
 }
 a {
