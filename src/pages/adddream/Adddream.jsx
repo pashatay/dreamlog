@@ -16,18 +16,16 @@ function Adddream() {
           maxlength="30"
           name={"title"}
         />
-        <label>
-          <input type="radio" value="lucid" name="dream-type" checked={true} />{" "}
-          Lucid
-        </label>
-        <input type="radio" value="normal" name="dream-type" /> Normal
-        <input type="radio" value="nightmare" name="dream-type" /> Nightmare
+        <select name="dreamtype">
+          <option value="Lucid">Lucid</option>
+          <option value="Normal">Normal</option>
+          <option value="Nightmare">Nightmare</option>
+        </select>
         <textarea required type="text" placeholder="info" name={"info"} />
         <label>
-          <input type="checkbox" name="isPrivate" /> Is Private?
+          <input type="checkbox" name="isPrivate" /> Make it private?
         </label>
-        <br />
-        <input type="submit" className="button" value="Sign Up"></input>
+        <input type="submit" className="button" value="Add Dream"></input>
       </form>
     </div>
   );

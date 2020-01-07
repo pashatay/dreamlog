@@ -1,5 +1,37 @@
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"] {
   -webkit-appearance: checkbox;
   -moz-appearance: initial;
+}
+
+.adddream-form {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-top: 15vh;
+  justify-content: space-around;
+}
+.adddream-form > input {
+  width: 90vw;
+  margin: auto;
+  box-sizing: border-box;
+}
+.adddream-form select {
+  padding: 10px 16px;
+  height: 50px;
+  -webkit-border-radius: 0;
+  border: 0;
+  outline: 1px inset #fff;
+  outline-offset: -1px;
+  width: 90vw;
+  height: 5vh;
+  margin: 5%;
+}
+
+.adddream-form textarea {
+  box-sizing: border-box;
+  width: 90vw;
+  margin: auto;
+  height: 15vh;
+  margin-bottom: 5%;
 }
