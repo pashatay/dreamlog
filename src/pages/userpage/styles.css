@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 15vw;
+}
+nav div {
+  margin: auto;
+  margin-bottom: 3%;
+}
+i {
+  font-size: 4em;
+}
