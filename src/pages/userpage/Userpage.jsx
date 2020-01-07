@@ -8,6 +8,7 @@ function Userpage() {
   return (
     <>
       <Header />
+      <h3 className="greeting">Hey, Pasha!</h3>
       <nav>
         <div>
           <i class="ri-quill-pen-fill"></i>
@@ -26,6 +27,10 @@ function Userpage() {
           <h5>My Statistics</h5>
         </div>
       </nav>
+      <footer>
+        <i class="ri-tools-fill"></i>
+        <i class="ri-delete-bin-6-fill"></i>
+      </footer>
     </>
   );
 }

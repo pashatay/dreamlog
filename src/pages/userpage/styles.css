@@ -1,14 +1,43 @@
+.greeting {
+  font-size: 1.5em;
+  text-align: center;
+}
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100vw;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 15vw;
+  margin-top: 25vw;
+  text-align: center;
 }
 nav div {
+  width: 50vw;
   margin: auto;
   margin-bottom: 3%;
 }
-i {
-  font-size: 4em;
+nav i {
+  font-size: 5em;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.ri-tools-fill {
+  font-size: 2.2em;
+  float: left;
+  margin: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.ri-delete-bin-6-fill {
+  font-size: 2em;
+  float: right;
+  margin: 5%;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
