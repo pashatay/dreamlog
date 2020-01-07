@@ -65,6 +65,7 @@ input[type="submit"] {
   box-shadow: 0 0 10px rgb(235, 235, 245);
   color: rgb(235, 235, 245);
   border-radius: 0;
+  box-sizing: border-box;
 }
 input:focus,
 select:focus,
@@ -89,6 +90,7 @@ button:focus {
   color: rgb(235, 235, 245);
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
+  box-sizing: border-box;
 }
 .signup-button {
   -webkit-appearance: none;
