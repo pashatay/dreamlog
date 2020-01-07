@@ -17,7 +17,7 @@ function Main() {
         <source src={cosmos} />>
       </video>
       <div className="app-name">
-        <h2>Dream.Log </h2>
+        <h2>_Dream.Log </h2>
         <p>the best dream journal out there.</p>
       </div>
       <div className="div-login-form">
