@@ -6,6 +6,7 @@
   -webkit-border-radius: 0;
   border: 0;
   width: 80vw;
+  box-sizing: border-box;
 }
 .signup-have-an-account {
   text-align: center;
