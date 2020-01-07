@@ -7,6 +7,8 @@
   border: 0;
   width: 80vw;
   box-sizing: border-box;
+  height: 5vh;
+  margin: 3%;
 }
 .signup-have-an-account {
   text-align: center;
