@@ -1,12 +1,24 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Login from "../components/Login";
-import Head from "../components/Head";
+import Head from "./Signup";
 import cosmos from "../images/cosmos.mov";
 function Main() {
   return (
     <div className="div-main-page">
-      <Head />
+      <video
+        playsinline="playsinline"
+        className="video-main-page"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src={cosmos} />>
+      </video>
+      <div className="app-name">
+        <h2>Dream Log - </h2>
+        <p>the best dream journal out there.</p>
+      </div>
       <div className="div-login-form">
         <Login />
       </div>
