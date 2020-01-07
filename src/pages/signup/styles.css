@@ -3,6 +3,8 @@
   margin-top: 15vh;
 }
 .signup-form input {
+  -webkit-border-radius: 0;
+  border: 0;
   width: 80vw;
 }
 .signup-have-an-account {
