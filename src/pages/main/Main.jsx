@@ -1,8 +1,9 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import Login from "../components/Login";
-import Head from "./Signup";
-import cosmos from "../images/cosmos.mov";
+import styles from "./styles.css";
+import Login from "../../components/Login";
+import cosmos from "../../images/cosmos.mov";
+
 function Main() {
   return (
     <div className="div-main-page">
@@ -16,7 +17,7 @@ function Main() {
         <source src={cosmos} />>
       </video>
       <div className="app-name">
-        <h2>Dream Log - </h2>
+        <h2>Dream.Log </h2>
         <p>the best dream journal out there.</p>
       </div>
       <div className="div-login-form">

@@ -1,11 +1,11 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import cosmos from "../images/cosmos.mov";
+import styles from "./styles.css";
 
 function Signup() {
   return (
     <>
-      <form>
+      <form className="signup-form">
         <input required type="text" placeholder="name" name={"name"} />
         <input required type="email" placeholder="email" name={"email"} />
         <input
@@ -18,6 +18,9 @@ function Signup() {
         <br />
         <input type="submit" className="button" value="Sign Up"></input>
       </form>
+      <Link to="/">
+        <h3 className="signup-have-an-account">Already have an account?</h3>
+      </Link>
     </>
   );
 }

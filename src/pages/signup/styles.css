@@ -1,0 +1,21 @@
+.signup-form {
+  text-align: center;
+  margin-top: 23vh;
+}
+.signup-form input {
+  width: 80vw;
+}
+.signup-have-an-account {
+  text-align: center;
+}
+
+a {
+  color: rgb(235, 235, 245);
+  text-decoration: underline;
+}
+
+.signup-have-an-account:link,
+.signup-have-an-account:visited {
+  text-decoration: none;
+  color: rgb(235, 235, 245);
+}
