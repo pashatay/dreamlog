@@ -22,8 +22,10 @@ function Adddream() {
         </label>
         <input type="radio" value="normal" name="dream-type" /> Normal
         <input type="radio" value="nightmare" name="dream-type" /> Nightmare
-        <input required type="text" placeholder="info" name={"info"} />
-        <input required type="password" placeholder="confirm password" />
+        <textarea required type="text" placeholder="info" name={"info"} />
+        <label>
+          <input type="checkbox" name="isPrivate" /> Is Private?
+        </label>
         <br />
         <input type="submit" className="button" value="Sign Up"></input>
       </form>

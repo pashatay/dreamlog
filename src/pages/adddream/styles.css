@@ -1,0 +1,5 @@
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: initial;
+}
