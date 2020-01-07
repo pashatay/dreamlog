@@ -4,7 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import Main from "./pages/main/Main";
 import Signup from "./pages/signup/Signup";
 import About from "./pages/about/About";
-import Userpage from "./pages/userpage/Userpage";
+import Homepage from "./pages/homepage/Homepage";
+import Adddream from "./pages/adddream/Adddream";
 
 function App() {
   return (
@@ -19,8 +20,11 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/userpage">
-          <Userpage />
+        <Route path="/homepage">
+          <Homepage />
+        </Route>
+        <Route path="/adddream">
+          <Adddream />
         </Route>
       </Switch>
     </div>

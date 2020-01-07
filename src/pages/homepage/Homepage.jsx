@@ -4,7 +4,7 @@ import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
 
-function Userpage() {
+function Homepage() {
   return (
     <>
       <Header />
@@ -35,4 +35,4 @@ function Userpage() {
   );
 }
 
-export default Userpage;
+export default Homepage;
