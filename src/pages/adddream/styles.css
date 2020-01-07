@@ -13,6 +13,7 @@ input[type="checkbox"] {
 }
 .adddream-form > input {
   -webkit-border-radius: 0;
+  border: 0;
   width: 90vw;
   margin: auto;
   box-sizing: border-box;
@@ -31,6 +32,8 @@ input[type="checkbox"] {
 
 .adddream-form textarea {
   box-sizing: border-box;
+  -webkit-border-radius: 0;
+  border: 0;
   width: 90vw;
   margin: auto;
   height: 15vh;
