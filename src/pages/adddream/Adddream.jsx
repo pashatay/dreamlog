@@ -21,6 +21,14 @@ function Adddream() {
           <option value="Normal">Normal</option>
           <option value="Nightmare">Nightmare</option>
         </select>
+        <input
+          required
+          type="number"
+          placeholder="How many hours"
+          min="1"
+          max="20"
+          name={"hours"}
+        />
         <textarea required type="text" placeholder="info" name={"info"} />
         <label>
           <input type="checkbox" name="isPrivate" /> Make it private?

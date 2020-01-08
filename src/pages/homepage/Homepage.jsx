@@ -11,25 +11,37 @@ function Homepage() {
       <h3 className="greeting">Hey, Pasha!</h3>
       <nav>
         <div>
-          <i class="ri-quill-pen-fill"></i>
+          <Link to="/adddream">
+            <i class="ri-quill-pen-fill"></i>
+          </Link>
           <h5>Add a dream</h5>
         </div>
         <div>
-          <i class="ri-moon-clear-fill"></i>
+          <Link to="/dreamlog">
+            <i class="ri-moon-clear-fill"></i>
+          </Link>
           <h5>My dream log</h5>
         </div>
         <div>
-          <i class="ri-book-open-fill"></i>
+          <Link to="/dreamblog">
+            <i class="ri-book-open-fill"></i>
+          </Link>
           <h5>My dream blog</h5>
         </div>
         <div>
-          <i class="ri-bar-chart-fill"></i>
+          <Link to="/statistics">
+            <i class="ri-bar-chart-fill"></i>
+          </Link>
           <h5>My Statistics</h5>
         </div>
       </nav>
       <footer>
-        <i class="ri-tools-fill"></i>
-        <i class="ri-delete-bin-6-fill"></i>
+        <Link to="/editpage">
+          <i class="ri-tools-fill"></i>
+        </Link>
+        <Link to="/deletepage">
+          <i class="ri-delete-bin-6-fill"></i>
+        </Link>
       </footer>
     </>
   );

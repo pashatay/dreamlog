@@ -6,6 +6,11 @@ import Signup from "./pages/signup/Signup";
 import About from "./pages/about/About";
 import Homepage from "./pages/homepage/Homepage";
 import Adddream from "./pages/adddream/Adddream";
+import Dreamlog from "./pages/dreamlog/Dreamlog";
+import Dreamblog from "./pages/dreamblog/Dreamblog";
+import Statistics from "./pages/statistics/Statistics";
+import Deletepage from "./pages/deletepage/Deletepage";
+import Editpage from "./pages/editpage/Editpage";
 
 function App() {
   return (
@@ -25,6 +30,21 @@ function App() {
         </Route>
         <Route path="/adddream">
           <Adddream />
+        </Route>
+        <Route path="/dreamlog">
+          <Dreamlog />
+        </Route>
+        <Route path="/dreamblog">
+          <Dreamblog />
+        </Route>
+        <Route path="/statistics">
+          <Statistics />
+        </Route>
+        <Route path="/deletepage">
+          <Deletepage />
+        </Route>
+        <Route path="/editpage">
+          <Editpage />
         </Route>
       </Switch>
     </div>
