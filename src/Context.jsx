@@ -29,13 +29,13 @@ function ContextProvider(props) {
 
     e.preventDefault();
     axios
-      .patch("http://localhost:8000/userpage", formValues, { headers })
+      .patch(`http://localhost:8000/resetpassword/${token}`, formValues)
       .then(res => {
         console.log("done");
       })
       .then(setFormValues(formDefaultValues))
       .catch(err => {
-        console.log("error");
+        console.log(err);
       });
   };
 
