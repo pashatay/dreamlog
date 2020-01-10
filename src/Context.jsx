@@ -23,7 +23,7 @@ function ContextProvider(props) {
       [target.name]: target.value.trim()
     }));
   };
-
+  const x = props.match.pasrams.token;
   const handleSubmitChangePassword = e => {
     formValues.email = "";
 
@@ -35,7 +35,7 @@ function ContextProvider(props) {
       })
       .then(setFormValues(formDefaultValues))
       .catch(err => {
-        console.log(err);
+        console.log(x);
       });
   };
 
