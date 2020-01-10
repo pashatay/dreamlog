@@ -1,9 +1,54 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Context = React.createContext();
 
 function ContextProvider(props) {
-  return <Context.Provider>{props.children}</Context.Provider>;
+  const formDefaultValues = {
+    name: "",
+    email: "",
+    password: ""
+  };
+
+  const [formValues, setFormValues] = useState(formDefaultValues);
+
+  const headers = {
+    Authorization: localStorage.getItem("access_token")
+  };
+
+  const handleChange = e => {
+    const target = e.target;
+    setFormValues(prevState => ({
+      ...prevState,
+      [target.name]: target.value.trim()
+    }));
+  };
+
+  const handleSubmitChangePassword = e => {
+    formValues.email = "";
+
+    e.preventDefault();
+    axios
+      .patch("http://localhost:8000/userpage", formValues, { headers })
+      .then(res => {
+        console.log("done");
+      })
+      .then(setFormValues(formDefaultValues))
+      .catch(err => {
+        console.log("error");
+      });
+  };
+
+  return (
+    <Context.Provider
+      value={{
+        handleChange,
+        handleSubmitChangePassword
+      }}
+    >
+      {props.children}
+    </Context.Provider>
+  );
 }
 
 export { ContextProvider, Context };
