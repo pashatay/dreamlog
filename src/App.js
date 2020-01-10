@@ -11,6 +11,8 @@ import Dreamblog from "./pages/dreamblog/Dreamblog";
 import Statistics from "./pages/statistics/Statistics";
 import Deletepage from "./pages/deletepage/Deletepage";
 import Editpage from "./pages/editpage/Editpage";
+import ForgotPassword from "./pages/resetpassword/ForgotPassword";
+import ResetPassword from "./pages/resetpassword/ResetPassword";
 
 function App() {
   return (
@@ -45,6 +47,12 @@ function App() {
         </Route>
         <Route path="/editpage">
           <Editpage />
+        </Route>
+        <Route path="/forgot">
+          <ForgotPassword />
+        </Route>
+        <Route path="/reset">
+          <ResetPassword />
         </Route>
       </Switch>
     </div>
