@@ -8,9 +8,9 @@ function Main() {
   return (
     <div className="div-main-page">
       <video
-        playsinline="playsinline"
+        playsInline="playsinline"
         className="video-main-page"
-        autoplay="autoplay"
+        autoPlay="autoplay"
         muted="muted"
         loop="loop"
       >

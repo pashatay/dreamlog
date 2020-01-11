@@ -6,7 +6,7 @@ import styles from "./styles.css";
 import Header from "../../components/header/Header";
 
 function Homepage() {
-  const { userName } = useContext(Context);
+  const { userName, userId } = useContext(Context);
   return (
     <>
       <Header />
@@ -25,7 +25,7 @@ function Homepage() {
           <h5>My dream log</h5>
         </div>
         <div>
-          <Link to="/dreamblog">
+          <Link to={`/dreamblog/${userId}`}>
             <i className="ri-book-open-fill"></i>
           </Link>
           <h5>My dream blog</h5>

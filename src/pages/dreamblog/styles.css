@@ -1,0 +1,10 @@
+.allDreamsBlog {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 10%;
+}

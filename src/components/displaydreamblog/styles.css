@@ -1,0 +1,25 @@
+.dreamblog-box {
+  margin: 3%;
+  border: 0.5px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+.dreamblog-title {
+  height: auto;
+  text-align: center;
+  margin: 0;
+  padding: 3%;
+  font-size: 1.6em;
+}
+
+.dreamblog-date {
+  font-size: 1.1em;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+}
+.dreamblog-info {
+  font-size: 1em;
+  margin: auto;
+  padding: 3%;
+  text-align: center;
+}

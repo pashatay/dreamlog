@@ -39,10 +39,12 @@ function ContextProvider(props) {
   const [confirmedPassword, setConfirmedPassword] = useState("");
   const [anError, setAnError] = useState("");
   const [token, setToken] = useState("");
+  const [userId, setUserId] = useState("");
   const [userHasLoggedIn, setUserHasLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [redirectTask, setRedirectTask] = useState(false);
   const [dreams, setDreams] = useState([]);
+  const [publicDreams, setPublicDreams] = useState([]);
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -112,6 +114,7 @@ function ContextProvider(props) {
   const userLoggedIn = data => {
     localStorage.setItem("access_token", `bearer ${data.token}`);
     setUserName(data.name);
+    setUserId(data.id);
     setUserHasLoggedIn(true);
   };
 
@@ -170,6 +173,18 @@ function ContextProvider(props) {
         console.log(err);
       });
   };
+  const getPublicDreams = id => {
+    axios
+      .get(`${url}/dreamblog/${id}`)
+      .then(res => {
+        setPublicDreams(res.data);
+        console.log(userId);
+      })
+      .catch(err => {
+        console.log(err);
+        console.log(userId);
+      });
+  };
   return (
     <Context.Provider
       value={{
@@ -178,6 +193,7 @@ function ContextProvider(props) {
         userHasLoggedIn,
         setUserHasLoggedIn,
         userName,
+        userId,
         anError,
         setAnError,
         handleSubmitSignUp,
@@ -190,7 +206,9 @@ function ContextProvider(props) {
         handleNewDreamChange,
         handleSubmitNewDream,
         getAllDreams,
-        dreams
+        dreams,
+        publicDreams,
+        getPublicDreams
       }}
     >
       {props.children}

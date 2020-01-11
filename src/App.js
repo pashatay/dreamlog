@@ -37,7 +37,7 @@ function App() {
         <Route path="/dreamlog">
           <Dreamlog />
         </Route>
-        <Route path="/dreamblog">
+        <Route path="/dreamblog/:id">
           <Dreamblog />
         </Route>
         <Route path="/statistics">

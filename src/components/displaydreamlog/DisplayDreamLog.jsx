@@ -3,7 +3,7 @@ import { Context } from "../../Context";
 import { Redirect } from "react-router-dom";
 import styles from "./styles.css";
 
-function DisplayDreamLog(data, key) {
+function DisplayDreamLog(data) {
   const dream = data.data;
   return (
     <div className={`${dream.dream_type} dream-box`}>
