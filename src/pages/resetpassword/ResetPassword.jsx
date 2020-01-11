@@ -1,11 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
+import { useParams } from "react-router-dom";
 //import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
 
 function ResetPassword() {
-  const { handleChange, handleSubmitChangePassword } = useContext(Context);
+  const { token } = useParams();
+  useEffect(() => {
+    setToken(token);
+  }, [token]);
+
+  const { handleChange, handleSubmitChangePassword, setToken } = useContext(
+    Context
+  );
   return (
     <div>
       <Header />

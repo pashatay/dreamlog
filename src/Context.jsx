@@ -11,6 +11,7 @@ function ContextProvider(props) {
   };
 
   const [formValues, setFormValues] = useState(formDefaultValues);
+  const [token, setToken] = useState("");
 
   const headers = {
     Authorization: localStorage.getItem("access_token")
@@ -23,19 +24,19 @@ function ContextProvider(props) {
       [target.name]: target.value.trim()
     }));
   };
-  const x = props.match.pasrams.token;
+
   const handleSubmitChangePassword = e => {
     formValues.email = "";
 
     e.preventDefault();
     axios
-      .patch("http://localhost:8000/resetpassword/:token", formValues)
+      .patch(`http://localhost:8000/resetpassword/${token}`, formValues)
       .then(res => {
         console.log("done");
       })
       .then(setFormValues(formDefaultValues))
       .catch(err => {
-        console.log(x);
+        console.log(err);
       });
   };
 
@@ -43,7 +44,8 @@ function ContextProvider(props) {
     <Context.Provider
       value={{
         handleChange,
-        handleSubmitChangePassword
+        handleSubmitChangePassword,
+        setToken
       }}
     >
       {props.children}
