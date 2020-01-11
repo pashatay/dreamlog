@@ -11,7 +11,10 @@ function ContextProvider(props) {
     let newDate = new Date();
     let month = newDate.getMonth() + 1;
     let date = newDate.getDate();
-    let year = newDate.getFullYear();
+    let year = newDate
+      .getFullYear()
+      .toString()
+      .slice(2);
     let today = `${month}/${date}/${year}`;
     return today;
   };
@@ -38,6 +41,7 @@ function ContextProvider(props) {
   const [token, setToken] = useState("");
   const [userHasLoggedIn, setUserHasLoggedIn] = useState(false);
   const [redirectTask, setRedirectTask] = useState(false);
+  const [dreams, setDreams] = useState([]);
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -92,7 +96,7 @@ function ContextProvider(props) {
   const handleSubmitLogin = e => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/login", formValues)
+      .post(`${url}/login`, formValues)
       .then(res => {
         userLoggedIn(res.data);
         setRedirectTask(true);
@@ -142,7 +146,27 @@ function ContextProvider(props) {
   };
   const handleSubmitNewDream = e => {
     e.preventDefault();
-    console.log(newDreamValues);
+    axios
+      .post(`${url}/userpage`, newDreamValues, { headers })
+      .then(res => {
+        console.log(res);
+      })
+      //.then(getDataForUserMainPage())
+      //.then(setRedirectTask(true))
+      .catch(err => {
+        console.log(err);
+      });
+  };
+  const getAllDreams = () => {
+    axios
+      .get(`${url}/userpage`, { headers })
+      .then(res => {
+        setDreams(res.data);
+        console.log(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
   return (
     <Context.Provider
@@ -161,7 +185,9 @@ function ContextProvider(props) {
         redirectToHomePage,
         setRedirectTask,
         handleNewDreamChange,
-        handleSubmitNewDream
+        handleSubmitNewDream,
+        getAllDreams,
+        dreams
       }}
     >
       {props.children}

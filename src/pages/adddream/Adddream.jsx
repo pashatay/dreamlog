@@ -22,7 +22,7 @@ function Adddream() {
           required
           type="text"
           placeholder="title"
-          maxlength="30"
+          maxLength="30"
           name={"title"}
           onChange={handleNewDreamChange}
         />
