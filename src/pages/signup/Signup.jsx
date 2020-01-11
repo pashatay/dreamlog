@@ -40,6 +40,7 @@ function Signup() {
           type="password"
           placeholder="password"
           name={"password"}
+          minLength="8"
           onChange={handleChange}
         />
         <input

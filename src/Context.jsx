@@ -7,12 +7,32 @@ const Context = React.createContext();
 function ContextProvider(props) {
   const url = "http://localhost:8000";
 
+  const todaysDate = () => {
+    let newDate = new Date();
+    let month = newDate.getMonth() + 1;
+    let date = newDate.getDate();
+    let year = newDate.getFullYear();
+    let today = `${month}/${date}/${year}`;
+    return today;
+  };
+
   const formDefaultValues = {
     name: "",
     email: "",
     password: ""
   };
+
+  const newDreamDefaultValues = {
+    title: "",
+    dream_date: todaysDate(),
+    dream_type: "",
+    hours_slept: "",
+    info: "",
+    is_private: "false"
+  };
+
   const [formValues, setFormValues] = useState(formDefaultValues);
+  const [newDreamValues, setNewDreamValues] = useState(newDreamDefaultValues);
   const [confirmedPassword, setConfirmedPassword] = useState("");
   const [anError, setAnError] = useState("");
   const [token, setToken] = useState("");
@@ -32,6 +52,22 @@ function ContextProvider(props) {
       ...prevState,
       [target.name]: target.value.trim()
     }));
+  };
+
+  const handleNewDreamChange = e => {
+    const { type, checked } = e.target;
+    const target = e.target;
+    if (type === "checkbox") {
+      setNewDreamValues(prevState => ({
+        ...prevState,
+        [target.name]: checked
+      }));
+    } else {
+      setNewDreamValues(prevState => ({
+        ...prevState,
+        [target.name]: target.value.trim()
+      }));
+    }
   };
 
   const handleSubmitSignUp = e => {
@@ -104,7 +140,10 @@ function ContextProvider(props) {
         console.log(err);
       });
   };
-
+  const handleSubmitNewDream = e => {
+    e.preventDefault();
+    console.log(newDreamValues);
+  };
   return (
     <Context.Provider
       value={{
@@ -120,7 +159,9 @@ function ContextProvider(props) {
         handleSubmitChangePassword,
         setToken,
         redirectToHomePage,
-        setRedirectTask
+        setRedirectTask,
+        handleNewDreamChange,
+        handleSubmitNewDream
       }}
     >
       {props.children}
