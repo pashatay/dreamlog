@@ -40,6 +40,7 @@ function ContextProvider(props) {
   const [anError, setAnError] = useState("");
   const [token, setToken] = useState("");
   const [userHasLoggedIn, setUserHasLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
   const [redirectTask, setRedirectTask] = useState(false);
   const [dreams, setDreams] = useState([]);
 
@@ -110,6 +111,7 @@ function ContextProvider(props) {
 
   const userLoggedIn = data => {
     localStorage.setItem("access_token", `bearer ${data.token}`);
+    setUserName(data.name);
     setUserHasLoggedIn(true);
   };
 
@@ -175,6 +177,7 @@ function ContextProvider(props) {
         handleSubmitLogin,
         userHasLoggedIn,
         setUserHasLoggedIn,
+        userName,
         anError,
         setAnError,
         handleSubmitSignUp,

@@ -1,14 +1,16 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../Context";
 import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
 
 function Homepage() {
+  const { userName } = useContext(Context);
   return (
     <>
       <Header />
-      <h3 className="greeting">Hey, Pasha!</h3>
+      <h3 className="greeting">Hey, {userName}!</h3>
       <nav>
         <div>
           <Link to="/adddream">

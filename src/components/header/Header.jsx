@@ -7,15 +7,20 @@ function Header() {
   const { userHasLoggedIn } = useContext(Context);
   const logged = (
     <>
-      <h3 className="logo">_Dream.log</h3>
-      <Link to="/logout" className="header-logOut">
+      <Link to="/homepage" className="logo">
+        <h3>_Dream.log</h3>
+      </Link>
+
+      <Link to="/logout" className="header-logout">
         <h2>Log Out</h2>
       </Link>
     </>
   );
   const notLogged = (
     <>
-      <h3 className="logo">_Dream.log</h3>
+      <Link to="/" className="logo">
+        <h3>_Dream.log</h3>
+      </Link>
     </>
   );
   return <header>{userHasLoggedIn ? logged : notLogged}</header>;
