@@ -4,6 +4,8 @@ import axios from "axios";
 const Context = React.createContext();
 
 function ContextProvider(props) {
+  const url = "http://localhost:8000";
+
   const formDefaultValues = {
     name: "",
     email: "",
@@ -25,12 +27,25 @@ function ContextProvider(props) {
     }));
   };
 
-  const handleSubmitChangePassword = e => {
-    formValues.email = "";
-
+  const handleSubmitEmailToChangePassword = e => {
     e.preventDefault();
     axios
-      .patch(`http://localhost:8000/resetpassword/${token}`, formValues)
+      .post(`${url}/resetpassword/email`, formValues)
+      .then(res => {
+        console.log(res);
+      })
+      //.then(setFormValues(formDefaultValues))
+      .catch(err => {
+        console.log(err);
+        console.log({ email: formValues.email });
+      });
+  };
+
+  const handleSubmitChangePassword = e => {
+    formValues.email = "";
+    e.preventDefault();
+    axios
+      .patch(`${url}/resetpassword/${token}`, formValues)
       .then(res => {
         console.log("done");
       })
@@ -44,6 +59,7 @@ function ContextProvider(props) {
     <Context.Provider
       value={{
         handleChange,
+        handleSubmitEmailToChangePassword,
         handleSubmitChangePassword,
         setToken
       }}
