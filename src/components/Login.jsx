@@ -1,17 +1,38 @@
-import React, { useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../Context";
 import cosmos from "../images/cosmos.mov";
 
 function Login() {
+  const {
+    anError,
+    setAnError,
+    handleSubmitLogin,
+    handleChange,
+    redirectToHomePage
+  } = useContext(Context);
+
+  useEffect(() => {
+    setAnError("");
+  }, []);
+
   return (
     <>
-      <form className="login-form">
-        <input required type="email" placeholder="email" name={"email"} />
+      {redirectToHomePage()}
+      <form className="login-form" onSubmit={handleSubmitLogin}>
+        <input
+          required
+          type="email"
+          placeholder="email"
+          name={"email"}
+          onChange={handleChange}
+        />
         <input
           required
           type="password"
           placeholder="password"
           name={"password"}
+          onChange={handleChange}
         />
         <input type="submit" className="button" value="Log In"></input>
       </form>

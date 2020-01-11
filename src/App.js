@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Main from "./pages/main/Main";
 import Signup from "./pages/signup/Signup";
+import Logout from "./components/Logout";
 import About from "./pages/about/About";
 import Homepage from "./pages/homepage/Homepage";
 import Adddream from "./pages/adddream/Adddream";
@@ -53,6 +54,9 @@ function App() {
         </Route>
         <Route path="/reset/:token">
           <ResetPassword />
+        </Route>
+        <Route path="/logout">
+          <Logout />
         </Route>
       </Switch>
     </div>

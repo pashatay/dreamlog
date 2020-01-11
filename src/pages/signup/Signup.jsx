@@ -1,23 +1,53 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "./styles.css";
-
 import Header from "../../components/header/Header";
+import styles from "./styles.css";
+import { Context } from "../../Context";
 
 function Signup() {
+  const {
+    anError,
+    setAnError,
+    handleChange,
+    handleSubmitSignUp,
+    setConfirmedPassword
+  } = useContext(Context);
+
+  useEffect(() => {
+    setAnError("");
+  }, []);
+
   return (
     <>
       <Header />
-      <form className="signup-form">
-        <input required type="text" placeholder="name" name={"name"} />
-        <input required type="email" placeholder="email" name={"email"} />
+      <form className="signup-form" onSubmit={handleSubmitSignUp}>
+        <input
+          required
+          type="text"
+          placeholder="name"
+          name={"name"}
+          onChange={handleChange}
+        />
+        <input
+          required
+          type="email"
+          placeholder="email"
+          name={"email"}
+          onChange={handleChange}
+        />
         <input
           required
           type="password"
           placeholder="password"
           name={"password"}
+          onChange={handleChange}
         />
-        <input required type="password" placeholder="confirm password" />
+        <input
+          required
+          type="password"
+          placeholder="confirm password"
+          onChange={e => setConfirmedPassword(e.target.value)}
+        />
         <br />
         <input type="submit" className="button" value="Sign Up"></input>
       </form>

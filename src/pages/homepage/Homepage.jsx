@@ -12,35 +12,35 @@ function Homepage() {
       <nav>
         <div>
           <Link to="/adddream">
-            <i class="ri-quill-pen-fill"></i>
+            <i className="ri-quill-pen-fill"></i>
           </Link>
           <h5>Add a dream</h5>
         </div>
         <div>
           <Link to="/dreamlog">
-            <i class="ri-moon-clear-fill"></i>
+            <i className="ri-moon-clear-fill"></i>
           </Link>
           <h5>My dream log</h5>
         </div>
         <div>
           <Link to="/dreamblog">
-            <i class="ri-book-open-fill"></i>
+            <i className="ri-book-open-fill"></i>
           </Link>
           <h5>My dream blog</h5>
         </div>
         <div>
           <Link to="/statistics">
-            <i class="ri-bar-chart-fill"></i>
+            <i className="ri-bar-chart-fill"></i>
           </Link>
           <h5>My Statistics</h5>
         </div>
       </nav>
       <footer>
         <Link to="/editpage">
-          <i class="ri-tools-fill"></i>
+          <i className="ri-tools-fill"></i>
         </Link>
         <Link to="/deletepage">
-          <i class="ri-delete-bin-6-fill"></i>
+          <i className="ri-delete-bin-6-fill"></i>
         </Link>
       </footer>
     </>
