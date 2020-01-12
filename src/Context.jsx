@@ -190,6 +190,7 @@ function ContextProvider(props) {
       .then(res => {
         console.log(res);
       })
+      .then(() => getAllDreams())
       .catch(err => {
         console.log(err);
       });

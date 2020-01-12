@@ -10,7 +10,7 @@ function DisplayDreamLog(data, key) {
     setKeyModal(dream.id);
     setOpenModal(!openModal);
   };
-
+  const privateDream = <i className={`${dream.dream_type} ri-lock-2-fill`}></i>;
   return (
     <div
       className={`${dream.dream_type} dream-box`}
@@ -18,6 +18,7 @@ function DisplayDreamLog(data, key) {
     >
       <div className="dream-info">
         <h5 className="dream-title">{dream.title}</h5>
+        {dream.is_private ? privateDream : false}
         <h4 className="dream-date">{dream.dream_date}</h4>
       </div>
     </div>

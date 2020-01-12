@@ -82,3 +82,20 @@
 .display-none {
   display: none;
 }
+.ri-lock-2-fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5%;
+  font-size: 1em;
+  background: none;
+}
+.Lucid .ri-lock-2-fill {
+  color: rgba(0, 0, 0, 0.5);
+}
+.Normal .ri-lock-2-fill {
+  color: rgba(0, 0, 0, 0.5);
+}
+.Nightmare .ri-lock-2-fill {
+  opacity: 0.5;
+}
