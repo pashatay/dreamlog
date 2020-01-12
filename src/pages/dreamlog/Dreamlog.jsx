@@ -4,6 +4,7 @@ import DisplayDreamLog from "../../components/displaydreamlog/DisplayDreamLog";
 import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
+import Modal from "../../components/displaydreamlog/Modal";
 
 function Dreamlog() {
   const { getAllDreams, dreams } = useContext(Context);
@@ -19,7 +20,10 @@ function Dreamlog() {
   return (
     <div>
       <Header />
-      <section className="allDreams">{allDreams}</section>
+      <section className="allDreams">
+        {allDreams}
+        <Modal data={dreams} />
+      </section>
     </div>
   );
 }

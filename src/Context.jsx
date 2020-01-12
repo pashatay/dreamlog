@@ -45,6 +45,8 @@ function ContextProvider(props) {
   const [redirectTask, setRedirectTask] = useState(false);
   const [dreams, setDreams] = useState([]);
   const [publicDreams, setPublicDreams] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
+  const [keyModal, setKeyModal] = useState("");
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -178,13 +180,12 @@ function ContextProvider(props) {
       .get(`${url}/dreamblog/${id}`)
       .then(res => {
         setPublicDreams(res.data);
-        console.log(userId);
       })
       .catch(err => {
         console.log(err);
-        console.log(userId);
       });
   };
+
   return (
     <Context.Provider
       value={{
@@ -208,7 +209,11 @@ function ContextProvider(props) {
         getAllDreams,
         dreams,
         publicDreams,
-        getPublicDreams
+        getPublicDreams,
+        openModal,
+        setOpenModal,
+        keyModal,
+        setKeyModal
       }}
     >
       {props.children}

@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./styles.css";
+import "./styles.css";
 import { Context } from "../../Context";
 import DisplayDreamBlog from "../../components/displaydreamblog/DisplayDreamBlog";
 
