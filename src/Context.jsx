@@ -169,7 +169,6 @@ function ContextProvider(props) {
       .get(`${url}/userpage`, { headers })
       .then(res => {
         setDreams(res.data);
-        console.log(res.data);
       })
       .catch(err => {
         console.log(err);

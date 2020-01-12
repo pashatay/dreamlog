@@ -1,9 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
-import { Redirect } from "react-router-dom";
-import ReactDOM from "react-dom";
-import styles from "./styles.css";
-import Modal from "./Modal";
+import "./styles.css";
 
 function DisplayDreamLog(data, key) {
   const { setOpenModal, openModal, setKeyModal } = useContext(Context);

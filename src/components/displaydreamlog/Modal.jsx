@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
-import styles from "./styles.css";
+import "./styles.css";
 
 function Modal(data) {
   const { setOpenModal, openModal, keyModal } = useContext(Context);
