@@ -46,7 +46,7 @@ function Modal(data) {
       <section className={`${dream.dream_type}`}>
         <h1>{dream.title}</h1>
         <p>{dream.info}</p>
-        <i class="ri-close-line" onClick={() => setOpenModal(false)}></i>
+        <i className="ri-close-line" onClick={() => setOpenModal(false)}></i>
         {dream.is_private ? privateDream : publicDream}
       </section>
     </div>

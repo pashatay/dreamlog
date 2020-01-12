@@ -188,7 +188,7 @@ function ContextProvider(props) {
     axios
       .patch(`${url}/dreams/${dreamId}`, { is_private }, { headers })
       .then(res => {
-        setPublicDreams(res.data);
+        console.log(res);
       })
       .catch(err => {
         console.log(err);

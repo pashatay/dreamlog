@@ -18,6 +18,7 @@ function Dreamblog() {
     return <DisplayDreamBlog data={dream} key={i} />;
   });
 
+  console.log("dream blog", publicDreams);
   return (
     <div>
       <Header />
