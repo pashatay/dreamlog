@@ -67,12 +67,12 @@
 }
 .modal > section {
   position: fixed;
-  width: 90vw;
-  height: 70vh;
+  width: 70vw;
+  height: 50vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid white;
+  border: 3px solid white;
 }
 
 .display-block {

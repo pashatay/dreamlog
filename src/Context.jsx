@@ -184,7 +184,16 @@ function ContextProvider(props) {
         console.log(err);
       });
   };
-
+  const handleChangeDreamPrivacy = (dreamId, is_private) => {
+    axios
+      .patch(`${url}/dreams/${dreamId}`, { is_private }, { headers })
+      .then(res => {
+        setPublicDreams(res.data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
   return (
     <Context.Provider
       value={{
@@ -212,7 +221,8 @@ function ContextProvider(props) {
         openModal,
         setOpenModal,
         keyModal,
-        setKeyModal
+        setKeyModal,
+        handleChangeDreamPrivacy
       }}
     >
       {props.children}
