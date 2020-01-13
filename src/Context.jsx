@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
 
@@ -10,6 +10,7 @@ function ContextProvider(props) {
   const todaysDate = () => {
     let newDate = new Date();
     let month = newDate.getMonth() + 1;
+    month = month.toString().length < 2 ? "0" + month : month;
     let date = newDate.getDate();
     let year = newDate
       .getFullYear()
@@ -28,7 +29,7 @@ function ContextProvider(props) {
   const newDreamDefaultValues = {
     title: "",
     dream_date: todaysDate(),
-    dream_type: "",
+    dream_type: "Lucid",
     hours_slept: "",
     info: "",
     is_private: "false"
@@ -47,6 +48,7 @@ function ContextProvider(props) {
   const [publicDreams, setPublicDreams] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [keyModal, setKeyModal] = useState("");
+  const [filterDreams, setFilterDreams] = useState("all");
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -153,10 +155,11 @@ function ContextProvider(props) {
   };
   const handleSubmitNewDream = e => {
     e.preventDefault();
+    e.target.reset();
     axios
       .post(`${url}/userpage`, newDreamValues, { headers })
       .then(res => {
-        console.log(res);
+        setNewDreamValues(newDreamDefaultValues);
       })
       //.then(getDataForUserMainPage())
       //.then(setRedirectTask(true))
@@ -168,7 +171,7 @@ function ContextProvider(props) {
     axios
       .get(`${url}/userpage`, { headers })
       .then(res => {
-        setDreams(res.data);
+        setDreams(res.data.sort((a, b) => b.id - a.id));
       })
       .catch(err => {
         console.log(err);
@@ -178,7 +181,7 @@ function ContextProvider(props) {
     axios
       .get(`${url}/dreamblog/${id}`)
       .then(res => {
-        setPublicDreams(res.data);
+        setPublicDreams(res.data.sort((a, b) => b.id - a.id));
       })
       .catch(err => {
         console.log(err);
@@ -223,7 +226,9 @@ function ContextProvider(props) {
         setOpenModal,
         keyModal,
         setKeyModal,
-        handleChangeDreamPrivacy
+        handleChangeDreamPrivacy,
+        filterDreams,
+        setFilterDreams
       }}
     >
       {props.children}
