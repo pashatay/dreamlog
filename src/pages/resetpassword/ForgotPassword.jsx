@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from "react";
 //import styles from "./styles.css";
 import { Context } from "../../Context";
+import LoginSignupModal from "../../components/modals/LoginSignupModal";
 
 import Header from "../../components/header/Header";
 
 function ForgotPassword() {
-  const { handleChange, handleSubmitEmailToChangePassword } = useContext(
+  const { handleChange, handleSubmitEmailToResetPassword } = useContext(
     Context
   );
   return (
@@ -13,7 +14,7 @@ function ForgotPassword() {
       <Header />
       <form
         className="forgotpassword-form"
-        onSubmit={handleSubmitEmailToChangePassword}
+        onSubmit={handleSubmitEmailToResetPassword}
       >
         <input
           required
@@ -24,6 +25,7 @@ function ForgotPassword() {
         />
         <input type="submit" className="button" value="Send"></input>
       </form>
+      <LoginSignupModal />
     </div>
   );
 }

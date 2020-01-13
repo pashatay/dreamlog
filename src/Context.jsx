@@ -139,32 +139,76 @@ function ContextProvider(props) {
     return redirectTask ? <Redirect to="/homepage" /> : false;
   };
 
-  const handleSubmitEmailToChangePassword = e => {
+  const handleSubmitEmailToResetPassword = e => {
     e.preventDefault();
+    e.target.reset();
     axios
       .post(`${url}/resetpassword/email`, formValues)
       .then(res => {
         console.log(res);
+        setOpenModal(true);
+        setAnError("");
+        setAMessage(res.data.message);
       })
       .then(setFormValues(formDefaultValues))
       .catch(err => {
-        console.log(err);
-        console.log({ email: formValues.email });
+        setOpenModal(true);
+        setAMessage("");
+        setAnError(err.response.data.error.message);
       });
   };
 
-  const handleSubmitChangePassword = e => {
+  const handleSubmitResetPassword = e => {
     formValues.email = "";
     e.preventDefault();
+    e.target.reset();
     axios
       .patch(`${url}/resetpassword/${token}`, formValues)
       .then(res => {
-        console.log("done");
+        console.log(res);
+        setOpenModal(true);
+        setAnError("");
+        setAMessage(res.data.message);
       })
       .then(setFormValues(formDefaultValues))
       .catch(err => {
-        console.log(err);
+        setOpenModal(true);
+        setAMessage("");
+        setAnError("Something went wrong. You need a new reset link.");
       });
+  };
+  const handleSubmitChangeEmail = e => {
+    formValues.password = "";
+    e.preventDefault();
+    axios
+      .post("http://localhost:8000/mainpage", formValues, { headers })
+      .then(res => {
+        setAnError(res.data.message.message);
+        setUserHasLoggedIn(false);
+      })
+      .then(setFormValues(formDefaultValues))
+      .catch(err => {
+        setAnError(err.response.data.error.message);
+      });
+  };
+  const handleSubmitChangePassword = e => {
+    formValues.email = "";
+    if (formValues.password != confirmedPassword) {
+      e.preventDefault();
+      setAnError("Passwords don't match!");
+    } else {
+      e.preventDefault();
+      axios
+        .post("http://localhost:8000/mainpage", formValues, { headers })
+        .then(setUserHasLoggedIn(false))
+        .then(res => {
+          setAnError(res.data.message.message);
+        })
+        .then(setFormValues(formDefaultValues))
+        .catch(err => {
+          setAnError(err.response.data.error.message || "error");
+        });
+    }
   };
   const handleSubmitNewDream = e => {
     e.preventDefault();
@@ -226,8 +270,8 @@ function ContextProvider(props) {
         setAMessage,
         handleSubmitSignUp,
         setConfirmedPassword,
-        handleSubmitEmailToChangePassword,
-        handleSubmitChangePassword,
+        handleSubmitEmailToResetPassword,
+        handleSubmitResetPassword,
         setToken,
         redirectToHomePage,
         setRedirectTask,
@@ -243,7 +287,9 @@ function ContextProvider(props) {
         setKeyModal,
         handleChangeDreamPrivacy,
         filterDreams,
-        setFilterDreams
+        setFilterDreams,
+        handleSubmitChangeEmail,
+        handleSubmitChangePassword
       }}
     >
       {props.children}
