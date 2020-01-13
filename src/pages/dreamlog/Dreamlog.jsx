@@ -4,7 +4,7 @@ import DisplayDreamLog from "../../components/displaydreamlog/DisplayDreamLog";
 import "./styles.css";
 
 import Header from "../../components/header/Header";
-import Modal from "../../components/displaydreamlog/Modal";
+import DreamDisplayModal from "../../components/modals/DreamDisplayModal";
 
 function Dreamlog() {
   const { getAllDreams, dreams, filterDreams, setFilterDreams } = useContext(
@@ -60,7 +60,7 @@ function Dreamlog() {
           : filterDreams === "month"
           ? currentMonthDreams
           : allDreams}
-        <Modal data={dreams} />
+        <DreamDisplayModal data={dreams} />
       </section>
     </>
   );

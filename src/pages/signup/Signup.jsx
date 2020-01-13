@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import styles from "./styles.css";
 import { Context } from "../../Context";
+import LoginSignupModal from "../../components/modals/LoginSignupModal";
 
 function Signup() {
   const {
-    anError,
     setAnError,
+    setAMessage,
     handleChange,
     handleSubmitSignUp,
     setConfirmedPassword
@@ -15,6 +16,7 @@ function Signup() {
 
   useEffect(() => {
     setAnError("");
+    setAMessage("");
   }, []);
 
   return (
@@ -55,6 +57,7 @@ function Signup() {
       <Link to="/">
         <h3 className="signup-have-an-account">Already have an account?</h3>
       </Link>
+      <LoginSignupModal />
     </>
   );
 }

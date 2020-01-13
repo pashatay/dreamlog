@@ -39,6 +39,7 @@ function ContextProvider(props) {
   const [newDreamValues, setNewDreamValues] = useState(newDreamDefaultValues);
   const [confirmedPassword, setConfirmedPassword] = useState("");
   const [anError, setAnError] = useState("");
+  const [aMessage, setAMessage] = useState("");
   const [token, setToken] = useState("");
   const [userId, setUserId] = useState("");
   const [userHasLoggedIn, setUserHasLoggedIn] = useState(false);
@@ -83,25 +84,34 @@ function ContextProvider(props) {
 
   const handleSubmitSignUp = e => {
     e.preventDefault();
+    e.target.reset();
     if (formValues.password === confirmedPassword && emailIsValid) {
       axios
         .post(`${url}/signup`, formValues)
         .then(res => {
           console.log(res);
-          setAnError(
+          setOpenModal(true);
+          setAnError("");
+          setAMessage(
             "Almost done! Please check your email for the link to verify your account."
           );
         })
         .catch(err => {
+          setOpenModal(true);
+          setAMessage("");
           setAnError(err.response.data.error.message);
+          console.log(err.response.data.error.message);
         });
     } else {
+      setOpenModal(true);
+      setAMessage("");
       setAnError("Passwords don't match!");
     }
   };
 
   const handleSubmitLogin = e => {
     e.preventDefault();
+    e.target.reset();
     axios
       .post(`${url}/login`, formValues)
       .then(res => {
@@ -111,7 +121,10 @@ function ContextProvider(props) {
       })
       .catch(err => {
         setRedirectTask(false);
-        setAnError(err.response.data.error.message);
+        setOpenModal(true);
+        return err.response.status === 401
+          ? (setAMessage(""), setAnError(err.response.data.error.message))
+          : (setAnError(""), setAMessage(err.response.data.error.message));
       });
   };
 
@@ -209,6 +222,8 @@ function ContextProvider(props) {
         userId,
         anError,
         setAnError,
+        aMessage,
+        setAMessage,
         handleSubmitSignUp,
         setConfirmedPassword,
         handleSubmitEmailToChangePassword,

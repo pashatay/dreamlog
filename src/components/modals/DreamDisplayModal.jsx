@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
 import "./styles.css";
 
-function Modal(data) {
+function DreamDisplayModal(data) {
   const {
     setOpenModal,
     openModal,
@@ -53,4 +53,4 @@ function Modal(data) {
   );
 }
 
-export default Modal;
+export default DreamDisplayModal;

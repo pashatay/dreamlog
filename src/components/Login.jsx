@@ -2,18 +2,20 @@ import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
 import cosmos from "../images/cosmos.mov";
+import LoginSignupModal from "./modals/LoginSignupModal";
 
 function Login() {
   const {
-    anError,
     setAnError,
     handleSubmitLogin,
+    setOpenModal,
     handleChange,
     redirectToHomePage
   } = useContext(Context);
 
   useEffect(() => {
     setAnError("");
+    setOpenModal(false);
   }, []);
 
   return (
@@ -42,6 +44,7 @@ function Login() {
           <button className="signup-button">Sign Up</button>
         </Link>
       </div>
+      <LoginSignupModal />
     </>
   );
 }
