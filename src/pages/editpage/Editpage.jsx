@@ -3,6 +3,7 @@ import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
 import { Context } from "../../Context";
+import LoginSignupModal from "../../components/modals/LoginSignupModal";
 
 function Editpage() {
   const {
@@ -27,7 +28,7 @@ function Editpage() {
           <input type="submit" className="button" value="Change Email"></input>
         </form>
         <br />
-        <h4 className="error">{anError}</h4>
+
         <form onSubmit={handleSubmitChangePassword}>
           <input
             required
@@ -35,6 +36,7 @@ function Editpage() {
             placeholder="password"
             name={"password"}
             onChange={handleChange}
+            minLength="8"
           />
 
           <input
@@ -51,6 +53,7 @@ function Editpage() {
           ></input>
         </form>
       </section>
+      <LoginSignupModal />
     </div>
   );
 }

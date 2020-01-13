@@ -3,12 +3,10 @@ import { Context } from "../Context";
 import { Redirect } from "react-router-dom";
 
 function Logout() {
-  const { setUserHasLoggedIn, setRedirectTask } = useContext(Context);
+  const { logOutUser } = useContext(Context);
   useEffect(() => {
-    localStorage.removeItem("access_token");
-    setUserHasLoggedIn(false);
-    setRedirectTask(false);
-  });
+    logOutUser();
+  }, []);
   return <Redirect to="/" />;
 }
 

@@ -8,6 +8,8 @@ header {
   box-shadow: 0px 1px 10px 1px rgba(244, 245, 235, 0.664);
 }
 .logo {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: 0;
   margin-left: 4%;
@@ -20,4 +22,15 @@ header {
   right: 0;
   margin-right: 4%;
   font-size: 0.8em;
+}
+.ri-home-6-line {
+  font-size: 1.5em;
+  align-self: center;
+  margin: 0%;
+  padding: 0;
+}
+.dreamlog-logo {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
 }

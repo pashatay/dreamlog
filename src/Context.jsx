@@ -116,7 +116,6 @@ function ContextProvider(props) {
       .post(`${url}/login`, formValues)
       .then(res => {
         userLoggedIn(res.data);
-        setRedirectTask(true);
         setAnError("");
       })
       .catch(err => {
@@ -130,9 +129,18 @@ function ContextProvider(props) {
 
   const userLoggedIn = data => {
     localStorage.setItem("access_token", `bearer ${data.token}`);
+    setRedirectTask(true);
     setUserName(data.name);
     setUserId(data.id);
     setUserHasLoggedIn(true);
+  };
+
+  const logOutUser = () => {
+    localStorage.removeItem("access_token");
+    setRedirectTask(false);
+    setUserName("");
+    setUserId("");
+    setUserHasLoggedIn(false);
   };
 
   const redirectToHomePage = () => {
@@ -180,14 +188,20 @@ function ContextProvider(props) {
   const handleSubmitChangeEmail = e => {
     formValues.password = "";
     e.preventDefault();
+    e.target.reset();
     axios
-      .post("http://localhost:8000/mainpage", formValues, { headers })
+      .patch(`${url}/userpage`, formValues, { headers })
       .then(res => {
-        setAnError(res.data.message.message);
-        setUserHasLoggedIn(false);
+        setOpenModal(true);
+        setAnError("");
+        setAMessage(res.data.message.message);
+        setFormValues(formDefaultValues);
+        logOutUser();
       })
-      .then(setFormValues(formDefaultValues))
       .catch(err => {
+        console.log(err.response);
+        setOpenModal(true);
+        setAMessage("");
         setAnError(err.response.data.error.message);
       });
   };
@@ -195,18 +209,24 @@ function ContextProvider(props) {
     formValues.email = "";
     if (formValues.password != confirmedPassword) {
       e.preventDefault();
+      e.target.reset();
+      setOpenModal(true);
+      setAMessage("");
       setAnError("Passwords don't match!");
     } else {
       e.preventDefault();
+      e.target.reset();
       axios
-        .post("http://localhost:8000/mainpage", formValues, { headers })
-        .then(setUserHasLoggedIn(false))
+        .patch(`${url}/userpage`, formValues, { headers })
         .then(res => {
-          setAnError(res.data.message.message);
+          setOpenModal(true);
+          setAnError("");
+          setAMessage(res.data.message.message);
+          setFormValues(formDefaultValues);
+          logOutUser();
         })
-        .then(setFormValues(formDefaultValues))
         .catch(err => {
-          setAnError(err.response.data.error.message || "error");
+          setAnError(err.response.data.error.message);
         });
     }
   };
@@ -218,8 +238,6 @@ function ContextProvider(props) {
       .then(res => {
         setNewDreamValues(newDreamDefaultValues);
       })
-      //.then(getDataForUserMainPage())
-      //.then(setRedirectTask(true))
       .catch(err => {
         console.log(err);
       });
@@ -289,7 +307,8 @@ function ContextProvider(props) {
         filterDreams,
         setFilterDreams,
         handleSubmitChangeEmail,
-        handleSubmitChangePassword
+        handleSubmitChangePassword,
+        logOutUser
       }}
     >
       {props.children}

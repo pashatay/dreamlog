@@ -24,6 +24,7 @@ function ResetPassword() {
           type="password"
           placeholder="password"
           name={"password"}
+          minLength="8"
           onChange={handleChange}
         />
         <input required type="password" placeholder="confirm password" />

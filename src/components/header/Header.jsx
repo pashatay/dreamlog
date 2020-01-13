@@ -8,7 +8,8 @@ function Header() {
   const logged = (
     <>
       <Link to="/homepage" className="logo">
-        <h3>_Dream.log</h3>
+        <i className="ri-home-6-line"></i>
+        <h3 className="dreamlog-logo">_Dream.log</h3>
       </Link>
 
       <Link to="/logout" className="header-logout">
@@ -19,7 +20,8 @@ function Header() {
   const notLogged = (
     <>
       <Link to="/" className="logo">
-        <h3>_Dream.log</h3>
+        <i className="ri-home-6-line"></i>
+        <h3 className="dreamlog-logo">_Dream.log</h3>
       </Link>
     </>
   );
