@@ -56,11 +56,21 @@
   color: rgba(235, 235, 245, 0.397);
 }
 
-.ri-lock-2-fill {
+.ri-eye-off-fill {
   position: absolute;
   top: 0;
   right: 0;
   padding: 5%;
-  font-size: 1em;
+  font-size: 1.1em;
   background: none;
+}
+
+.Lucid .ri-eye-off-fill {
+  color: rgba(0, 0, 0, 0.5);
+}
+.Normal .ri-eye-off-fill {
+  color: rgba(0, 0, 0, 0.5);
+}
+.Nightmare .ri-eye-off-fill {
+  opacity: 0.5;
 }

@@ -10,7 +10,9 @@ function DisplayDreamLog(data, key) {
     setKeyModal(dream.id);
     setOpenModal(!openModal);
   };
-  const privateDream = <i className={`${dream.dream_type} ri-lock-2-fill`}></i>;
+  const privateDream = (
+    <i className={`${dream.dream_type} ri-eye-off-fill`}></i>
+  );
   return (
     <div
       className={`${dream.dream_type} dream-box`}
