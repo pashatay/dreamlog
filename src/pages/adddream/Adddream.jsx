@@ -11,11 +11,13 @@ function Adddream() {
     setAnError,
     handleNewDreamChange,
     handleSubmitNewDream,
-    redirectToHomePage
+    redirectToHomePage,
+    redirectToLoginPage
   } = useContext(Context);
 
   return (
-    <div>
+    <>
+      {redirectToLoginPage()}
       <Header />
       <form className="adddream-form" onSubmit={handleSubmitNewDream}>
         <input
@@ -57,7 +59,7 @@ function Adddream() {
         </label>
         <input type="submit" className="button" value="Add Dream"></input>
       </form>
-    </div>
+    </>
   );
 }
 

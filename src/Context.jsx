@@ -147,6 +147,10 @@ function ContextProvider(props) {
     return redirectTask ? <Redirect to="/homepage" /> : false;
   };
 
+  const redirectToLoginPage = () => {
+    return !userHasLoggedIn ? <Redirect to="/" /> : false;
+  };
+
   const handleSubmitEmailToResetPassword = e => {
     e.preventDefault();
     e.target.reset();
@@ -273,9 +277,19 @@ function ContextProvider(props) {
         console.log(err);
       });
   };
+  const handleDeleteAccount = e => {
+    e.preventDefault();
+    axios
+      .delete(`${url}/userpage`, { headers })
+      .then(logOutUser())
+      .catch(err => {
+        console.log(err);
+      });
+  };
   return (
     <Context.Provider
       value={{
+        redirectToLoginPage,
         handleChange,
         handleSubmitLogin,
         userHasLoggedIn,
@@ -308,7 +322,8 @@ function ContextProvider(props) {
         setFilterDreams,
         handleSubmitChangeEmail,
         handleSubmitChangePassword,
-        logOutUser
+        logOutUser,
+        handleDeleteAccount
       }}
     >
       {props.children}

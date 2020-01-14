@@ -7,9 +7,13 @@ import Header from "../../components/header/Header";
 import DreamDisplayModal from "../../components/modals/DreamDisplayModal";
 
 function Dreamlog() {
-  const { getAllDreams, dreams, filterDreams, setFilterDreams } = useContext(
-    Context
-  );
+  const {
+    getAllDreams,
+    dreams,
+    filterDreams,
+    setFilterDreams,
+    redirectToLoginPage
+  } = useContext(Context);
 
   useEffect(() => {
     getAllDreams();
@@ -45,6 +49,7 @@ function Dreamlog() {
 
   return (
     <>
+      {redirectToLoginPage()}
       <Header />
       <select
         name={"filter_dreams"}

@@ -11,10 +11,12 @@ function Editpage() {
     handleSubmitChangePassword,
     handleChange,
     setConfirmedPassword,
-    anError
+    anError,
+    redirectToLoginPage
   } = useContext(Context);
   return (
-    <div>
+    <>
+      {redirectToLoginPage()}
       <Header />
       <section className="edit-form">
         <form onSubmit={handleSubmitChangeEmail}>
@@ -54,7 +56,7 @@ function Editpage() {
         </form>
       </section>
       <LoginSignupModal />
-    </div>
+    </>
   );
 }
 
