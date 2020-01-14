@@ -7,17 +7,22 @@ const Context = React.createContext();
 function ContextProvider(props) {
   const url = "http://localhost:8000";
 
-  const todaysDate = () => {
-    let newDate = new Date();
-    let month = newDate.getMonth() + 1;
-    month = month.toString().length < 2 ? "0" + month : month;
-    let date = newDate.getDate();
-    let year = newDate
+  const date = {
+    date: new Date().getDate(),
+    rawMonth: new Date().getMonth() + 1,
+    month: function() {
+      return this.rawMonth.toString().length < 2
+        ? "0" + this.rawMonth
+        : this.rawMonth;
+    },
+    year: new Date()
       .getFullYear()
       .toString()
-      .slice(2);
-    let today = `${month}/${date}/${year}`;
-    return today;
+      .slice(-2)
+  };
+
+  const todaysDate = () => {
+    return `${date.month()}/${date.date}/${date.year}`;
   };
 
   const formDefaultValues = {
@@ -49,7 +54,7 @@ function ContextProvider(props) {
   const [publicDreams, setPublicDreams] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [keyModal, setKeyModal] = useState("");
-  const [filterDreams, setFilterDreams] = useState("all");
+  const [dreamFilter, setDreamFilter] = useState("all");
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -286,9 +291,19 @@ function ContextProvider(props) {
         console.log(err);
       });
   };
+
+  const filteredDreams = {
+    year: dreams.filter(dream => dream.dream_date.slice(-2) === date.year),
+    month: dreams.filter(
+      dream =>
+        dream.dream_date.slice(0, 2) === date.month() &&
+        dream.dream_date.slice(-2) === date.year
+    )
+  };
   return (
     <Context.Provider
       value={{
+        date,
         redirectToLoginPage,
         handleChange,
         handleSubmitLogin,
@@ -318,12 +333,14 @@ function ContextProvider(props) {
         keyModal,
         setKeyModal,
         handleChangeDreamPrivacy,
-        filterDreams,
-        setFilterDreams,
+        dreamFilter,
+        setDreamFilter,
         handleSubmitChangeEmail,
         handleSubmitChangePassword,
         logOutUser,
-        handleDeleteAccount
+        handleDeleteAccount,
+
+        filteredDreams
       }}
     >
       {props.children}

@@ -8,10 +8,11 @@ import DreamDisplayModal from "../../components/modals/DreamDisplayModal";
 
 function Dreamlog() {
   const {
+    filteredDreams,
     getAllDreams,
     dreams,
-    filterDreams,
-    setFilterDreams,
+    dreamFilter,
+    setDreamFilter,
     redirectToLoginPage
   } = useContext(Context);
 
@@ -19,33 +20,17 @@ function Dreamlog() {
     getAllDreams();
   }, []);
 
-  const currentYear = new Date()
-    .getFullYear()
-    .toString()
-    .slice(-2);
-
-  const month = new Date().getMonth() + 1;
-  const currentMonth = month.toString().length < 2 ? "0" + month : month;
-
   const allDreams = dreams.map((dream, i) => {
     return <DisplayDreamLog data={dream} key={i} />;
   });
 
-  const currentYearDreams = dreams
-    .filter(dream => dream.dream_date.slice(-2) === currentYear)
-    .map((dream, i) => {
-      return <DisplayDreamLog data={dream} key={i} />;
-    });
+  const currentYearDreams = filteredDreams.year.map((dream, i) => {
+    return <DisplayDreamLog data={dream} key={i} />;
+  });
 
-  const currentMonthDreams = dreams
-    .filter(
-      dream =>
-        dream.dream_date.slice(0, 2) === currentMonth &&
-        dream.dream_date.slice(-2) === currentYear
-    )
-    .map((dream, i) => {
-      return <DisplayDreamLog data={dream} key={i} />;
-    });
+  const currentMonthDreams = filteredDreams.month.map((dream, i) => {
+    return <DisplayDreamLog data={dream} key={i} />;
+  });
 
   return (
     <>
@@ -53,16 +38,16 @@ function Dreamlog() {
       <Header />
       <select
         name={"filter_dreams"}
-        onChange={e => setFilterDreams(e.target.value)}
+        onChange={e => setDreamFilter(e.target.value)}
       >
         <option value="all">All Dreams</option>
         <option value="month">From this Month</option>
         <option value="year">From this Year</option>
       </select>
       <section className="allDreams">
-        {filterDreams === "year"
+        {dreamFilter === "year"
           ? currentYearDreams
-          : filterDreams === "month"
+          : dreamFilter === "month"
           ? currentMonthDreams
           : allDreams}
         <DreamDisplayModal data={dreams} />
