@@ -300,6 +300,7 @@ function ContextProvider(props) {
         dream.dream_date.slice(-2) === date.year
     )
   };
+
   return (
     <Context.Provider
       value={{

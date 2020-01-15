@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import ReactDOM from "react-dom";
-import { Doughnut } from "react-chartjs-2";
+import { Polar } from "react-chartjs-2";
 import { Context } from "../../Context";
 
 function DreamTypes() {
@@ -11,6 +11,7 @@ function DreamTypes() {
   useEffect(() => {
     getAllDreams();
   }, []);
+  let array = [];
 
   function filterData(param, data) {
     return param === "year"
@@ -19,6 +20,14 @@ function DreamTypes() {
       ? thisMonthDreams(data)
       : alldreams(data);
   }
+  function totalDreams() {
+    return dreamFilter === "year"
+      ? filteredDreams.year.length
+      : dreamFilter === "month"
+      ? filteredDreams.month.length
+      : dreams.length;
+  }
+
   function alldreams(dreams) {
     let lucid = 0;
     let normal = 0;
@@ -30,7 +39,7 @@ function DreamTypes() {
         ? normal++
         : nightmare++;
     });
-    let array = [lucid, normal, nightmare];
+    array = [lucid, normal, nightmare];
     return array;
   }
 
@@ -45,7 +54,7 @@ function DreamTypes() {
         ? normal++
         : nightmare++;
     });
-    let array = [lucid, normal, nightmare];
+    array = [lucid, normal, nightmare];
     return array;
   }
 
@@ -60,7 +69,7 @@ function DreamTypes() {
         ? normal++
         : nightmare++;
     });
-    let array = [lucid, normal, nightmare];
+    array = [lucid, normal, nightmare];
     return array;
   }
   const charData = {
@@ -80,7 +89,24 @@ function DreamTypes() {
 
   return (
     <div>
-      <Doughnut data={charData}></Doughnut>
+      <h3>Total: {totalDreams()} dreams</h3>
+      <Polar
+        data={charData}
+        options={{
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  display: false
+                }
+              }
+            ]
+          },
+          legend: {
+            display: false
+          }
+        }}
+      ></Polar>
     </div>
   );
 }

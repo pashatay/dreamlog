@@ -4,6 +4,8 @@ import "./styles.css";
 import DreamTypes from "../../components/charts/DreamTypes";
 import HoursSlept from "../../components/charts/HoursSlept";
 import Header from "../../components/header/Header";
+import HoursPerDreamType from "../../components/charts/HoursPerDreamType";
+import PublicPrivate from "../../components/charts/PublicPrivate";
 
 function Statistics() {
   const { setDreamFilter } = useContext(Context);
@@ -25,6 +27,8 @@ function Statistics() {
       <h3>Statistics</h3>
       <DreamTypes />
       <HoursSlept />
+      <HoursPerDreamType />
+      <PublicPrivate />
     </div>
   );
 }

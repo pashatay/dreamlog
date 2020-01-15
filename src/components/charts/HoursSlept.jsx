@@ -52,6 +52,7 @@ function HoursSlept() {
     });
     return chardata;
   }
+
   const charData = {
     labels: filterData(dreamFilter, dreams).labels,
     datasets: [
@@ -69,7 +70,6 @@ function HoursSlept() {
         pointHoverBorderWidth: 2,
         pointRadius: 1,
         pointHitRadius: 30,
-
         data: filterData(dreamFilter, dreams).hours,
         backgroundColor: ["rgb(250, 139, 255)"]
       }
