@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
 import "./styles.css";
 import DreamTypes from "../../components/charts/DreamTypes";
+import HoursSlept from "../../components/charts/HoursSlept";
 import Header from "../../components/header/Header";
 
 function Statistics() {
@@ -23,6 +24,7 @@ function Statistics() {
       </select>
       <h3>Statistics</h3>
       <DreamTypes />
+      <HoursSlept />
     </div>
   );
 }
