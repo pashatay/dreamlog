@@ -133,11 +133,11 @@ function ContextProvider(props) {
   };
 
   const userLoggedIn = data => {
+    setUserHasLoggedIn(true);
     localStorage.setItem("access_token", `bearer ${data.token}`);
     setRedirectTask(true);
     setUserName(data.name);
     setUserId(data.id);
-    setUserHasLoggedIn(true);
   };
 
   const logOutUser = () => {

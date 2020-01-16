@@ -1,14 +1,15 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../Context";
-import styles from "./styles.css";
+import "./styles.css";
 
 import Header from "../../components/header/Header";
 
 function Homepage() {
-  const { userName, userId } = useContext(Context);
+  const { userName, userId, redirectToLoginPage } = useContext(Context);
   return (
     <>
+      {redirectToLoginPage()}
       <Header />
       <h3 className="greeting">Hey, {userName}!</h3>
       <nav>

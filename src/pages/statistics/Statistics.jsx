@@ -8,13 +8,14 @@ import HoursPerDreamType from "../../components/charts/HoursPerDreamType";
 import PublicPrivate from "../../components/charts/PublicPrivate";
 
 function Statistics() {
-  const { setDreamFilter } = useContext(Context);
+  const { setDreamFilter, redirectToLoginPage } = useContext(Context);
   useEffect(() => {
     setDreamFilter("all");
   }, []);
 
   return (
     <>
+      {redirectToLoginPage()}
       <Header />
       <section className="statistics-filter">
         <h3>Your Statistics from: </h3>
