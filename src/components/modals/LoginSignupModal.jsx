@@ -15,14 +15,20 @@ function Modal() {
       <Link to="/forgot" className="reset-password-link">
         <h3>Reset password</h3>
       </Link>
-      <i className="ri-close-line" onClick={() => setOpenModal(false)}></i>
+      <i
+        className="ri-close-circle-fill"
+        onClick={() => setOpenModal(false)}
+      ></i>
     </>
   );
   const otherErrors = (
     <>
       <h2 className="anError">{anError}</h2>
       <h2 className="aMessage">{aMessage}</h2>
-      <i className="ri-close-line" onClick={() => setOpenModal(false)}></i>
+      <i
+        className="ri-close-circle-fill"
+        onClick={() => setOpenModal(false)}
+      ></i>
     </>
   );
   return (

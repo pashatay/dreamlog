@@ -23,8 +23,10 @@ function DreamDisplayModal(data) {
   }
   const privateDream = (
     <>
-      <p>This dream is Private</p>
+      <i class="ri-eye-off-fill"></i>
+
       <button
+        className="modal-dream-private-button"
         onClick={() => handleChangeDreamPrivacy(dream.id, !dream.is_private)}
       >
         Make Public
@@ -33,8 +35,10 @@ function DreamDisplayModal(data) {
   );
   const publicDream = (
     <>
-      <p>This dream is Public</p>
+      <i class="ri-eye-fill"></i>
+
       <button
+        className="modal-dream-private-button"
         onClick={() => handleChangeDreamPrivacy(dream.id, !dream.is_private)}
       >
         Make Private
@@ -44,9 +48,12 @@ function DreamDisplayModal(data) {
   return (
     <div className={showHideClassName}>
       <section className={`${dream.dream_type}`}>
-        <h1>{dream.title}</h1>
-        <p>{dream.info}</p>
-        <i className="ri-close-line" onClick={() => setOpenModal(false)}></i>
+        <h1 className="modal-dream-title">{dream.title}</h1>
+        <p className="modal-dream-info">{dream.info}</p>
+        <i
+          className="ri-close-circle-fill"
+          onClick={() => setOpenModal(false)}
+        ></i>
         {dream.is_private ? privateDream : publicDream}
       </section>
     </div>

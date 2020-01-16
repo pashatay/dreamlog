@@ -12,7 +12,10 @@ function Modal() {
   return (
     <div className={showHideClassName}>
       <h2 className="aMessage">Dream was added.</h2>
-      <i className="ri-close-line" onClick={() => setOpenModal(false)}></i>
+      <i
+        className="ri-close-circle-fill"
+        onClick={() => setOpenModal(false)}
+      ></i>
     </div>
   );
 }

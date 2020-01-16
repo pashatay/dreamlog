@@ -8,9 +8,11 @@
   z-index: 2;
 }
 .modal > section {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  width: 70vw;
-  height: 50vh;
+  width: 80vw;
+  height: 60vh;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -25,7 +27,7 @@
   display: none;
 }
 
-.ri-close-line {
+.ri-close-circle-fill {
   position: absolute;
   bottom: 0;
   font-size: 2.3em;
@@ -63,4 +65,41 @@
   text-decoration: underline;
   font-size: 0.9em;
   color: rgba(235, 235, 245, 0.767);
+}
+
+.modal-dream-title {
+  margin: 0;
+  padding: 7%;
+  text-align: center;
+  font-size: 1.6em;
+}
+.modal-dream-private-button {
+  position: absolute;
+  top: 75%;
+  padding: 3%;
+  width: 45%;
+  align-self: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  background: inherit;
+  font-size: 1.1em;
+  height: auto;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(235, 235, 245);
+}
+
+.Lucid .modal-dream-private-button {
+  color: rgba(0, 0, 0, 0.952);
+}
+
+.modal-dream-info {
+  margin: 0;
+  text-align: center;
+  font-size: 1.4em;
+  overflow: scroll;
+  padding: 5%;
 }
