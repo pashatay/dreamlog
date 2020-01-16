@@ -9,7 +9,7 @@ import DisplayDreamBlog from "../../components/displaydreamblog/DisplayDreamBlog
 import Header from "../../components/header/Header";
 
 function Dreamblog() {
-  const { dreams, getPublicDreams, publicDreams, userHasLoggedIn } = useContext(
+  const { getPublicDreams, publicDreams, userHasLoggedIn } = useContext(
     Context
   );
   const { id } = useParams();
@@ -24,17 +24,25 @@ function Dreamblog() {
 
   const noDreams = (
     <>
-      <h1 className="no-dreams">You have no dreams yet.</h1>
-      <Link to="/adddream">
-        <button className="adddream-button">Add a Dream</button>
-      </Link>
+      {userHasLoggedIn ? (
+        <>
+          <h1 className="no-dreams">You have no dreams yet.</h1>
+          <Link to="/adddream">
+            <button className="adddream-button">Add a Dream</button>
+          </Link>
+        </>
+      ) : (
+        <h1 className="no-dreams">No dreams yet.</h1>
+      )}
     </>
   );
   const displayDreams = (
     <>
       {userHasLoggedIn ? (
         <CopyToClipboard text={window.location.href}>
-          <button onClick={() => alert("copied")}>Share</button>
+          <button className="share-blog-button" onClick={() => alert("copied")}>
+            Share
+          </button>
         </CopyToClipboard>
       ) : (
         false
@@ -45,7 +53,7 @@ function Dreamblog() {
   return (
     <>
       <Header />
-      {dreams.length < 1 ? noDreams : displayDreams}
+      {publicDreams.length < 1 ? noDreams : displayDreams}
     </>
   );
 }
