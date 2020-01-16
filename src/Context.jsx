@@ -245,6 +245,7 @@ function ContextProvider(props) {
     axios
       .post(`${url}/userpage`, newDreamValues, { headers })
       .then(res => {
+        setOpenModal(true);
         setNewDreamValues(newDreamDefaultValues);
       })
       .catch(err => {

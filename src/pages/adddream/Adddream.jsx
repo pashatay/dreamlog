@@ -3,15 +3,13 @@ import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 import styles from "./styles.css";
 
+import DreamAddedModal from "../../components/modals/DreamAddedModal";
 import Header from "../../components/header/Header";
 
 function Adddream() {
   const {
-    anError,
-    setAnError,
     handleNewDreamChange,
     handleSubmitNewDream,
-    redirectToHomePage,
     redirectToLoginPage
   } = useContext(Context);
 
@@ -23,7 +21,7 @@ function Adddream() {
         <input
           required
           type="text"
-          placeholder="title"
+          placeholder="Title"
           maxLength="30"
           name={"title"}
           onChange={handleNewDreamChange}
@@ -45,20 +43,21 @@ function Adddream() {
         <textarea
           required
           type="text"
-          placeholder="info"
+          placeholder="What happened in your dream?"
           name={"info"}
           onChange={handleNewDreamChange}
         />
-        <label>
+        <label className="private-checkbox">
           <input
             type="checkbox"
             name={"is_private"}
             onChange={handleNewDreamChange}
           />
-          Make it private?
+          <h3>Make it private?</h3>
         </label>
         <input type="submit" className="button" value="Add Dream"></input>
       </form>
+      <DreamAddedModal />
     </>
   );
 }

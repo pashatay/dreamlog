@@ -11,31 +11,69 @@ input[type="checkbox"] {
   margin-top: 15vh;
   justify-content: space-around;
 }
+
 .adddream-form > input {
+  font-size: 1.3em;
   -webkit-border-radius: 0;
   border: 0;
   width: 90vw;
+  height: 50px;
   margin: auto;
   box-sizing: border-box;
+  background: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+.adddream-form ::placeholder {
+  color: rgba(235, 235, 245, 0.822);
 }
 .adddream-form select {
-  padding: 10px 16px;
+  width: 90vw;
   height: 50px;
+  box-sizing: border-box;
   -webkit-border-radius: 0;
-  border: 0;
   outline: 1px inset #fff;
   outline-offset: -1px;
-  width: 90vw;
-  height: 5vh;
+  font-size: 1.3em;
   margin: 5%;
+  text-align-last: center;
+  background: none;
+  color: rgba(235, 235, 245, 0.822);
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
 }
 
 .adddream-form textarea {
+  margin-top: 5%;
+  align-self: center;
   box-sizing: border-box;
   -webkit-border-radius: 0;
   border: 0;
   width: 90vw;
-  margin: auto;
   height: 15vh;
   margin-bottom: 5%;
+  color: rgb(235, 235, 245);
+  font-size: 1.3em;
+  text-align: center;
+  padding: 3%;
+  background: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+
+.private-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.private-checkbox input {
+  align-self: center;
+  width: 20px;
+}
+.private-checkbox h3 {
+  align-self: center;
+}
+
+input[type="submit"] {
+  background: #5c258a;
 }
