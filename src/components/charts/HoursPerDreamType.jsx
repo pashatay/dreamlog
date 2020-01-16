@@ -77,40 +77,54 @@ function HoursPerDreamType() {
     labels: ["Lucid", "Normal", "Nightmare"],
     datasets: [
       {
-        label: "Average sleep type per dream type",
+        fill: false,
+        label: "Median hours",
         data: filterData(dreamFilter, dreams),
         backgroundColor: [
-          "rgb(255, 206, 86)",
-          "rgb(250, 139, 255)",
-          "rgb(54, 162, 235)",
-          "rgb(255, 206, 86)"
+          "rgba(249, 139, 255, 0.925)",
+          "rgba(184, 192, 199, 0.918)",
+          "rgba(111, 0, 0, 0.904)"
         ],
-        borderColor: "rgba(0,0,0,1)",
-        width: 2
+        borderColor: "rgb(235, 235, 245)",
+        borderWidth: 0,
+        hoverBorderWidth: 4
       }
     ]
   };
 
+  const options = {
+    legend: {
+      display: false
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+            fontColor: "rgb(235, 235, 245)",
+            padding: 20
+          },
+
+          gridLines: {
+            drawTicks: false,
+            display: false,
+            color: "rgb(235, 235, 245)"
+          }
+        }
+      ],
+      xAxes: [
+        {
+          ticks: {
+            fontColor: "rgb(235, 235, 245)"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <div>
-      <Bar
-        data={charData}
-        options={{
-          scales: {
-            yAxes: [
-              {
-                ticks: {
-                  beginAtZero: true,
-                  display: false
-                }
-              }
-            ]
-          },
-          legend: {
-            display: false
-          }
-        }}
-      ></Bar>
+      <Bar data={charData} options={options}></Bar>
     </div>
   );
 }

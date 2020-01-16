@@ -14,22 +14,27 @@ function Statistics() {
   }, []);
 
   return (
-    <div>
+    <>
       <Header />
-      <select
-        name={"filter_dreams_statistics"}
-        onChange={e => setDreamFilter(e.target.value)}
-      >
-        <option value="all">All Dreams</option>
-        <option value="month">From this Month</option>
-        <option value="year">From this Year</option>
-      </select>
-      <h3>Statistics</h3>
-      <DreamTypes />
-      <HoursSlept />
-      <HoursPerDreamType />
-      <PublicPrivate />
-    </div>
+      <section className="statistics-filter">
+        <h3>Your Statistics from: </h3>
+        <select
+          name={"filter_dreams_statistics"}
+          onChange={e => setDreamFilter(e.target.value)}
+        >
+          <option value="all">all dreams</option>
+          <option value="month">this Month</option>
+          <option value="year">this Year</option>
+        </select>
+      </section>
+
+      <section className="charts">
+        <DreamTypes />
+        <HoursSlept />
+        <HoursPerDreamType />
+        <PublicPrivate />
+      </section>
+    </>
   );
 }
 

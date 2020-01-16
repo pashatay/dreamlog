@@ -1,0 +1,40 @@
+.statistics-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  height: auto;
+  padding: 5%;
+}
+.statistics-filter select {
+  width: auto;
+  height: 40px;
+  text-align: center;
+  align-self: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #1d2159;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.statistics-filter h3 {
+  height: 30px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.charts {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.charts div {
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0.5px 0 0px rgb(235, 235, 245);
+}

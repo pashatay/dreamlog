@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import ReactDOM from "react-dom";
-import { Doughnut } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import { Context } from "../../Context";
 
 function PublicPrivate() {
@@ -50,14 +50,37 @@ function PublicPrivate() {
       {
         label: "Public/ Private",
         data: filterData(dreamFilter, dreams),
-        backgroundColor: ["rgb(54, 162, 235)", "rgb(255, 206, 86)"]
+        backgroundColor: ["rgb(43, 210, 255)", "rgba(184, 192, 199, 0.918)"],
+        borderColor: "rgb(235, 235, 245)",
+        borderWidth: 0,
+        hoverBorderWidth: 4
       }
     ]
   };
-
+  const options = {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            display: false
+          }
+        }
+      ]
+    },
+    legend: {
+      display: true,
+      labels: {
+        fontColor: "rgb(235, 235, 245)",
+        fontSize: 16,
+        fontFamily: "Fjalla One",
+        padding: 30
+      },
+      position: "left"
+    }
+  };
   return (
     <div>
-      <Doughnut data={charData}></Doughnut>
+      <Pie data={charData} options={options}></Pie>
     </div>
   );
 }

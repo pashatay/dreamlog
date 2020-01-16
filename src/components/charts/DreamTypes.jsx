@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useContext } from "react";
-import ReactDOM from "react-dom";
-import { Polar } from "react-chartjs-2";
+import React, { useEffect, useContext } from "react";
+import { Doughnut } from "react-chartjs-2";
 import { Context } from "../../Context";
+
+import "./styles.css";
 
 function DreamTypes() {
   const { dreams, filteredDreams, getAllDreams, dreamFilter } = useContext(
@@ -79,34 +80,44 @@ function DreamTypes() {
         label: "type of dreams",
         data: filterData(dreamFilter, dreams),
         backgroundColor: [
-          "rgb(250, 139, 255)",
-          "rgb(54, 162, 235)",
-          "rgb(255, 206, 86)"
-        ]
+          "rgba(249, 139, 255, 0.925)",
+          "rgba(184, 192, 199, 0.918)",
+          "rgba(111, 0, 0, 0.904)"
+        ],
+        borderColor: "rgb(235, 235, 245)",
+        borderWidth: 0,
+        hoverBorderWidth: 4
       }
     ]
   };
 
-  return (
-    <div>
-      <h3>Total: {totalDreams()} dreams</h3>
-      <Polar
-        data={charData}
-        options={{
-          scales: {
-            yAxes: [
-              {
-                ticks: {
-                  display: false
-                }
-              }
-            ]
-          },
-          legend: {
+  const options = {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
             display: false
           }
-        }}
-      ></Polar>
+        }
+      ]
+    },
+    legend: {
+      display: true,
+      labels: {
+        fontColor: "rgb(235, 235, 245)",
+        fontSize: 16,
+        fontFamily: "Fjalla One",
+        padding: 30
+      },
+      position: "left"
+    }
+  };
+  return (
+    <div>
+      <h3 className="total-dreams">
+        Total: {totalDreams()} <i className="ri-moon-clear-fill"></i> dreams.
+      </h3>
+      <Doughnut data={charData} options={options}></Doughnut>
     </div>
   );
 }

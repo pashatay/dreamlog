@@ -23,6 +23,7 @@ function HoursSlept() {
     labels: [],
     hours: []
   };
+
   function alldreams(dreams) {
     chardata.labels = [];
     chardata.hours = [];
@@ -53,38 +54,77 @@ function HoursSlept() {
     return chardata;
   }
 
-  const charData = {
-    labels: filterData(dreamFilter, dreams).labels,
-    datasets: [
-      {
-        label: "Sleeping schedule",
-        fill: false,
-        borderColor: "rgba(75,192,192,1)",
-        lineTension: 0.05,
-        pointBorderColor: "rgba(75,192,192,1)",
-        pointBackgroundColor: "#fff",
-        pointBorderWidth: 10,
-        pointHoverRadius: 5,
-        pointHoverBackgroundColor: "rgba(75,192,192,1)",
-        pointHoverBorderColor: "rgba(220,220,220,1)",
-        pointHoverBorderWidth: 2,
-        pointRadius: 1,
-        pointHitRadius: 30,
-        data: filterData(dreamFilter, dreams).hours,
-        backgroundColor: ["rgb(250, 139, 255)"]
-      }
-    ]
+  const charData = canvas => {
+    const ctx = canvas.getContext("2d");
+    const gradient = ctx.createLinearGradient(400, 0, 40, 0);
+    gradient.addColorStop(0, "#fa8bff");
+    gradient.addColorStop(1, "#2bd2ff");
+    gradient.addColorStop(1, "#2bff88");
+    return {
+      labels: filterData(dreamFilter, dreams).labels,
+      datasets: [
+        {
+          label: "Slept hours",
+          fill: false,
+          borderColor: gradient,
+          pointBorderColor: "rgb(235, 235, 245)",
+          pointBackgroundColor: gradient,
+          borderWidth: 5,
+          pointBorderWidth: 5,
+          pointHoverRadius: 7,
+          pointHoverBackgroundColor: gradient,
+          pointHoverBorderColor: "rgb(235, 235, 245)",
+          pointHoverBorderWidth: 2,
+          pointRadius: 1,
+          pointHitRadius: 30,
+          data: filterData(dreamFilter, dreams).hours
+        }
+      ]
+    };
+  };
+  const options = {
+    legend: {
+      display: false
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            fontColor: "rgb(235, 235, 245)",
+            padding: 20
+          },
+
+          gridLines: {
+            drawTicks: false,
+            display: false,
+            color: "rgb(235, 235, 245)"
+          }
+        }
+      ],
+      xAxes: [
+        {
+          ticks: {
+            fontColor: "rgb(235, 235, 245)"
+          }
+        }
+      ]
+    }
   };
 
-  const averageHours =
-    chardata.hours.reduce((acc, cv) => {
-      return acc + cv;
-    }, 0) / chardata.hours.length;
+  const averageHours = hours => {
+    return (
+      hours.reduce((acc, cv) => {
+        return acc + cv;
+      }, 0) / hours.length
+    );
+  };
 
   return (
     <div>
-      <h1>{averageHours.toFixed(1)} h</h1>
-      <Line data={charData}></Line>
+      <h1>
+        {averageHours(filterData(dreamFilter, dreams).hours).toFixed(1)} h
+      </h1>
+      <Line data={charData} options={options}></Line>
     </div>
   );
 }
