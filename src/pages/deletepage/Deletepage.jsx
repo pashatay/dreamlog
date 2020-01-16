@@ -14,11 +14,11 @@ function Deletepage() {
       {redirectToLoginPage()}
       <Header />
       <section className="delete-section">
-        <div>
-          <p className="delete-info">
-            Are you sure you want to delete your page? If you press yes all your
-            information will be erased permanently.
-          </p>
+        <p className="delete-info">
+          Are you sure you want to delete your page? If you press yes all your
+          information will be erased permanently.
+        </p>
+        <div className="deletepage-buttons">
           <Link to="/">
             <button
               onClick={handleDeleteAccount}

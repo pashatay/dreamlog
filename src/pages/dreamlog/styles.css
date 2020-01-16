@@ -9,3 +9,51 @@
   margin-top: 5%;
   margin-bottom: 10%;
 }
+
+.dreams-filter-log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  height: auto;
+  padding: 5%;
+}
+.dreams-filter-log select {
+  width: auto;
+  height: 40px;
+  text-align: center;
+  align-self: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #1d2159;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.no-dreams {
+  color: rgba(235, 235, 245, 0.445);
+  text-align: center;
+  margin-top: 50%;
+}
+.adddream-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  width: auto;
+  height: auto;
+  padding: 4%;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #5c258a;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+  border-radius: 0;
+  cursor: pointer;
+}

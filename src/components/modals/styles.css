@@ -90,6 +90,7 @@
   text-decoration: none;
   font-weight: 400;
   color: rgb(235, 235, 245);
+  cursor: pointer;
 }
 
 .Lucid .modal-dream-private-button {

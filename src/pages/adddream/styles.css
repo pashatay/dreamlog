@@ -74,6 +74,7 @@ input[type="checkbox"] {
   align-self: center;
 }
 
-input[type="submit"] {
+.adddream-form input[type="submit"] {
   background: #5c258a;
+  cursor: pointer;
 }

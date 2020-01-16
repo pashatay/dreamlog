@@ -42,7 +42,7 @@ function Dreamlog() {
     </>
   );
   const displayDreams = (
-    <>
+    <section className="statistics-filter">
       <select
         name={"filter_dreams"}
         onChange={e => setDreamFilter(e.target.value)}
@@ -59,7 +59,7 @@ function Dreamlog() {
           : allDreams}
         <DreamDisplayModal data={dreams} />
       </section>
-    </>
+    </section>
   );
   return (
     <>

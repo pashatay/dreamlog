@@ -68,6 +68,7 @@ input[type="submit"] {
   color: rgb(235, 235, 245);
   border-radius: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 input:focus,
 select:focus,

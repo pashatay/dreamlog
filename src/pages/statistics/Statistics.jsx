@@ -18,7 +18,6 @@ function Statistics() {
   );
   const displayDreams = (
     <>
-      {" "}
       <section className="statistics-filter">
         <h3>Your Statistics from: </h3>
         <select

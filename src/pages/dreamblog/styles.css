@@ -1,6 +1,31 @@
 .share-blog-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  width: auto;
+  height: auto;
+  padding: 2%;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+  border-radius: 0;
+  cursor: pointer;
 }
-
+.share-blog-button > h3 {
+  margin: 0;
+  padding: 0;
+}
+.ri-share-forward-fill {
+  margin: 3%;
+  text-align: center;
+  align-self: center;
+}
 .allDreamsBlog {
   width: 100%;
   height: auto;
@@ -8,6 +33,5 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  margin-top: 8%;
   margin-bottom: 10%;
 }

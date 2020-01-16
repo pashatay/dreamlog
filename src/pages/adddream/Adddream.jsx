@@ -1,7 +1,6 @@
-import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import { Context } from "../../Context";
-import styles from "./styles.css";
+import "./styles.css";
 
 import DreamAddedModal from "../../components/modals/DreamAddedModal";
 import Header from "../../components/header/Header";

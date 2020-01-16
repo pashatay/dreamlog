@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import styles from "./styles.css";
+import "./styles.css";
 
 import Header from "../../components/header/Header";
 import { Context } from "../../Context";
@@ -11,7 +11,6 @@ function Editpage() {
     handleSubmitChangePassword,
     handleChange,
     setConfirmedPassword,
-    anError,
     redirectToLoginPage
   } = useContext(Context);
   return (

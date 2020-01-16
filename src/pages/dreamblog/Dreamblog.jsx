@@ -41,7 +41,7 @@ function Dreamblog() {
       {userHasLoggedIn ? (
         <CopyToClipboard text={window.location.href}>
           <button className="share-blog-button" onClick={() => alert("copied")}>
-            Share
+            <h3>Share </h3> <i class="ri-share-forward-fill"></i>
           </button>
         </CopyToClipboard>
       ) : (

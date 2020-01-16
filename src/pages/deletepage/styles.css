@@ -1,0 +1,31 @@
+.delete-info {
+  text-align: center;
+  padding: 5%;
+  font-size: 1.5em;
+}
+
+.deletepage-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.delete-info-button {
+  padding: 3%;
+  width: 30vw;
+  margin: 5%;
+  text-align: center;
+  align-self: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  background: #5c258a;
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 6vh;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(235, 235, 245);
+  cursor: pointer;
+}
