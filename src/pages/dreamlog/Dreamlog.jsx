@@ -1,5 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
 import { Context } from "../../Context";
+import { Link } from "react-router-dom";
 import DisplayDreamLog from "../../components/displaydreamlog/DisplayDreamLog";
 import "./styles.css";
 
@@ -32,10 +33,16 @@ function Dreamlog() {
     return <DisplayDreamLog data={dream} key={i} />;
   });
 
-  return (
+  const noDreams = (
     <>
-      {redirectToLoginPage()}
-      <Header />
+      <h1 className="no-dreams">You have no dreams yet.</h1>
+      <Link to="adddream">
+        <button className="adddream-button">Add a Dream</button>
+      </Link>
+    </>
+  );
+  const displayDreams = (
+    <>
       <select
         name={"filter_dreams"}
         onChange={e => setDreamFilter(e.target.value)}
@@ -52,6 +59,13 @@ function Dreamlog() {
           : allDreams}
         <DreamDisplayModal data={dreams} />
       </section>
+    </>
+  );
+  return (
+    <>
+      {redirectToLoginPage()}
+      <Header />
+      {dreams.length < 1 ? noDreams : displayDreams}
     </>
   );
 }

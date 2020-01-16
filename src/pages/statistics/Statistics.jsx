@@ -8,15 +8,17 @@ import HoursPerDreamType from "../../components/charts/HoursPerDreamType";
 import PublicPrivate from "../../components/charts/PublicPrivate";
 
 function Statistics() {
-  const { setDreamFilter, redirectToLoginPage } = useContext(Context);
+  const { dreams, setDreamFilter, redirectToLoginPage } = useContext(Context);
   useEffect(() => {
     setDreamFilter("all");
   }, []);
 
-  return (
+  const noDreams = (
+    <h1 className="no-dreams">Not enough dreams to display statistics.</h1>
+  );
+  const displayDreams = (
     <>
-      {redirectToLoginPage()}
-      <Header />
+      {" "}
       <section className="statistics-filter">
         <h3>Your Statistics from: </h3>
         <select
@@ -28,13 +30,19 @@ function Statistics() {
           <option value="year">this Year</option>
         </select>
       </section>
-
       <section className="charts">
         <DreamTypes />
         <HoursSlept />
         <HoursPerDreamType />
         <PublicPrivate />
-      </section>
+      </section>{" "}
+    </>
+  );
+  return (
+    <>
+      {redirectToLoginPage()}
+      <Header />
+      {dreams.length < 1 ? noDreams : displayDreams}
     </>
   );
 }
