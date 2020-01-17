@@ -26,7 +26,7 @@ function Dreamblog() {
     <>
       {userHasLoggedIn ? (
         <>
-          <h1 className="no-dreams">You have no dreams yet.</h1>
+          <h1 className="no-dreams">You haven't made any dreams public.</h1>
           <Link to="/adddream">
             <button className="adddream-button">Add a Dream</button>
           </Link>

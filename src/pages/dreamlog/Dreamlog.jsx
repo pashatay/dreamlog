@@ -35,7 +35,7 @@ function Dreamlog() {
 
   const noDreams = (
     <>
-      <h1 className="no-dreams">You have no dreams yet.</h1>
+      <h1 className="no-dreams">You haven't logged any dreams yet.</h1>
       <Link to="adddream">
         <button className="adddream-button">Add a Dream</button>
       </Link>
