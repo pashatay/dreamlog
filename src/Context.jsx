@@ -1,11 +1,12 @@
 import React, { useState, useRef } from "react";
 import { Redirect } from "react-router-dom";
 import axios from "axios";
+import config from "./config";
 
 const Context = React.createContext();
 
 function ContextProvider(props) {
-  const url = "http://localhost:8000";
+  const url = config.API_ENDPOINT;
 
   const date = {
     date: new Date().getDate(),
