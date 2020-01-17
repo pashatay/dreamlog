@@ -25,7 +25,7 @@ input[type="checkbox"] {
   box-shadow: 0 0 10px rgb(235, 235, 245);
 }
 .adddream-form ::placeholder {
-  color: rgba(235, 235, 245, 0.822);
+  color: rgba(235, 235, 245, 0.692);
 }
 .adddream-form select {
   -moz-appearance: none;
@@ -41,7 +41,7 @@ input[type="checkbox"] {
   font-size: 1.3em;
   margin: 5%;
   background: none;
-  color: rgba(235, 235, 245, 0.822);
+  color: rgba(235, 235, 245, 0.692);
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
   background-image: url("../../images/arrow.png");
