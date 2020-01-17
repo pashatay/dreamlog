@@ -1,6 +1,6 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./styles.css";
+import "./styles.css";
 import Login from "../../components/Login";
 import cosmos from "../../images/cosmos.mov";
 

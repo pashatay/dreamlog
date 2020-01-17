@@ -23,3 +23,22 @@ a {
   text-decoration: none;
   color: rgb(235, 235, 245);
 }
+
+@media only screen and (min-width: 1024px) {
+  .html body {
+    background: red important!;
+  }
+  .signup-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .signup-form input {
+    width: 40vw;
+  }
+  .signup-have-an-account {
+    text-align: center;
+  }
+}
