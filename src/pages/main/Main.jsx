@@ -23,8 +23,8 @@ function Main() {
       <div className="div-login-form">
         <Login />
       </div>
-      <Link to="/about">
-        <h3 className="about-link">About</h3>
+      <Link className="about-link" to="/about">
+        About
       </Link>
     </div>
   );

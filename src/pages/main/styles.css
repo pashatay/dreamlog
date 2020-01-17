@@ -22,9 +22,7 @@ body {
 .app-name {
   position: fixed;
   z-index: 1;
-  margin-top: 8vh;
-  margin-left: 10%;
-  margin: 8%;
+  margin: 2rem;
 }
 .app-name > h2 {
   font-size: 2rem;
@@ -35,10 +33,9 @@ body {
 .div-login-form {
   position: fixed;
   z-index: 1;
-  height: inherit;
-  margin-top: 30vh;
-  margin-left: 10vw;
-  width: 80vw;
+  margin-top: 15rem;
+  align-self: center;
+  width: 22rem;
 }
 .login-form {
   display: flex;
@@ -107,12 +104,9 @@ button:focus {
   cursor: pointer;
 }
 .about-link {
-  position: fixed;
-  height: auto;
+  position: relative;
   text-align: center;
-  width: 50vw;
-  margin-left: 25vw;
-  margin-top: 78vh;
+  margin-top: 40rem;
   color: rgb(235, 235, 245);
 }
 a {
@@ -140,9 +134,9 @@ a {
     min-height: 100%;
   }
   .app-name {
-    margin-top: 30vh;
+    margin-top: 15rem;
     margin-left: 5%;
-    width: 50vw;
+    max-width: 40%;
   }
   .app-name > h2 {
     font-size: 4em;
@@ -152,11 +146,14 @@ a {
   }
   .div-login-form {
     right: 0;
-    width: 40vw;
+    width: 30rem;
+    margin-top: 5rem;
     margin-right: 5%;
   }
   .about-link {
-    margin-top: 90vh;
+    margin-top: 40rem;
     font-size: 1.6rem;
+    text-align: center;
+    width: 100%;
   }
 }
