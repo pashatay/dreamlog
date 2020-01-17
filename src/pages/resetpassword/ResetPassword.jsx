@@ -12,9 +12,12 @@ function ResetPassword() {
     setToken(token);
   }, [token]);
 
-  const { handleChange, handleSubmitResetPassword, setToken } = useContext(
-    Context
-  );
+  const {
+    handleChange,
+    handleSubmitResetPassword,
+    setConfirmedPassword,
+    setToken
+  } = useContext(Context);
   return (
     <div>
       <Header />
@@ -27,7 +30,12 @@ function ResetPassword() {
           minLength="8"
           onChange={handleChange}
         />
-        <input required type="password" placeholder="confirm password" />
+        <input
+          required
+          type="password"
+          placeholder="confirm password"
+          onChange={e => setConfirmedPassword(e.target.value)}
+        />
         <input type="submit" className="button" value="Send"></input>
       </form>
       <LoginSignupModal />
