@@ -3,7 +3,7 @@ header {
   justify-content: space-around;
   position: relative;
   align-items: center;
-  height: 10vh;
+  height: 5rem;
   background: #5e3982;
   box-shadow: 0px 1px 10px 1px rgba(244, 245, 235, 0.664);
 }
@@ -12,25 +12,41 @@ header {
   flex-direction: column;
   position: absolute;
   left: 0;
-  margin-left: 4%;
-  font-size: 1.5em;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
   align-self: center;
 }
 
 .header-logout {
   position: absolute;
   right: 0;
-  margin-right: 4%;
-  font-size: 0.8em;
+  margin-right: 1.5rem;
+  font-size: 0.8rem;
 }
 .ri-home-6-line {
-  font-size: 1.5em;
+  font-size: 2rem;
   align-self: center;
   margin: 0%;
   padding: 0;
 }
 .dreamlog-logo {
-  font-size: 0.7em;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .ri-home-6-line {
+    font-size: 2.3rem;
+  }
+  .dreamlog-logo {
+    font-size: 1.3rem;
+  }
+  .logo:hover,
+  .header-logout:hover {
+    text-shadow: 0 0 10px rgb(235, 235, 245);
+  }
+  .header-logout {
+    font-size: 0.9rem;
+  }
 }

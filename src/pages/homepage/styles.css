@@ -1,33 +1,33 @@
 .greeting {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 5vh;
 }
 nav {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 17vw;
+  margin-top: 5rem;
   text-align: center;
 }
 nav div {
-  width: 50vw;
+  width: 50%;
   margin: auto;
-  margin-bottom: 3%;
+  margin-bottom: 2rem;
 }
 nav i {
   font-size: 5em;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
 
 .ri-tools-fill {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   float: left;
   margin: 5%;
   top: 0;
@@ -35,7 +35,7 @@ footer {
   left: 0;
 }
 .ri-delete-bin-6-fill {
-  font-size: 2em;
+  font-size: 2rem;
   float: right;
   margin: 5%;
   top: 0;
@@ -44,4 +44,39 @@ footer {
 }
 a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .greeting {
+    font-size: 2rem;
+  }
+  nav {
+    margin-top: 10%;
+    flex-wrap: nowrap;
+  }
+  nav i {
+    font-size: 8rem;
+  }
+  nav i:hover {
+    color: rgba(255, 255, 0, 0.801);
+    text-shadow: 0 0 15px rgb(235, 235, 245);
+  }
+  h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .ri-delete-bin-6-fill:hover,
+  .ri-tools-fill:hover {
+    text-shadow: 0 0 10px rgb(235, 235, 245);
+  }
+  footer {
+    /* margin-top: 85%;
+    position: relative; */
+  }
+}
+
+@media only screen and (max-height: 640px), (max-width: 300px) {
+  footer {
+    display: none;
+  }
 }
