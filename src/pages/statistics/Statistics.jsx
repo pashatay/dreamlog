@@ -8,8 +8,14 @@ import HoursPerDreamType from "../../components/charts/HoursPerDreamType";
 import PublicPrivate from "../../components/charts/PublicPrivate";
 
 function Statistics() {
-  const { dreams, setDreamFilter, redirectToLoginPage } = useContext(Context);
+  const {
+    dreams,
+    getAllDreams,
+    setDreamFilter,
+    redirectToLoginPage
+  } = useContext(Context);
   useEffect(() => {
+    getAllDreams();
     setDreamFilter("all");
   }, []);
 
@@ -34,7 +40,7 @@ function Statistics() {
         <HoursSlept />
         <HoursPerDreamType />
         <PublicPrivate />
-      </section>{" "}
+      </section>
     </>
   );
   return (

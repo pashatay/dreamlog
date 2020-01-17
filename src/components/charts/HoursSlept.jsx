@@ -121,9 +121,12 @@ function HoursSlept() {
 
   return (
     <div>
-      <h1>
-        {averageHours(filterData(dreamFilter, dreams).hours).toFixed(1)} h
-      </h1>
+      <h3>
+        Average sleeping hours:
+        <span>
+          {averageHours(filterData(dreamFilter, dreams).hours).toFixed(1)}
+        </span>
+      </h3>
       <Line data={charData} options={options}></Line>
     </div>
   );

@@ -124,6 +124,7 @@ function HoursPerDreamType() {
 
   return (
     <div>
+      <h3>Average sleeping hours per Dream Type:</h3>
       <Bar data={charData} options={options}></Bar>
     </div>
   );

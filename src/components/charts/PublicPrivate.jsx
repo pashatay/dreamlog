@@ -80,6 +80,7 @@ function PublicPrivate() {
   };
   return (
     <div>
+      <h3>Private/Public Dreams rate:</h3>
       <Pie data={charData} options={options}></Pie>
     </div>
   );
