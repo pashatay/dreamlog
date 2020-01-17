@@ -1,6 +1,7 @@
 .greeting {
   font-size: 1.5em;
   text-align: center;
+  margin-top: 5vh;
 }
 nav {
   display: flex;
@@ -8,7 +9,7 @@ nav {
   width: 100vw;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 25vw;
+  margin-top: 17vw;
   text-align: center;
 }
 nav div {
