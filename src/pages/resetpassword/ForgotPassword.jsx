@@ -6,9 +6,16 @@ import LoginSignupModal from "../../components/modals/LoginSignupModal";
 import Header from "../../components/header/Header";
 
 function ForgotPassword() {
-  const { handleChange, handleSubmitEmailToResetPassword } = useContext(
-    Context
-  );
+  const {
+    handleChange,
+    setOpenModal,
+    handleSubmitEmailToResetPassword
+  } = useContext(Context);
+
+  useEffect(() => {
+    setOpenModal(false);
+  }, []);
+
   return (
     <div>
       <Header />

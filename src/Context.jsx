@@ -127,6 +127,7 @@ function ContextProvider(props) {
       .catch(err => {
         setRedirectTask(false);
         setOpenModal(true);
+        console.log(err.response);
         return err.response.status === 401
           ? (setAMessage(""), setAnError(err.response.data.error.message))
           : (setAnError(""), setAMessage(err.response.data.error.message));
@@ -177,23 +178,29 @@ function ContextProvider(props) {
   };
 
   const handleSubmitResetPassword = e => {
-    formValues.email = "";
-    e.preventDefault();
-    e.target.reset();
-    axios
-      .patch(`${url}/resetpassword/${token}`, formValues)
-      .then(res => {
-        console.log(res);
-        setOpenModal(true);
-        setAnError("");
-        setAMessage(res.data.message);
-      })
-      .then(setFormValues(formDefaultValues))
-      .catch(err => {
-        setOpenModal(true);
-        setAMessage("");
-        setAnError("Something went wrong. You need a new reset link.");
-      });
+    if (formValues.password === confirmedPassword) {
+      formValues.email = "";
+      e.preventDefault();
+      e.target.reset();
+      axios
+        .patch(`${url}/resetpassword/${token}`, formValues)
+        .then(res => {
+          console.log(res);
+          setOpenModal(true);
+          setAnError("");
+          setAMessage(res.data.message);
+        })
+        .then(setFormValues(formDefaultValues))
+        .catch(err => {
+          setOpenModal(true);
+          setAMessage("");
+          setAnError("Something went wrong. You need a new reset link.");
+        });
+    } else {
+      setOpenModal(true);
+      setAMessage("");
+      setAnError("Passwords don't match!");
+    }
   };
   const handleSubmitChangeEmail = e => {
     formValues.password = "";
