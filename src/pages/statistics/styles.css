@@ -7,8 +7,13 @@
   padding: 5%;
 }
 .statistics-filter select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   width: auto;
   height: 40px;
+  padding-right: 10%;
+  padding-left: 5%;
   text-align: center;
   align-self: center;
   font-size: 1.3em;
@@ -19,7 +24,12 @@
   color: rgb(235, 235, 245);
   border-radius: 0;
   box-sizing: border-box;
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.1em top 50%, 0 0;
+  background-size: 1.1em auto, 100%;
 }
+
 .statistics-filter h3 {
   height: 30px;
   font-size: 1.5em;
