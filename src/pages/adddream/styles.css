@@ -28,6 +28,9 @@ input[type="checkbox"] {
   color: rgba(235, 235, 245, 0.822);
 }
 .adddream-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   width: 90vw;
   height: 50px;
   box-sizing: border-box;
@@ -37,10 +40,16 @@ input[type="checkbox"] {
   font-size: 1.3em;
   margin: 5%;
   text-align-last: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  text-align: center;
   background: none;
   color: rgba(235, 235, 245, 0.822);
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%, 0 0;
 }
 
 .adddream-form textarea {
