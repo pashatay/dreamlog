@@ -10,29 +10,6 @@
   margin-bottom: 10%;
 }
 
-.dreams-filter-log {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 90vw;
-  height: auto;
-  padding: 5%;
-}
-.dreams-filter-log select {
-  width: auto;
-  height: 40px;
-  text-align: center;
-  align-self: center;
-  font-size: 1.3em;
-  font-weight: bold;
-  background: none;
-  border: 1px solid rgb(235, 235, 245);
-  box-shadow: 0 0 10px rgb(235, 235, 245);
-  color: rgb(235, 235, 245);
-  border-radius: 0;
-  box-sizing: border-box;
-}
-
 .no-dreams {
   color: rgba(235, 235, 245, 0.342);
   text-align: center;
