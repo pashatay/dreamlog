@@ -7,6 +7,7 @@ import LoginSignupModal from "./modals/LoginSignupModal";
 function Login() {
   const {
     setAnError,
+    setAMessage,
     handleSubmitLogin,
     setOpenModal,
     handleChange,
@@ -15,6 +16,7 @@ function Login() {
 
   useEffect(() => {
     setAnError("");
+    setAMessage("");
     setOpenModal(false);
   }, []);
 
