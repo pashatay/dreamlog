@@ -34,7 +34,7 @@ body {
   z-index: 1;
   margin-top: 13rem;
   align-self: center;
-  width: 22rem;
+  width: 80%;
 }
 .login-form {
   display: flex;
@@ -103,7 +103,8 @@ button:focus {
   cursor: pointer;
 }
 .about-link {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   overflow: hidden;
   text-align: center;
   font-size: 1.3rem;
