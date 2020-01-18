@@ -1,7 +1,7 @@
 .delete-info {
   text-align: center;
   padding: 5%;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .deletepage-buttons {
@@ -11,7 +11,7 @@
 }
 .delete-info-button {
   padding: 3%;
-  width: 30vw;
+  width: 8rem;
   margin: 5%;
   text-align: center;
   align-self: center;
@@ -21,11 +21,22 @@
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
   background: #5c258a;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: bold;
-  height: 6vh;
+  height: 3rem;
   text-decoration: none;
   font-weight: 400;
   color: rgb(235, 235, 245);
   cursor: pointer;
+}
+
+@media (max-height: 640px) and (max-width: 361px) {
+  .delete-info {
+    font-size: 1.2rem;
+  }
+  .delete-info-button {
+    width: 6rem;
+    height: 2.4rem;
+    font-size: 1.2rem;
+  }
 }

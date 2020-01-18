@@ -16,3 +16,34 @@
   width: 80vw;
   box-sizing: border-box;
 }
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 812px) and (orientation: landscape) {
+  .edit-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-evenly;
+  }
+  .edit-form form {
+    width: 40vw;
+  }
+
+  .edit-form input {
+    width: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  .edit-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    justify-content: space-evenly;
+  }
+  .edit-form form {
+    width: 40vw;
+  }
+
+  .edit-form input {
+    width: 40vw;
+  }
+}

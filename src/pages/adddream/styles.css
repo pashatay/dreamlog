@@ -13,7 +13,7 @@ input[type="checkbox"] {
 }
 
 .adddream-form > input {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   -webkit-border-radius: 0;
   border: 0;
   width: 90vw;
@@ -39,7 +39,7 @@ input[type="checkbox"] {
   -webkit-border-radius: 0;
   outline: 1px inset #fff;
   outline-offset: -1px;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   margin: 5%;
   background: none;
   color: rgba(235, 235, 245, 0.692);
@@ -61,7 +61,7 @@ input[type="checkbox"] {
   height: 15vh;
   margin-bottom: 5%;
   color: rgb(235, 235, 245);
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-align: center;
   padding: 3%;
   background: none;
@@ -85,4 +85,37 @@ input[type="checkbox"] {
 .adddream-form input[type="submit"] {
   background: #5c258a;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .adddream-form {
+    margin-top: 15vh;
+  }
+  .adddream-form > input {
+    max-width: 40vw;
+    margin-right: 50vw;
+    height: 4rem;
+  }
+  .adddream-form select {
+    max-width: 40vw;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 50vw;
+    padding-left: 15vw;
+    height: 4rem;
+  }
+  .private-checkbox {
+    max-width: 40vw;
+    margin-left: 10vw;
+  }
+  .adddream-form textarea {
+    position: fixed;
+    top: 7vh;
+    left: 7%;
+    max-width: 40vw;
+    margin-left: 50vw;
+    height: 80vh;
+    font-size: 2rem;
+  }
 }

@@ -45,7 +45,29 @@ footer {
 a {
   text-decoration: none;
 }
-
+@media (max-height: 640px) and (max-width: 361px) {
+  .greeting {
+    font-size: 1.4rem;
+  }
+  nav {
+    margin-top: 2.2rem;
+  }
+  nav i {
+    font-size: 3.5rem;
+  }
+  .ri-tools-fill {
+    font-size: 2rem;
+  }
+  .ri-delete-bin-6-fill {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
+  nav {
+    margin-top: 5%;
+    flex-wrap: nowrap;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .greeting {
     font-size: 2rem;
@@ -69,17 +91,10 @@ a {
   .ri-tools-fill:hover {
     text-shadow: 0 0 10px rgb(235, 235, 245);
   }
-  footer {
-    /* margin-top: 85%;
-    position: relative; */
-  }
 }
 
 @media only screen and (max-height: 640px), (max-width: 300px) {
   footer {
     position: relative;
   }
-}
-
-@media only screen and (max-height: 600px) {
 }
