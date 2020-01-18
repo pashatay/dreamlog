@@ -86,6 +86,61 @@ input[type="checkbox"] {
   background: #5c258a;
   cursor: pointer;
 }
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .adddream-form {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+  .adddream-form > input {
+    width: 40vw;
+  }
+  .adddream-form select {
+    width: 40vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30vw;
+    padding-left: 15vw;
+  }
+  .private-checkbox {
+    width: 100%;
+  }
+  .adddream-form textarea {
+    width: 40vw;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 825px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .adddream-form {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+  .adddream-form > input {
+    width: 40vw;
+  }
+  .adddream-form select {
+    width: 40vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30vw;
+    padding-left: 15vw;
+  }
+  .private-checkbox {
+    width: 100%;
+  }
+  .adddream-form textarea {
+    width: 40vw;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 1%;
+  }
+}
 
 @media (min-width: 1024px) {
   .adddream-form {
