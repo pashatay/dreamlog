@@ -34,7 +34,7 @@ body {
   z-index: 1;
   margin-top: 13rem;
   align-self: center;
-  width: 80%;
+  width: 90%;
 }
 .login-form {
   display: flex;
@@ -123,7 +123,6 @@ a {
 }
 @media (max-height: 640px) {
   .div-login-form {
-    width: 15rem;
     margin-top: 10rem;
   }
   input,
@@ -151,7 +150,6 @@ a {
 }
 @media (max-height: 740px) and (min-height: 641px) {
   .div-login-form {
-    width: 20rem;
     margin-top: 11rem;
   }
   input,
@@ -178,7 +176,7 @@ a {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 1024px) and (min-height: 700px) {
+@media (min-width: 1024px) and (min-height: 800px) {
   .div-main-page {
     flex-direction: row;
     height: auto;
