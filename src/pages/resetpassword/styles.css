@@ -1,0 +1,35 @@
+.forgotpassword-h3,
+.resetpassword-h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5vh;
+}
+.forgotpassword-form,
+.resetpassword-form {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+@media (min-width: 1024px) {
+  .forgotpassword-h3,
+  .resetpassword-h3 {
+    font-size: 2rem;
+  }
+  .forgotpassword-form {
+    flex-direction: row;
+    width: 60vw;
+  }
+  .forgotpassword-form input {
+    width: 30vw;
+  }
+  .resetpassword-form {
+    flex-direction: row;
+    width: 60vw;
+  }
+  .resetpassword-form input {
+    width: 20vw;
+  }
+}

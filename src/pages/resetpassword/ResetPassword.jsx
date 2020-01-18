@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
 import { useParams } from "react-router-dom";
-//import styles from "./styles.css";
+import "./styles.css";
 import LoginSignupModal from "../../components/modals/LoginSignupModal";
 
 import Header from "../../components/header/Header";
@@ -19,8 +19,9 @@ function ResetPassword() {
     setToken
   } = useContext(Context);
   return (
-    <div>
+    <>
       <Header />
+      <h3 className="resetpassword-h3">Enter your new password please:</h3>
       <form className="resetpassword-form" onSubmit={handleSubmitResetPassword}>
         <input
           required
@@ -39,7 +40,7 @@ function ResetPassword() {
         <input type="submit" className="button" value="Send"></input>
       </form>
       <LoginSignupModal />
-    </div>
+    </>
   );
 }
 

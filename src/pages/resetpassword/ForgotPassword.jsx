@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-//import styles from "./styles.css";
+import "./styles.css";
 import { Context } from "../../Context";
 import LoginSignupModal from "../../components/modals/LoginSignupModal";
 
@@ -17,8 +17,11 @@ function ForgotPassword() {
   }, []);
 
   return (
-    <div>
+    <>
       <Header />
+      <h3 className="forgotpassword-h3">
+        Enter your Email to proceed with password reset:
+      </h3>
       <form
         className="forgotpassword-form"
         onSubmit={handleSubmitEmailToResetPassword}
@@ -33,7 +36,7 @@ function ForgotPassword() {
         <input type="submit" className="button" value="Send"></input>
       </form>
       <LoginSignupModal />
-    </div>
+    </>
   );
 }
 
