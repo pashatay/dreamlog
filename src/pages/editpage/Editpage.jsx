@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
-import "./styles.css";
-
-import Header from "../../components/header/Header";
 import { Context } from "../../Context";
+
+import "./styles.css";
+import Header from "../../components/header/Header";
 import LoginSignupModal from "../../components/modals/LoginSignupModal";
+import WaterMark from "../../components/watermark/WaterMark";
 
 function Editpage() {
   const {
@@ -55,6 +56,7 @@ function Editpage() {
         </form>
       </section>
       <LoginSignupModal />
+      <WaterMark />
     </>
   );
 }

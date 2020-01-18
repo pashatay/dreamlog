@@ -7,6 +7,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import DisplayDreamBlog from "../../components/displaydreamblog/DisplayDreamBlog";
 
 import Header from "../../components/header/Header";
+import WaterMark from "../../components/watermark/WaterMark";
 
 function Dreamblog() {
   const { getPublicDreams, publicDreams, userHasLoggedIn } = useContext(
@@ -54,6 +55,7 @@ function Dreamblog() {
     <>
       <Header />
       {publicDreams.length < 1 ? noDreams : displayDreams}
+      <WaterMark />
     </>
   );
 }

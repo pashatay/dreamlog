@@ -6,6 +6,7 @@ import HoursSlept from "../../components/charts/HoursSlept";
 import Header from "../../components/header/Header";
 import HoursPerDreamType from "../../components/charts/HoursPerDreamType";
 import PublicPrivate from "../../components/charts/PublicPrivate";
+import WaterMark from "../../components/watermark/WaterMark";
 
 function Statistics() {
   const {
@@ -41,6 +42,7 @@ function Statistics() {
         <HoursPerDreamType />
         <PublicPrivate />
       </section>
+      <WaterMark />
     </>
   );
   return (

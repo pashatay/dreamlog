@@ -6,6 +6,7 @@ import "./styles.css";
 
 import Header from "../../components/header/Header";
 import DreamDisplayModal from "../../components/modals/DreamDisplayModal";
+import WaterMark from "../../components/watermark/WaterMark";
 
 function Dreamlog() {
   const {
@@ -66,6 +67,7 @@ function Dreamlog() {
       {redirectToLoginPage()}
       <Header />
       {dreams.length < 1 ? noDreams : displayDreams}
+      <WaterMark />
     </>
   );
 }

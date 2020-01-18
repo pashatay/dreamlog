@@ -5,6 +5,7 @@ import { Redirect } from "react-router-dom";
 import styles from "./styles.css";
 
 import Header from "../../components/header/Header";
+import WaterMark from "../../components/watermark/WaterMark";
 
 function Deletepage() {
   const { handleDeleteAccount, redirectToLoginPage } = useContext(Context);
@@ -33,6 +34,7 @@ function Deletepage() {
           </Link>
         </div>
       </section>
+      <WaterMark />
     </>
   );
 }
