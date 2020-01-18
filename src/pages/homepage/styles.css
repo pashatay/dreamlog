@@ -77,6 +77,9 @@ a {
 
 @media only screen and (max-height: 640px), (max-width: 300px) {
   footer {
-    display: none;
+    position: relative;
   }
+}
+
+@media only screen and (max-height: 600px) {
 }

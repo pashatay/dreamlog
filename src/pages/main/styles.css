@@ -104,9 +104,11 @@ button:focus {
   cursor: pointer;
 }
 .about-link {
-  position: relative;
+  position: fixed;
   text-align: center;
+  font-size: 1.3rem;
   margin-top: 40rem;
+  margin-left: 45%;
   color: rgb(235, 235, 245);
 }
 a {
@@ -136,7 +138,7 @@ a {
   .app-name {
     margin-top: 15rem;
     margin-left: 5%;
-    max-width: 40%;
+    max-width: 50%;
   }
   .app-name > h2 {
     font-size: 4em;
@@ -146,14 +148,31 @@ a {
   }
   .div-login-form {
     right: 0;
-    width: 30rem;
-    margin-top: 5rem;
+    min-width: 40%;
+    margin-top: 0rem;
     margin-right: 5%;
   }
+  .div-login-form input {
+    min-height: 4rem;
+  }
+  .div-signup-button {
+    min-height: 4rem;
+  }
+  .signup-button {
+    min-height: 4rem;
+  }
   .about-link {
-    margin-top: 40rem;
+    position: relative;
+    margin-top: 50rem;
+    margin-left: 0;
     font-size: 1.6rem;
     text-align: center;
     width: 100%;
+  }
+}
+
+@media only screen and (max-height: 640px), (max-width: 300px) {
+   {
+    position: relative;
   }
 }
