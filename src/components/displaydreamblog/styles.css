@@ -1,6 +1,8 @@
 .dreamblog-box {
-  margin: 3%;
-  border: 0.5px solid rgb(235, 235, 245);
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  width: 90vw;
   box-shadow: 0 0 10px rgb(235, 235, 245);
 }
 .dreamblog-title {
@@ -8,18 +10,55 @@
   text-align: center;
   margin: 0;
   padding: 3%;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .dreamblog-date {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   margin: auto;
   padding: 3%;
   text-align: center;
 }
 .dreamblog-info {
-  font-size: 1em;
+  font-size: 1.2rem;
+  word-spacing: 0.2rem;
+  line-height: 2rem;
   margin: auto;
   padding: 3%;
+  padding-bottom: 10%;
   text-align: center;
+}
+@media (max-height: 640px) and (max-width: 361px) {
+  .dreamblog-title {
+    font-size: 1.3rem;
+  }
+
+  .dreamblog-date {
+    font-size: 1.2rem;
+  }
+  .dreamblog-info {
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .dreamblog-box {
+    width: 70vw;
+    margin-bottom: 3%;
+    box-shadow: 0 0 30px rgb(235, 235, 245);
+  }
+  .dreamblog-title {
+    font-size: 2rem;
+  }
+
+  .dreamblog-date {
+    font-size: 1.4rem;
+  }
+  .dreamblog-info {
+    font-size: 1.5rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    margin: auto;
+  }
 }
