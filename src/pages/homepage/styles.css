@@ -62,10 +62,7 @@ a {
     font-size: 1.8rem;
   }
 }
-@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
-  html {
-    -webkit-text-size-adjust: none; /* none for no scaling */
-  }
+@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   nav {
     margin-top: 5%;
     flex-wrap: nowrap;
