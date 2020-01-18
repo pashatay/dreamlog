@@ -103,7 +103,7 @@ button:focus {
   cursor: pointer;
 }
 .about-link {
-  position: relative;
+  position: sticky;
   overflow: hidden;
   text-align: center;
   font-size: 1.3rem;
