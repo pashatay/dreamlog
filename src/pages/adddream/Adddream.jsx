@@ -4,7 +4,6 @@ import "./styles.css";
 
 import DreamAddedModal from "../../components/modals/DreamAddedModal";
 import Header from "../../components/header/Header";
-import WaterMark from "../../components/watermark/WaterMark";
 
 function Adddream() {
   const {
@@ -58,7 +57,6 @@ function Adddream() {
         <input type="submit" className="button" value="Add Dream"></input>
       </form>
       <DreamAddedModal />
-      <WaterMark />
     </>
   );
 }
