@@ -178,7 +178,7 @@ a {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 1024px) and (min-height: 800px) {
+@media (min-width: 1024px) and (min-height: 700px) {
   .div-main-page {
     flex-direction: row;
     height: auto;
@@ -204,6 +204,7 @@ a {
   }
   .div-login-form {
     right: 0;
+    width: 22rem;
     min-width: 40%;
     margin-top: 0rem;
     margin-right: 5%;
