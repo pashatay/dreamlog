@@ -10,7 +10,7 @@ body {
 .div-main-page {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
 }
 
 .video-main-page {
@@ -145,9 +145,6 @@ a {
   }
 }
 @media (max-height: 740px) and (min-height: 641px) {
-  .div-login-form {
-    margin-top: 11rem;
-  }
   input,
   .div-signup-button,
   .signup-button {
@@ -168,7 +165,6 @@ a {
     font-size: 1.4rem;
   }
   .about-link {
-    margin-top: 31rem;
     font-size: 1.1rem;
   }
 }
@@ -212,10 +208,11 @@ a {
     font-size: 2.5em;
   }
   .div-login-form {
+    position: fixed;
     right: 0;
     width: 22rem;
     min-width: 40%;
-    margin-top: 0rem;
+    margin-top: 10rem;
     margin-right: 5%;
   }
   .div-login-form input {
@@ -228,7 +225,7 @@ a {
     min-height: 4rem;
   }
   .about-link {
-    position: relative;
+    position: fixed;
     margin-top: 50rem;
     margin-left: 0;
     font-size: 1.6rem;
