@@ -104,11 +104,10 @@ button:focus {
   cursor: pointer;
 }
 .about-link {
-  position: fixed;
+  position: relative;
   text-align: center;
   font-size: 1.3rem;
   margin-top: 40rem;
-  margin-left: 45%;
   color: rgb(235, 235, 245);
 }
 a {
@@ -122,7 +121,7 @@ a {
   color: rgb(235, 235, 245);
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 800px) {
   .div-main-page {
     flex-direction: row;
     height: auto;
