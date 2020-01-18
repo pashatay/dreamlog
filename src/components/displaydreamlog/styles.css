@@ -106,7 +106,29 @@
     font-size: 1.4rem;
   }
 }
-
+@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
+  .dream-box {
+    width: 10rem;
+    height: 10rem;
+  }
+  .dream-info {
+    width: 10rem;
+    height: 10rem;
+  }
+  .dream-title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .dream-date {
+    font-size: 3rem;
+    left: 0;
+  }
+  .ri-eye-off-fill,
+  .ri-eye-fill {
+    padding: 2%;
+    font-size: 1.5rem;
+  }
+}
 @media (min-width: 1024px) {
   .dream-box {
     width: 15rem;
