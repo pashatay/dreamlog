@@ -1,6 +1,6 @@
 .dream-box {
-  width: 145px;
-  height: 145px;
+  width: 90vw;
+  height: 10vh;
   border: 0.5px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
   display: flex;
@@ -34,17 +34,16 @@
 }
 
 .dream-info {
-  width: 145px;
-  height: 145px;
+  width: 50%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 .dream-title {
   z-index: 1;
-  font-size: 1.5em;
+  font-size: 1.7rem;
   margin-top: 4%;
-  margin-left: 2%;
-  padding: 0;
+  margin-left: 4%;
 }
 .Lucid .dream-date {
   color: rgba(72, 72, 75, 0.63);
@@ -52,10 +51,10 @@
 .dream-date {
   position: absolute;
   bottom: 0;
-  font-size: 2.8em;
-  overflow: hidden;
+  right: 0;
+  font-size: 2.1rem;
   margin: auto;
-  margin: 1%;
+  margin-right: 3%;
   color: rgba(235, 235, 245, 0.397);
 }
 
@@ -64,8 +63,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 5%;
-  font-size: 1.1em;
+  padding: 2%;
+  font-size: 1.5rem;
   background: none;
   z-index: 2;
 }
@@ -81,4 +80,53 @@
 .Nightmare .ri-eye-off-fill,
 .Nightmare .ri-eye-fill {
   opacity: 0.5;
+}
+@media (max-height: 640px) and (max-width: 361px) {
+  .dream-title {
+    font-size: 1.2rem;
+  }
+  .dream-date {
+    font-size: 1.5rem;
+  }
+  .ri-eye-off-fill,
+  .ri-eye-fill {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-height: 740px) and (min-height: 641px) {
+  .dream-title {
+    font-size: 1.4rem;
+  }
+  .dream-date {
+    font-size: 1.8rem;
+  }
+  .ri-eye-off-fill,
+  .ri-eye-fill {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dream-box {
+    width: 15rem;
+    height: 15rem;
+  }
+  .dream-info {
+    width: 15rem;
+    height: 15rem;
+  }
+  .dream-title {
+    font-size: 2rem;
+    text-align: left;
+  }
+  .dream-date {
+    font-size: 4.7rem;
+    left: 0;
+  }
+  .ri-eye-off-fill,
+  .ri-eye-fill {
+    padding: 5%;
+    font-size: 2rem;
+  }
 }

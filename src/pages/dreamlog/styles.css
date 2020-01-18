@@ -44,6 +44,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .allDreams {
+    justify-content: space-evenly;
+  }
   .no-dreams {
     margin-top: 10%;
     font-size: 2.5rem;
