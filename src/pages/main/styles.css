@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100%;
 }
 
 .video-main-page {
@@ -118,9 +119,6 @@ a {
   color: rgb(235, 235, 245);
 }
 @media (max-height: 640px) {
-  .div-login-form {
-    margin-top: 10rem;
-  }
   input,
   .div-signup-button,
   .signup-button {
@@ -140,7 +138,6 @@ a {
     font-size: 1.2rem;
   }
   .about-link {
-    margin-top: 27rem;
     font-size: 1.1rem;
   }
 }
