@@ -176,6 +176,21 @@ a {
     font-size: 1.1rem;
   }
 }
+@media only screen and (min-device-width: 480px) and (max-device-width: 812px) and (orientation: landscape) {
+  .div-login-form {
+    position: relative;
+    margin-top: 0;
+    width: 60%;
+  }
+  .app-name {
+    position: relative;
+  }
+  .about-link {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 @media (min-width: 1024px) {
   .div-main-page {
     flex-direction: row;
