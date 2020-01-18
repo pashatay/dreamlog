@@ -16,8 +16,7 @@
   width: 80vw;
   box-sizing: border-box;
 }
-
-@media only screen and (min-device-width: 480px) and (max-device-width: 812px) and (orientation: landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .edit-form {
     display: flex;
     flex-direction: row;
@@ -32,6 +31,23 @@
     width: 40vw;
   }
 }
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .edit-form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-evenly;
+  }
+  .edit-form form {
+    width: 40vw;
+  }
+
+  .edit-form input {
+    width: 40vw;
+  }
+}
+
 @media (min-width: 1024px) {
   .edit-form {
     display: flex;
