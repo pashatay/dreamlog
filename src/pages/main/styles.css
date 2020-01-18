@@ -8,7 +8,6 @@ body {
   font-family: "Fjalla One", sans-serif;
 }
 .div-main-page {
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -33,7 +32,7 @@ body {
 .div-login-form {
   position: fixed;
   z-index: 1;
-  margin-top: 15rem;
+  margin-top: 13rem;
   align-self: center;
   width: 22rem;
 }
@@ -107,7 +106,7 @@ button:focus {
   position: relative;
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 40rem;
+  margin-top: 36rem;
   color: rgb(235, 235, 245);
 }
 a {
@@ -120,7 +119,63 @@ a {
   text-decoration: none;
   color: rgb(235, 235, 245);
 }
-
+@media (max-height: 640px) {
+  .div-login-form {
+    width: 15rem;
+    margin-top: 10rem;
+  }
+  input,
+  .div-signup-button,
+  .signup-button {
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  input[type="submit"] {
+    font-size: 1rem;
+  }
+  .app-name {
+    margin: 1.5rem;
+  }
+  .app-name > h2 {
+    font-size: 1.5rem;
+  }
+  .app-name > p {
+    font-size: 1.2rem;
+  }
+  .about-link {
+    margin-top: 27rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-height: 740px) and (min-height: 641px) {
+  .div-login-form {
+    width: 20rem;
+    margin-top: 11rem;
+  }
+  input,
+  .div-signup-button,
+  .signup-button {
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+  input[type="submit"] {
+    font-size: 1.1rem;
+  }
+  .app-name {
+    margin: 1.8rem;
+    margin-top: 3rem;
+  }
+  .app-name > h2 {
+    font-size: 1.6rem;
+  }
+  .app-name > p {
+    font-size: 1.4rem;
+  }
+  .about-link {
+    margin-top: 31rem;
+    font-size: 1.1rem;
+  }
+}
 @media (min-width: 1024px) and (min-height: 800px) {
   .div-main-page {
     flex-direction: row;
@@ -167,11 +222,5 @@ a {
     font-size: 1.6rem;
     text-align: center;
     width: 100%;
-  }
-}
-
-@media only screen and (max-height: 640px), (max-width: 300px) {
-   {
-    position: relative;
   }
 }
