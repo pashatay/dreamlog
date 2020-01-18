@@ -63,6 +63,9 @@ a {
   }
 }
 @media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
+  html {
+    -webkit-text-size-adjust: none; /* none for no scaling */
+  }
   nav {
     margin-top: 5%;
     flex-wrap: nowrap;
