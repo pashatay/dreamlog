@@ -1,6 +1,10 @@
 .total-dreams {
-  font-size: 1.3em;
+  font-size: 1rem;
   width: auto;
-  margin-bottom: 15%;
-  text-align: center;
+  margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .total-dreams {
+    font-size: 1.7rem;
+  }
 }
