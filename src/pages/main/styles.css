@@ -108,7 +108,7 @@ button:focus {
   overflow: hidden;
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 36rem;
+  margin-top: 38rem;
   color: rgb(235, 235, 245);
 }
 a {
@@ -176,7 +176,7 @@ a {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 1024px) and (min-height: 800px) {
+@media (min-width: 1024px) {
   .div-main-page {
     flex-direction: row;
     height: auto;
