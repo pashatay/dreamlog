@@ -118,7 +118,7 @@ a {
   text-decoration: none;
   color: rgb(235, 235, 245);
 }
-@media (max-height: 640px) {
+@media (max-height: 640px) and (max-width: 361px) {
   input,
   .div-signup-button,
   .signup-button {
