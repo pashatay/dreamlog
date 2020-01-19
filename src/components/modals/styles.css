@@ -30,7 +30,7 @@
 .ri-close-circle-fill {
   position: absolute;
   bottom: 0;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   cursor: pointer;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,21 +49,23 @@
 }
 .anError {
   color: red;
-  font-size: 1.5em;
+  padding: 1%;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 30%;
 }
 .aMessage {
   color: rgb(6, 146, 29);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: center;
-  margin-top: 30%;
+  margin-top: -15%;
+  padding: 1%;
 }
 
 .reset-password-link {
   text-align: center;
   text-decoration: underline;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: rgba(235, 235, 245, 0.767);
 }
 
@@ -71,7 +73,7 @@
   margin: 0;
   padding: 7%;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 .modal-dream-private-button {
   position: absolute;
@@ -85,7 +87,7 @@
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
   background: inherit;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   height: auto;
   text-decoration: none;
   font-weight: 400;
@@ -100,7 +102,109 @@
 .modal-dream-info {
   margin: 0;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   overflow: scroll;
   padding: 5%;
+}
+.dream-was-added {
+  color: rgb(6, 146, 29);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30%;
+  padding: 1%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .signup-modal {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+  }
+  .modal-dream-title {
+    padding: 5%;
+    font-size: 2rem;
+  }
+  .modal-dream-private-button {
+    padding: 1%;
+    width: 10rem;
+  }
+  .modal > section {
+    position: relative;
+    height: 18rem;
+  }
+  .ri-close-circle-fill {
+    position: absolute;
+    top: 0;
+    margin: 2%;
+    font-size: 2.3rem;
+    cursor: pointer;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 825px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .signup-modal {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+  }
+  .modal-dream-title {
+    padding: 5%;
+    font-size: 2rem;
+  }
+  .modal-dream-private-button {
+    padding: 1%;
+    width: 10rem;
+  }
+  .modal > section {
+    position: relative;
+    height: 18rem;
+  }
+  .ri-close-circle-fill {
+    position: absolute;
+    top: 0;
+    margin: 2%;
+    font-size: 2.3rem;
+    cursor: pointer;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .signup-modal {
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+  }
+  .anError {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 7rem;
+    position: relative;
+  }
+  .aMessage {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding: 3%;
+  }
+  .reset-password-link {
+    font-size: 1.3rem;
+  }
+  .ri-close-circle-fill {
+    font-size: 3.5rem;
+  }
+  .modal-dream-title {
+    padding: 5%;
+    font-size: 2rem;
+  }
+  .modal-dream-private-button {
+    padding: 1%;
+    width: 10rem;
+  }
+  .modal > section {
+    width: 40rem;
+    height: 40rem;
+  }
 }

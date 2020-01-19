@@ -129,8 +129,10 @@ function ContextProvider(props) {
         setOpenModal(true);
         console.log(err.response);
         return err.response.status === 401
-          ? (setAMessage(""), setAnError(err.response.data.error.message))
-          : (setAnError(""), setAMessage(err.response.data.error.message));
+          ? (setAMessage(""),
+            setAnError(err.response.data.error.message || "error"))
+          : (setAnError(""),
+            setAMessage(err.response.data.error.message || "error"));
       });
   };
 
