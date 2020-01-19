@@ -56,6 +56,7 @@ function ContextProvider(props) {
   const [openModal, setOpenModal] = useState(false);
   const [keyModal, setKeyModal] = useState("");
   const [dreamFilter, setDreamFilter] = useState("all");
+  const [spinnerIsOn, setSpinnerIsOn] = useState("false");
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -117,6 +118,7 @@ function ContextProvider(props) {
 
   const handleSubmitLogin = e => {
     e.preventDefault();
+    setSpinnerIsOn(true);
     e.target.reset();
     axios
       .post(`${url}/login`, formValues)
@@ -125,6 +127,7 @@ function ContextProvider(props) {
         setAnError("");
       })
       .catch(err => {
+        setSpinnerIsOn(false);
         setRedirectTask(false);
         setOpenModal(true);
         console.log(err.response);
@@ -138,6 +141,7 @@ function ContextProvider(props) {
 
   const userLoggedIn = data => {
     setUserHasLoggedIn(true);
+    setSpinnerIsOn(false);
     localStorage.setItem("access_token", `bearer ${data.token}`);
     setRedirectTask(true);
     setUserName(data.name);
@@ -351,7 +355,8 @@ function ContextProvider(props) {
         handleSubmitChangePassword,
         logOutUser,
         handleDeleteAccount,
-
+        setSpinnerIsOn,
+        spinnerIsOn,
         filteredDreams
       }}
     >
