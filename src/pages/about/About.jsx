@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 import Header from "../../components/header/Header";
 
@@ -50,6 +51,9 @@ function About() {
           Join our Dream log family today and start your journey into
           understanding your subconscious psyche!
         </p>
+        <Link to="signup" className="about-signup-link">
+          Sign Up
+        </Link>
       </section>
       <WaterMark />
     </>

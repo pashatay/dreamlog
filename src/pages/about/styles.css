@@ -16,3 +16,12 @@
   box-shadow: 0 0 30px rgb(235, 235, 245);
   align-self: center;
 }
+.about-signup-link {
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: 40%;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  background: #5c258a;
+}

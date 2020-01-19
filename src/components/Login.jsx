@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
-import cosmos from "../images/cosmos.mov";
+import "../images/cosmos.mov";
 import LoginSignupModal from "./modals/LoginSignupModal";
 
 function Login() {
