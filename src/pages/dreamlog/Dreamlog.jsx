@@ -19,6 +19,7 @@ function Dreamlog() {
   } = useContext(Context);
 
   useEffect(() => {
+    setDreamFilter("all");
     getAllDreams();
   }, []);
 
