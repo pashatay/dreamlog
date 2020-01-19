@@ -9,10 +9,10 @@ function Main() {
   const { spinnerIsOn, setSpinnerIsOn } = useContext(Context);
 
   useEffect(() => {
-    //setSpinnerIsOn(false);
+    setSpinnerIsOn(false);
   }, []);
 
-  const spinner = <div class="loader">Loading...</div>;
+  const spinner = <div className="loader">Loading...</div>;
   return (
     <div className="div-main-page">
       <video
