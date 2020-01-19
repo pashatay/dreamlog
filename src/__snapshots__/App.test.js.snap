@@ -1,5 +1,1351 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Rendering tests About renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h1>
+        About page
+      </h1>
+      <p>
+        All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams. We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.   Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data. Join our Dream log family today and start your journey into understanding your subconscious psyche!
+      </p>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h1>
+      About page
+    </h1>
+    <p>
+      All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams. We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.   Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data. Join our Dream log family today and start your journey into understanding your subconscious psyche!
+    </p>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Adddream renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <form
+        class="adddream-form"
+      >
+        <input
+          maxlength="30"
+          name="title"
+          placeholder="Title"
+          required=""
+          type="text"
+        />
+        <select
+          name="dream_type"
+        >
+          <option
+            value="Lucid"
+          >
+            Lucid
+          </option>
+          <option
+            value="Normal"
+          >
+            Normal
+          </option>
+          <option
+            value="Nightmare"
+          >
+            Nightmare
+          </option>
+        </select>
+        <input
+          max="20"
+          min="1"
+          name="hours_slept"
+          placeholder="How many hours"
+          required=""
+          type="number"
+        />
+        <textarea
+          name="info"
+          placeholder="What happened in your dream?"
+          required=""
+          type="text"
+        />
+        <label
+          class="private-checkbox"
+        >
+          <input
+            name="is_private"
+            type="checkbox"
+          />
+          <h3>
+            Make it private?
+          </h3>
+        </label>
+        <input
+          class="button"
+          type="submit"
+          value="Add Dream"
+        />
+      </form>
+      <div
+        class="signup-modal display-none"
+      >
+        <h2
+          class="dream-was-added"
+        >
+          Dream was added.
+        </h2>
+        <i
+          class="ri-close-circle-fill"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <form
+      class="adddream-form"
+    >
+      <input
+        maxlength="30"
+        name="title"
+        placeholder="Title"
+        required=""
+        type="text"
+      />
+      <select
+        name="dream_type"
+      >
+        <option
+          value="Lucid"
+        >
+          Lucid
+        </option>
+        <option
+          value="Normal"
+        >
+          Normal
+        </option>
+        <option
+          value="Nightmare"
+        >
+          Nightmare
+        </option>
+      </select>
+      <input
+        max="20"
+        min="1"
+        name="hours_slept"
+        placeholder="How many hours"
+        required=""
+        type="number"
+      />
+      <textarea
+        name="info"
+        placeholder="What happened in your dream?"
+        required=""
+        type="text"
+      />
+      <label
+        class="private-checkbox"
+      >
+        <input
+          name="is_private"
+          type="checkbox"
+        />
+        <h3>
+          Make it private?
+        </h3>
+      </label>
+      <input
+        class="button"
+        type="submit"
+        value="Add Dream"
+      />
+    </form>
+    <div
+      class="signup-modal display-none"
+    >
+      <h2
+        class="dream-was-added"
+      >
+        Dream was added.
+      </h2>
+      <i
+        class="ri-close-circle-fill"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests App renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="div-main-page"
+        >
+          <video
+            autoplay=""
+            class="video-main-page"
+            loop=""
+            playsinline=""
+          >
+            <source
+              src="cosmos.mov"
+            />
+            &gt;
+          </video>
+          <div
+            class="app-name"
+          >
+            <h2>
+              _Dream.Log 
+            </h2>
+            <p>
+              the best dream journal out there.
+            </p>
+          </div>
+          <div
+            class="div-login-form"
+          >
+            <form
+              class="login-form"
+            >
+              <input
+                name="email"
+                placeholder="email"
+                required=""
+                type="email"
+              />
+              <input
+                name="password"
+                placeholder="password"
+                required=""
+                type="password"
+              />
+              <input
+                class="button"
+                type="submit"
+                value="Log In"
+              />
+            </form>
+            <h5
+              class="or"
+            >
+              or
+            </h5>
+            <div
+              class="div-signup-button"
+            >
+              <a
+                href="/signup"
+              >
+                <button
+                  class="signup-button"
+                >
+                  Sign Up
+                </button>
+              </a>
+            </div>
+            <div
+              class="signup-modal display-none"
+            >
+              <h2
+                class="anError"
+              />
+              <h2
+                class="aMessage"
+              />
+              <i
+                class="ri-close-circle-fill"
+              />
+            </div>
+          </div>
+          <a
+            class="about-link"
+            href="/about"
+          >
+            About
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="div-main-page"
+      >
+        <video
+          autoplay=""
+          class="video-main-page"
+          loop=""
+          playsinline=""
+        >
+          <source
+            src="cosmos.mov"
+          />
+          &gt;
+        </video>
+        <div
+          class="app-name"
+        >
+          <h2>
+            _Dream.Log 
+          </h2>
+          <p>
+            the best dream journal out there.
+          </p>
+        </div>
+        <div
+          class="div-login-form"
+        >
+          <form
+            class="login-form"
+          >
+            <input
+              name="email"
+              placeholder="email"
+              required=""
+              type="email"
+            />
+            <input
+              name="password"
+              placeholder="password"
+              required=""
+              type="password"
+            />
+            <input
+              class="button"
+              type="submit"
+              value="Log In"
+            />
+          </form>
+          <h5
+            class="or"
+          >
+            or
+          </h5>
+          <div
+            class="div-signup-button"
+          >
+            <a
+              href="/signup"
+            >
+              <button
+                class="signup-button"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+          <div
+            class="signup-modal display-none"
+          >
+            <h2
+              class="anError"
+            />
+            <h2
+              class="aMessage"
+            />
+            <i
+              class="ri-close-circle-fill"
+            />
+          </div>
+        </div>
+        <a
+          class="about-link"
+          href="/about"
+        >
+          About
+        </a>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Deletepage renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <section
+        class="delete-section"
+      >
+        <p
+          class="delete-info"
+        >
+          Are you sure you want to delete your page? If you press yes all your information will be erased permanently.
+        </p>
+        <div
+          class="deletepage-buttons"
+        >
+          <a
+            href="/"
+          >
+            <button
+              class="delete-info-button"
+            >
+              Yes
+            </button>
+          </a>
+          <a
+            href="/homepage"
+          >
+            <button
+              class="delete-info-button"
+            >
+              No
+            </button>
+          </a>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <section
+      class="delete-section"
+    >
+      <p
+        class="delete-info"
+      >
+        Are you sure you want to delete your page? If you press yes all your information will be erased permanently.
+      </p>
+      <div
+        class="deletepage-buttons"
+      >
+        <a
+          href="/"
+        >
+          <button
+            class="delete-info-button"
+          >
+            Yes
+          </button>
+        </a>
+        <a
+          href="/homepage"
+        >
+          <button
+            class="delete-info-button"
+          >
+            No
+          </button>
+        </a>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Dreamblog renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h1
+        class="no-dreams"
+      >
+        No dreams yet.
+      </h1>
+      <h3
+        class="copyrights"
+      >
+        Dreamlog © 2020
+      </h3>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h1
+      class="no-dreams"
+    >
+      No dreams yet.
+    </h1>
+    <h3
+      class="copyrights"
+    >
+      Dreamlog © 2020
+    </h3>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Dreamlog renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h1
+        class="no-dreams"
+      >
+        You haven't logged any dreams yet.
+      </h1>
+      <a
+        href="/adddream"
+      >
+        <button
+          class="adddream-button"
+        >
+          Add a Dream
+        </button>
+      </a>
+      <h3
+        class="copyrights"
+      >
+        Dreamlog © 2020
+      </h3>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h1
+      class="no-dreams"
+    >
+      You haven't logged any dreams yet.
+    </h1>
+    <a
+      href="/adddream"
+    >
+      <button
+        class="adddream-button"
+      >
+        Add a Dream
+      </button>
+    </a>
+    <h3
+      class="copyrights"
+    >
+      Dreamlog © 2020
+    </h3>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Editpage renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <section
+        class="edit-form"
+      >
+        <form>
+          <input
+            name="email"
+            placeholder="email"
+            required=""
+            type="email"
+          />
+          <input
+            class="button"
+            type="submit"
+            value="Change Email"
+          />
+        </form>
+        <br />
+        <form>
+          <input
+            minlength="8"
+            name="password"
+            placeholder="password"
+            required=""
+            type="password"
+          />
+          <input
+            placeholder="password"
+            required=""
+            type="password"
+          />
+          <br />
+          <input
+            class="button"
+            type="submit"
+            value="Change Password"
+          />
+        </form>
+      </section>
+      <div
+        class="signup-modal display-none"
+      >
+        <h2
+          class="anError"
+        />
+        <h2
+          class="aMessage"
+        />
+        <i
+          class="ri-close-circle-fill"
+        />
+      </div>
+      <h3
+        class="copyrights"
+      >
+        Dreamlog © 2020
+      </h3>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <section
+      class="edit-form"
+    >
+      <form>
+        <input
+          name="email"
+          placeholder="email"
+          required=""
+          type="email"
+        />
+        <input
+          class="button"
+          type="submit"
+          value="Change Email"
+        />
+      </form>
+      <br />
+      <form>
+        <input
+          minlength="8"
+          name="password"
+          placeholder="password"
+          required=""
+          type="password"
+        />
+        <input
+          placeholder="password"
+          required=""
+          type="password"
+        />
+        <br />
+        <input
+          class="button"
+          type="submit"
+          value="Change Password"
+        />
+      </form>
+    </section>
+    <div
+      class="signup-modal display-none"
+    >
+      <h2
+        class="anError"
+      />
+      <h2
+        class="aMessage"
+      />
+      <i
+        class="ri-close-circle-fill"
+      />
+    </div>
+    <h3
+      class="copyrights"
+    >
+      Dreamlog © 2020
+    </h3>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests ForgotPassword renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h3
+        class="forgotpassword-h3"
+      >
+        Enter your Email to proceed with password reset:
+      </h3>
+      <form
+        class="forgotpassword-form"
+      >
+        <input
+          name="email"
+          placeholder="email"
+          required=""
+          type="email"
+        />
+        <input
+          class="button"
+          type="submit"
+          value="Send"
+        />
+      </form>
+      <div
+        class="signup-modal display-none"
+      >
+        <h2
+          class="anError"
+        />
+        <h2
+          class="aMessage"
+        />
+        <i
+          class="ri-close-circle-fill"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h3
+      class="forgotpassword-h3"
+    >
+      Enter your Email to proceed with password reset:
+    </h3>
+    <form
+      class="forgotpassword-form"
+    >
+      <input
+        name="email"
+        placeholder="email"
+        required=""
+        type="email"
+      />
+      <input
+        class="button"
+        type="submit"
+        value="Send"
+      />
+    </form>
+    <div
+      class="signup-modal display-none"
+    >
+      <h2
+        class="anError"
+      />
+      <h2
+        class="aMessage"
+      />
+      <i
+        class="ri-close-circle-fill"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`Rendering tests Header renders without crashing 1`] = `
 Object {
   "asFragment": [Function],
@@ -93,6 +1439,245 @@ Object {
 }
 `;
 
+exports[`Rendering tests Homepage renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h3
+        class="greeting"
+      >
+        Hey, 
+        
+        !
+      </h3>
+      <nav>
+        <div>
+          <a
+            href="/adddream"
+          >
+            <i
+              class="ri-quill-pen-fill"
+            />
+          </a>
+          <h5>
+            Add a dream
+          </h5>
+        </div>
+        <div>
+          <a
+            href="/dreamlog"
+          >
+            <i
+              class="ri-moon-clear-fill"
+            />
+          </a>
+          <h5>
+            My dream log
+          </h5>
+        </div>
+        <div>
+          <a
+            href="/dreamblog/"
+          >
+            <i
+              class="ri-book-open-fill"
+            />
+          </a>
+          <h5>
+            My dream blog
+          </h5>
+        </div>
+        <div>
+          <a
+            href="/statistics"
+          >
+            <i
+              class="ri-bar-chart-fill"
+            />
+          </a>
+          <h5>
+            My Statistics
+          </h5>
+        </div>
+      </nav>
+      <footer>
+        <a
+          href="/editpage"
+        >
+          <i
+            class="ri-tools-fill"
+          />
+        </a>
+        <a
+          href="/deletepage"
+        >
+          <i
+            class="ri-delete-bin-6-fill"
+          />
+        </a>
+      </footer>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h3
+      class="greeting"
+    >
+      Hey, 
+      
+      !
+    </h3>
+    <nav>
+      <div>
+        <a
+          href="/adddream"
+        >
+          <i
+            class="ri-quill-pen-fill"
+          />
+        </a>
+        <h5>
+          Add a dream
+        </h5>
+      </div>
+      <div>
+        <a
+          href="/dreamlog"
+        >
+          <i
+            class="ri-moon-clear-fill"
+          />
+        </a>
+        <h5>
+          My dream log
+        </h5>
+      </div>
+      <div>
+        <a
+          href="/dreamblog/"
+        >
+          <i
+            class="ri-book-open-fill"
+          />
+        </a>
+        <h5>
+          My dream blog
+        </h5>
+      </div>
+      <div>
+        <a
+          href="/statistics"
+        >
+          <i
+            class="ri-bar-chart-fill"
+          />
+        </a>
+        <h5>
+          My Statistics
+        </h5>
+      </div>
+    </nav>
+    <footer>
+      <a
+        href="/editpage"
+      >
+        <i
+          class="ri-tools-fill"
+        />
+      </a>
+      <a
+        href="/deletepage"
+      >
+        <i
+          class="ri-delete-bin-6-fill"
+        />
+      </a>
+    </footer>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`Rendering tests Login renders without crashing 1`] = `
 Object {
   "asFragment": [Function],
@@ -100,6 +1685,722 @@ Object {
     <div />
   </body>,
   "container": <div />,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Mainpage renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="div-main-page"
+      >
+        <video
+          autoplay=""
+          class="video-main-page"
+          loop=""
+          playsinline=""
+        >
+          <source
+            src="cosmos.mov"
+          />
+          &gt;
+        </video>
+        <div
+          class="app-name"
+        >
+          <h2>
+            _Dream.Log 
+          </h2>
+          <p>
+            the best dream journal out there.
+          </p>
+        </div>
+        <div
+          class="div-login-form"
+        >
+          <form
+            class="login-form"
+          >
+            <input
+              name="email"
+              placeholder="email"
+              required=""
+              type="email"
+            />
+            <input
+              name="password"
+              placeholder="password"
+              required=""
+              type="password"
+            />
+            <input
+              class="button"
+              type="submit"
+              value="Log In"
+            />
+          </form>
+          <h5
+            class="or"
+          >
+            or
+          </h5>
+          <div
+            class="div-signup-button"
+          >
+            <a
+              href="/signup"
+            >
+              <button
+                class="signup-button"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+          <div
+            class="signup-modal display-none"
+          >
+            <h2
+              class="anError"
+            />
+            <h2
+              class="aMessage"
+            />
+            <i
+              class="ri-close-circle-fill"
+            />
+          </div>
+        </div>
+        <a
+          class="about-link"
+          href="/about"
+        >
+          About
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="div-main-page"
+    >
+      <video
+        autoplay=""
+        class="video-main-page"
+        loop=""
+        playsinline=""
+      >
+        <source
+          src="cosmos.mov"
+        />
+        &gt;
+      </video>
+      <div
+        class="app-name"
+      >
+        <h2>
+          _Dream.Log 
+        </h2>
+        <p>
+          the best dream journal out there.
+        </p>
+      </div>
+      <div
+        class="div-login-form"
+      >
+        <form
+          class="login-form"
+        >
+          <input
+            name="email"
+            placeholder="email"
+            required=""
+            type="email"
+          />
+          <input
+            name="password"
+            placeholder="password"
+            required=""
+            type="password"
+          />
+          <input
+            class="button"
+            type="submit"
+            value="Log In"
+          />
+        </form>
+        <h5
+          class="or"
+        >
+          or
+        </h5>
+        <div
+          class="div-signup-button"
+        >
+          <a
+            href="/signup"
+          >
+            <button
+              class="signup-button"
+            >
+              Sign Up
+            </button>
+          </a>
+        </div>
+        <div
+          class="signup-modal display-none"
+        >
+          <h2
+            class="anError"
+          />
+          <h2
+            class="aMessage"
+          />
+          <i
+            class="ri-close-circle-fill"
+          />
+        </div>
+      </div>
+      <a
+        class="about-link"
+        href="/about"
+      >
+        About
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests ResetPassword renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h3
+        class="resetpassword-h3"
+      >
+        Enter your new password please:
+      </h3>
+      <form
+        class="resetpassword-form"
+      >
+        <input
+          minlength="8"
+          name="password"
+          placeholder="password"
+          required=""
+          type="password"
+        />
+        <input
+          placeholder="confirm password"
+          required=""
+          type="password"
+        />
+        <input
+          class="button"
+          type="submit"
+          value="Send"
+        />
+      </form>
+      <div
+        class="signup-modal display-none"
+      >
+        <h2
+          class="anError"
+        />
+        <h2
+          class="aMessage"
+        />
+        <i
+          class="ri-close-circle-fill"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h3
+      class="resetpassword-h3"
+    >
+      Enter your new password please:
+    </h3>
+    <form
+      class="resetpassword-form"
+    >
+      <input
+        minlength="8"
+        name="password"
+        placeholder="password"
+        required=""
+        type="password"
+      />
+      <input
+        placeholder="confirm password"
+        required=""
+        type="password"
+      />
+      <input
+        class="button"
+        type="submit"
+        value="Send"
+      />
+    </form>
+    <div
+      class="signup-modal display-none"
+    >
+      <h2
+        class="anError"
+      />
+      <h2
+        class="aMessage"
+      />
+      <i
+        class="ri-close-circle-fill"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Signup renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <form
+        class="signup-form"
+      >
+        <input
+          name="name"
+          placeholder="name"
+          required=""
+          type="text"
+        />
+        <input
+          name="email"
+          placeholder="email"
+          required=""
+          type="email"
+        />
+        <input
+          minlength="8"
+          name="password"
+          placeholder="password"
+          required=""
+          type="password"
+        />
+        <input
+          placeholder="confirm password"
+          required=""
+          type="password"
+        />
+        <br />
+        <input
+          class="button"
+          type="submit"
+          value="Sign Up"
+        />
+      </form>
+      <a
+        href="/"
+      >
+        <h3
+          class="signup-have-an-account"
+        >
+          Already have an account?
+        </h3>
+      </a>
+      <div
+        class="signup-modal display-none"
+      >
+        <h2
+          class="anError"
+        />
+        <h2
+          class="aMessage"
+        />
+        <i
+          class="ri-close-circle-fill"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <form
+      class="signup-form"
+    >
+      <input
+        name="name"
+        placeholder="name"
+        required=""
+        type="text"
+      />
+      <input
+        name="email"
+        placeholder="email"
+        required=""
+        type="email"
+      />
+      <input
+        minlength="8"
+        name="password"
+        placeholder="password"
+        required=""
+        type="password"
+      />
+      <input
+        placeholder="confirm password"
+        required=""
+        type="password"
+      />
+      <br />
+      <input
+        class="button"
+        type="submit"
+        value="Sign Up"
+      />
+    </form>
+    <a
+      href="/"
+    >
+      <h3
+        class="signup-have-an-account"
+      >
+        Already have an account?
+      </h3>
+    </a>
+    <div
+      class="signup-modal display-none"
+    >
+      <h2
+        class="anError"
+      />
+      <h2
+        class="aMessage"
+      />
+      <i
+        class="ri-close-circle-fill"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Rendering tests Statistics renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header>
+        <a
+          class="logo"
+          href="/"
+        >
+          <i
+            class="ri-home-6-line"
+          />
+          <h3
+            class="dreamlog-logo"
+          >
+            _Dream.log
+          </h3>
+        </a>
+      </header>
+      <h1
+        class="no-dreams"
+      >
+        Not enough dreams to display statistics.
+      </h1>
+    </div>
+  </body>,
+  "container": <div>
+    <header>
+      <a
+        class="logo"
+        href="/"
+      >
+        <i
+          class="ri-home-6-line"
+        />
+        <h3
+          class="dreamlog-logo"
+        >
+          _Dream.log
+        </h3>
+      </a>
+    </header>
+    <h1
+      class="no-dreams"
+    >
+      Not enough dreams to display statistics.
+    </h1>
+  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],

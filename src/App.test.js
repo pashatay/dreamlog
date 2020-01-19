@@ -4,6 +4,7 @@ import { ContextProvider } from "./Context";
 import { render, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
+import App from "./App";
 import Header from "./components/header/Header";
 import Main from "./pages/main/Main";
 import Signup from "./pages/signup/Signup";
@@ -48,7 +49,9 @@ describe("Rendering tests", () => {
   it("About renders without crashing", () => {
     const div = render(
       <ContextProvider>
-        <About />
+        <Router>
+          <About />
+        </Router>
       </ContextProvider>
     );
     expect(div).toMatchSnapshot();
@@ -68,7 +71,109 @@ describe("Rendering tests", () => {
   it("Adddream renders without crashing", () => {
     const div = render(
       <ContextProvider>
-        <Adddream />
+        <Router>
+          <Adddream />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Deletepage renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Deletepage />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Dreamblog renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Dreamblog />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Dreamlog renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Dreamlog />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Editpage renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Editpage />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Homepage renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Homepage />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Mainpage renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Main />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("ForgotPassword renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <ForgotPassword />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("ResetPassword renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <ResetPassword />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Signup renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Signup />
+        </Router>
+      </ContextProvider>
+    );
+    expect(div).toMatchSnapshot();
+  });
+  it("Statistics renders without crashing", () => {
+    const div = render(
+      <ContextProvider>
+        <Router>
+          <Statistics />
+        </Router>
       </ContextProvider>
     );
     expect(div).toMatchSnapshot();

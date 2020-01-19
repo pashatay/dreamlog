@@ -34,7 +34,7 @@ function DreamTypes() {
     let normal = 0;
     let nightmare = 0;
     dreams.map(dream => {
-      dream.dream_type === "Lucid"
+      return dream.dream_type === "Lucid"
         ? lucid++
         : dream.dream_type === "Normal"
         ? normal++
@@ -49,7 +49,7 @@ function DreamTypes() {
     let normal = 0;
     let nightmare = 0;
     filteredDreams.year.map(dream => {
-      dream.dream_type === "Lucid"
+      return dream.dream_type === "Lucid"
         ? lucid++
         : dream.dream_type === "Normal"
         ? normal++
@@ -64,7 +64,7 @@ function DreamTypes() {
     let normal = 0;
     let nightmare = 0;
     filteredDreams.month.map(dream => {
-      dream.dream_type === "Lucid"
+      return dream.dream_type === "Lucid"
         ? lucid++
         : dream.dream_type === "Normal"
         ? normal++

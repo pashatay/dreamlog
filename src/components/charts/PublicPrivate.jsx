@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useContext } from "react";
 import { Pie } from "react-chartjs-2";
 import { Context } from "../../Context";
 
@@ -25,21 +24,21 @@ function PublicPrivate() {
   };
   function alldreams(dreams) {
     dreams.map(dream => {
-      dream.is_private ? chardata.private++ : chardata.public++;
+      return dream.is_private ? chardata.private++ : chardata.public++;
     });
     return [chardata.public, chardata.private];
   }
 
   function thisYearDreams(dreams) {
     filteredDreams.year.map(dream => {
-      dream.is_private ? chardata.private++ : chardata.public++;
+      return dream.is_private ? chardata.private++ : chardata.public++;
     });
     return [chardata.public, chardata.private];
   }
 
   function thisMonthDreams(dreams) {
     filteredDreams.month.map(dream => {
-      dream.is_private ? chardata.private++ : chardata.public++;
+      return dream.is_private ? chardata.private++ : chardata.public++;
     });
     return [chardata.public, chardata.private];
   }

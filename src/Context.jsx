@@ -96,7 +96,6 @@ function ContextProvider(props) {
       axios
         .post(`${url}/signup`, formValues)
         .then(res => {
-          console.log(res);
           setOpenModal(true);
           setAnError("");
           setAMessage(
@@ -107,7 +106,6 @@ function ContextProvider(props) {
           setOpenModal(true);
           setAMessage("");
           setAnError(err.response.data.error.message);
-          console.log(err.response.data.error.message);
         });
     } else {
       setOpenModal(true);
@@ -130,7 +128,7 @@ function ContextProvider(props) {
         setSpinnerIsOn(false);
         setRedirectTask(false);
         setOpenModal(true);
-        console.log(err.response);
+
         return err.response.status === 401
           ? (setAMessage(""),
             setAnError(err.response.data.error.message || "error"))
@@ -170,7 +168,6 @@ function ContextProvider(props) {
     axios
       .post(`${url}/resetpassword/email`, formValues)
       .then(res => {
-        console.log(res);
         setOpenModal(true);
         setAnError("");
         setAMessage(res.data.message);
@@ -191,7 +188,6 @@ function ContextProvider(props) {
       axios
         .patch(`${url}/resetpassword/${token}`, formValues)
         .then(res => {
-          console.log(res);
           setOpenModal(true);
           setAnError("");
           setAMessage(res.data.message);
@@ -222,7 +218,6 @@ function ContextProvider(props) {
         logOutUser();
       })
       .catch(err => {
-        console.log(err.response);
         setOpenModal(true);
         setAMessage("");
         setAnError(err.response.data.error.message);
@@ -262,9 +257,7 @@ function ContextProvider(props) {
         setOpenModal(true);
         setNewDreamValues(newDreamDefaultValues);
       })
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => {});
   };
   const getAllDreams = () => {
     axios
@@ -272,9 +265,7 @@ function ContextProvider(props) {
       .then(res => {
         setDreams(res.data.sort((a, b) => b.id - a.id));
       })
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => {});
   };
   const getPublicDreams = id => {
     axios
@@ -282,29 +273,21 @@ function ContextProvider(props) {
       .then(res => {
         setPublicDreams(res.data.sort((a, b) => b.id - a.id));
       })
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => {});
   };
   const handleChangeDreamPrivacy = (dreamId, is_private) => {
     axios
       .patch(`${url}/dreams/${dreamId}`, { is_private }, { headers })
-      .then(res => {
-        console.log(res);
-      })
+      .then(res => {})
       .then(() => getAllDreams())
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => {});
   };
   const handleDeleteAccount = e => {
     e.preventDefault();
     axios
       .delete(`${url}/userpage`, { headers })
       .then(logOutUser())
-      .catch(err => {
-        console.log(err);
-      });
+      .catch(err => {});
   };
 
   const filteredDreams = {

@@ -35,7 +35,7 @@ function DreamDisplayModal(data) {
   );
   const publicDream = (
     <>
-      <i class="ri-eye-fill"></i>
+      <i className="ri-eye-fill"></i>
 
       <button
         className="modal-dream-private-button"
