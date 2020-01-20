@@ -15,12 +15,14 @@ function Dreamlog() {
     dreams,
     dreamFilter,
     setDreamFilter,
-    redirectToLoginPage
+    redirectToLoginPage,
+    setGoBackButton
   } = useContext(Context);
 
   useEffect(() => {
     setDreamFilter("all");
     getAllDreams();
+    setGoBackButton(true);
   }, []);
 
   const allDreams = dreams.map((dream, i) => {

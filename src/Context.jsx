@@ -56,7 +56,8 @@ function ContextProvider(props) {
   const [openModal, setOpenModal] = useState(false);
   const [keyModal, setKeyModal] = useState("");
   const [dreamFilter, setDreamFilter] = useState("all");
-  const [spinnerIsOn, setSpinnerIsOn] = useState("false");
+  const [spinnerIsOn, setSpinnerIsOn] = useState(false);
+  const [goBackButton, setGoBackButton] = useState(false);
 
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   const emailIsValid = regex.test(formValues.email);
@@ -340,7 +341,9 @@ function ContextProvider(props) {
         handleDeleteAccount,
         setSpinnerIsOn,
         spinnerIsOn,
-        filteredDreams
+        filteredDreams,
+        goBackButton,
+        setGoBackButton
       }}
     >
       {props.children}

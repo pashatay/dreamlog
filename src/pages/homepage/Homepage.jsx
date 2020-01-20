@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 import "./styles.css";
@@ -6,7 +6,12 @@ import "./styles.css";
 import Header from "../../components/header/Header";
 
 function Homepage() {
-  const { userName, userId, redirectToLoginPage } = useContext(Context);
+  const { userName, userId, redirectToLoginPage, setGoBackButton } = useContext(
+    Context
+  );
+  useEffect(() => {
+    setGoBackButton(false);
+  }, []);
   return (
     <>
       {redirectToLoginPage()}

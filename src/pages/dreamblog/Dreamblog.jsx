@@ -10,14 +10,20 @@ import Header from "../../components/header/Header";
 import WaterMark from "../../components/watermark/WaterMark";
 
 function Dreamblog() {
-  const { getPublicDreams, publicDreams, userHasLoggedIn } = useContext(
-    Context
-  );
+  const {
+    getPublicDreams,
+    publicDreams,
+    userHasLoggedIn,
+    setGoBackButton
+  } = useContext(Context);
   const { id } = useParams();
 
   useEffect(() => {
     getPublicDreams(id);
   }, []);
+  useEffect(() => {
+    setGoBackButton(true);
+  }, [userHasLoggedIn]);
 
   const allDreams = publicDreams.map((dream, i) => {
     return <DisplayDreamBlog data={dream} key={i} />;

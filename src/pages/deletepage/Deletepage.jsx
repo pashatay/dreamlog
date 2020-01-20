@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../Context";
 import "./styles.css";
@@ -6,7 +6,15 @@ import "./styles.css";
 import Header from "../../components/header/Header";
 
 function Deletepage() {
-  const { handleDeleteAccount, redirectToLoginPage } = useContext(Context);
+  const {
+    handleDeleteAccount,
+    redirectToLoginPage,
+    setGoBackButton
+  } = useContext(Context);
+
+  useEffect(() => {
+    setGoBackButton(true);
+  }, []);
 
   return (
     <>

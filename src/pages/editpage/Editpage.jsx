@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Context } from "../../Context";
 
 import "./styles.css";
@@ -12,8 +12,14 @@ function Editpage() {
     handleSubmitChangePassword,
     handleChange,
     setConfirmedPassword,
-    redirectToLoginPage
+    redirectToLoginPage,
+    setGoBackButton
   } = useContext(Context);
+
+  useEffect(() => {
+    setGoBackButton(true);
+  }, []);
+
   return (
     <>
       {redirectToLoginPage()}

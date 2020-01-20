@@ -13,11 +13,14 @@ function Statistics() {
     dreams,
     getAllDreams,
     setDreamFilter,
-    redirectToLoginPage
+    redirectToLoginPage,
+    setGoBackButton
   } = useContext(Context);
+
   useEffect(() => {
     getAllDreams();
     setDreamFilter("all");
+    setGoBackButton(true);
   }, []);
 
   const noDreams = (

@@ -23,6 +23,9 @@ header {
   margin-right: 1.5rem;
   font-size: 0.8rem;
 }
+.ri-arrow-left-line {
+  font-size: 2rem;
+}
 .ri-home-6-line {
   font-size: 2rem;
   align-self: center;
@@ -38,6 +41,9 @@ header {
 @media only screen and (min-width: 1024px) {
   .ri-home-6-line {
     font-size: 2.3rem;
+  }
+  .ri-arrow-left-line {
+    font-size: 2.5rem;
   }
   .dreamlog-logo {
     font-size: 1.3rem;
