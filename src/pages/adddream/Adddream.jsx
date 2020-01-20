@@ -33,7 +33,7 @@ function Adddream() {
         <input
           required
           type="number"
-          placeholder="How many hours"
+          placeholder="Hours slept"
           min="1"
           max="20"
           name={"hours_slept"}

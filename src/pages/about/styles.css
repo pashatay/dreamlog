@@ -1,20 +1,46 @@
-.about-section {
-  margin-top: 5%;
+.carousel-laptop {
+  display: none;
+}
+.carousel-phones {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.about-section p {
+.carousel .slide {
+  background: none !important;
+  margin: auto !important;
+}
+.carousel .slide img {
+  width: 80% !important;
+}
+.carousel .thumbs-wrapper {
+  margin: 0 !important;
+  overflow: inherit !important;
+}
+.carousel .thumb {
+  display: none !important;
+}
+.carousel .control-dots {
+  position: inherit !important;
+  width: 90% !important;
+}
+.dream-image {
+  width: 18rem;
   align-self: center;
-  font-size: 1.2rem;
+}
+
+.about-p,
+.last-p {
+  align-self: center;
+  font-size: 1.1rem;
   text-align: center;
-  width: 90%;
+  padding: 4%;
 }
 .demo-image {
-  width: 70%;
   margin: 7%;
   box-shadow: 0 0 30px rgb(235, 235, 245);
-  align-self: center;
+}
+.demo-image-laptop {
+  display: none;
 }
 .about-signup-link {
   align-self: center;
@@ -24,4 +50,34 @@
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
   background: #5c258a;
+}
+
+@media (min-width: 1024px) {
+  .about-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .about-p {
+    width: 33%;
+    font-size: 1.4rem;
+  }
+  .demo-image {
+    display: none;
+  }
+  .demo-image-laptop {
+    display: flex;
+    width: 50%;
+    margin: 5% 0% 5% 0%;
+    box-shadow: 0 0 30px rgb(235, 235, 245);
+  }
+  .last-p {
+    width: 90vw;
+    font-size: 1.4rem;
+  }
+  .about-signup-link {
+    font-size: 1.4rem;
+    margin-top: 5%;
+    width: 10rem;
+  }
 }
