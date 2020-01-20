@@ -73,13 +73,18 @@ function About() {
           <img src={dashboardLaptop} className="demo-image-laptop" />
         </>
         <>
+          <div className="dream-image">
+            <img src={dream} />
+          </div>
           <p className="last-p">
             Join our Dream log family today and start your journey into
             understanding your subconscious psyche!
           </p>
-          <Link to="signup" className="about-signup-link">
-            Sign Up
-          </Link>
+          <div className="about-signup-button">
+            <Link to="signup" className="about-signup-link">
+              Sign Up
+            </Link>
+          </div>
         </>
       </Carousel>
     </div>
