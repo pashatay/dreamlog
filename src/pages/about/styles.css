@@ -26,8 +26,8 @@
 .dream-image {
   width: 18rem;
   align-self: center;
-  -webkit-filter: drop-shadow(01px 1px 2px rgb(0, 224, 253));
-  filter: drop-shadow(01px 1px 2px rgb(0, 224, 253));
+  -webkit-filter: drop-shadow(1px 1px 2px rgb(0, 224, 253));
+  filter: drop-shadow(1px 1px 2px rgb(0, 224, 253));
 }
 
 .about-p,
