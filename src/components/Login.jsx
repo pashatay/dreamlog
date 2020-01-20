@@ -10,6 +10,7 @@ function Login() {
     setAMessage,
     handleSubmitLogin,
     setOpenModal,
+    spinnerIsOn,
     handleChange,
     redirectToHomePage
   } = useContext(Context);
@@ -30,6 +31,7 @@ function Login() {
           placeholder="email"
           name={"email"}
           onChange={handleChange}
+          disabled={spinnerIsOn}
         />
         <input
           required
@@ -37,6 +39,7 @@ function Login() {
           placeholder="password"
           name={"password"}
           onChange={handleChange}
+          disabled={spinnerIsOn}
         />
         <input type="submit" className="button" value="Log In"></input>
       </form>
