@@ -49,17 +49,16 @@
 }
 .anError {
   color: red;
-  padding: 1%;
-  font-size: 1.5rem;
+  padding: 2%;
+  font-size: 1.2rem;
   text-align: center;
-  margin-top: 30%;
 }
 .aMessage {
+  position: absolute;
   color: rgb(6, 146, 29);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-  margin-top: -15%;
-  padding: 1%;
+  padding: 2%;
 }
 
 .reset-password-link {
@@ -110,9 +109,16 @@
   color: rgb(6, 146, 29);
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 30%;
-  padding: 1%;
+  padding: 5%;
 }
+@media (max-height: 640px) and (max-width: 361px) {
+  .aMessage,
+  .anError,
+  .dream-was-added {
+    font-size: 1.1rem;
+  }
+}
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .signup-modal {
     position: absolute;
@@ -130,6 +136,9 @@
   .modal > section {
     position: relative;
     height: 18rem;
+  }
+  .anError {
+    padding: 2rem;
   }
   .ri-close-circle-fill {
     position: absolute;
@@ -160,6 +169,9 @@
     position: relative;
     height: 18rem;
   }
+  .anError {
+    padding: 2rem;
+  }
   .ri-close-circle-fill {
     position: absolute;
     top: 0;
@@ -177,18 +189,13 @@
     width: 25rem;
     height: 25rem;
   }
-  .anError {
+  .aMessage,
+  .anError,
+  .dream-was-added {
     font-size: 2rem;
     text-align: center;
-    margin-top: 7rem;
-    position: relative;
   }
-  .aMessage {
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-    padding: 3%;
-  }
+
   .reset-password-link {
     font-size: 1.3rem;
   }
