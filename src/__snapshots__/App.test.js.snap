@@ -20,12 +20,687 @@ Object {
           </h3>
         </a>
       </header>
-      <h1>
-        About page
-      </h1>
-      <p>
-        All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams. We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.   Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data. Join our Dream log family today and start your journey into understanding your subconscious psyche!
-      </p>
+      <div
+        class="carousel-phones"
+      >
+        <p
+          class="about-p"
+        >
+          All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams.
+        </p>
+        <img
+          class="dream-image"
+          src="dream.png"
+        />
+        <p
+          class="about-p"
+        >
+          We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.
+        </p>
+        <div>
+          <div
+            class="carousel carousel-slider"
+            style="width: 100%;"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <div
+              class="slider-wrapper axis-horizontal"
+            >
+              <ul
+                class="slider animated"
+                style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  class="slide selected"
+                >
+                  <img
+                    class="demo-image"
+                    src="dashboard.JPG"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <img
+                    class="demo-image"
+                    src="adddream.JPG"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <img
+                    class="demo-image"
+                    src="log.JPG"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next"
+              type="button"
+            />
+            <ul
+              class="control-dots"
+            >
+              <li
+                aria-label="slide item 1"
+                class="dot selected"
+                role="button"
+                tabindex="0"
+                value="0"
+              />
+              <li
+                aria-label="slide item 2"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="1"
+              />
+              <li
+                aria-label="slide item 3"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="2"
+              />
+            </ul>
+            <p
+              class="carousel-status"
+            >
+              1 of 3
+            </p>
+          </div>
+          <div
+            class="carousel"
+          >
+            <div
+              class="thumbs-wrapper axis-vertical"
+            >
+              <button
+                aria-label="previous slide / item"
+                class="control-arrow control-prev control-disabled"
+                type="button"
+              />
+              <ul
+                class="thumbs animated"
+                style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  aria-label="slide item 1"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="dashboard.JPG"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 2"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="adddream.JPG"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 3"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="log.JPG"
+                  />
+                </li>
+              </ul>
+              <button
+                aria-label="next slide / item"
+                class="control-arrow control-next control-disabled"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="about-p"
+        >
+          Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. You can change the privacy of any dream, anytime.
+        </p>
+        <div>
+          <div
+            class="carousel carousel-slider"
+            style="width: 100%;"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <div
+              class="slider-wrapper axis-horizontal"
+            >
+              <ul
+                class="slider animated"
+                style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  class="slide selected"
+                >
+                  <img
+                    class="demo-image"
+                    src="blog.JPG"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <img
+                    class="demo-image"
+                    src="privacy.JPG"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next"
+              type="button"
+            />
+            <ul
+              class="control-dots"
+            >
+              <li
+                aria-label="slide item 1"
+                class="dot selected"
+                role="button"
+                tabindex="0"
+                value="0"
+              />
+              <li
+                aria-label="slide item 2"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="1"
+              />
+            </ul>
+            <p
+              class="carousel-status"
+            >
+              1 of 2
+            </p>
+          </div>
+          <div
+            class="carousel"
+          >
+            <div
+              class="thumbs-wrapper axis-vertical"
+            >
+              <button
+                aria-label="previous slide / item"
+                class="control-arrow control-prev control-disabled"
+                type="button"
+              />
+              <ul
+                class="thumbs animated"
+                style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  aria-label="slide item 1"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="blog.JPG"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 2"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="privacy.JPG"
+                  />
+                </li>
+              </ul>
+              <button
+                aria-label="next slide / item"
+                class="control-arrow control-next control-disabled"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="about-p"
+        >
+          Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data.
+        </p>
+        <div>
+          <div
+            class="carousel carousel-slider"
+            style="width: 100%;"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <div
+              class="slider-wrapper axis-horizontal"
+            >
+              <ul
+                class="slider animated"
+                style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  class="slide selected"
+                >
+                  <img
+                    class="demo-image"
+                    src="statistics.JPG"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <img
+                    class="demo-image"
+                    src="statistics2.JPG"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next"
+              type="button"
+            />
+            <ul
+              class="control-dots"
+            >
+              <li
+                aria-label="slide item 1"
+                class="dot selected"
+                role="button"
+                tabindex="0"
+                value="0"
+              />
+              <li
+                aria-label="slide item 2"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="1"
+              />
+            </ul>
+            <p
+              class="carousel-status"
+            >
+              1 of 2
+            </p>
+          </div>
+          <div
+            class="carousel"
+          >
+            <div
+              class="thumbs-wrapper axis-vertical"
+            >
+              <button
+                aria-label="previous slide / item"
+                class="control-arrow control-prev control-disabled"
+                type="button"
+              />
+              <ul
+                class="thumbs animated"
+                style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  aria-label="slide item 1"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="statistics.JPG"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 2"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image"
+                    src="statistics2.JPG"
+                  />
+                </li>
+              </ul>
+              <button
+                aria-label="next slide / item"
+                class="control-arrow control-next control-disabled"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="last-p"
+        >
+          Join our Dream log family today and start your journey into understanding your subconscious psyche!
+        </p>
+        <a
+          class="about-signup-link"
+          href="/signup"
+        >
+          Sign Up
+        </a>
+      </div>
+      <div
+        class="carousel-laptop"
+      >
+        <div>
+          <div
+            class="carousel carousel-slider"
+            style="width: 100%;"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <div
+              class="slider-wrapper axis-horizontal"
+            >
+              <ul
+                class="slider animated"
+                style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  class="slide selected"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="log-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="adddream-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="blog-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    You can change the privacy of any dream, anytime.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="privacy-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="statistics-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <p
+                    class="about-p"
+                  >
+                    We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data.
+                  </p>
+                  <img
+                    class="demo-image-laptop"
+                    src="dashboard-laptop.png"
+                  />
+                </li>
+                <li
+                  class="slide"
+                >
+                  <div
+                    class="dream-image"
+                  >
+                    <img
+                      src="dream.png"
+                    />
+                  </div>
+                  <p
+                    class="last-p"
+                  >
+                    Join our Dream log family today and start your journey into understanding your subconscious psyche!
+                  </p>
+                  <div
+                    class="about-signup-button"
+                  >
+                    <a
+                      class="about-signup-link"
+                      href="/signup"
+                    >
+                      Sign Up
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next"
+              type="button"
+            />
+            <ul
+              class="control-dots"
+            >
+              <li
+                aria-label="slide item 1"
+                class="dot selected"
+                role="button"
+                tabindex="0"
+                value="0"
+              />
+              <li
+                aria-label="slide item 2"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="1"
+              />
+              <li
+                aria-label="slide item 3"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="2"
+              />
+              <li
+                aria-label="slide item 4"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="3"
+              />
+              <li
+                aria-label="slide item 5"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="4"
+              />
+              <li
+                aria-label="slide item 6"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="5"
+              />
+              <li
+                aria-label="slide item 7"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="6"
+              />
+            </ul>
+            <p
+              class="carousel-status"
+            >
+              1 of 7
+            </p>
+          </div>
+          <div
+            class="carousel"
+          >
+            <div
+              class="thumbs-wrapper axis-vertical"
+            >
+              <button
+                aria-label="previous slide / item"
+                class="control-arrow control-prev control-disabled"
+                type="button"
+              />
+              <ul
+                class="thumbs animated"
+                style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  aria-label="slide item 1"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="log-laptop.png"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 2"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="adddream-laptop.png"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 3"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="blog-laptop.png"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 4"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="privacy-laptop.png"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 5"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="statistics-laptop.png"
+                  />
+                </li>
+                <li
+                  aria-label="slide item 6"
+                  class="thumb"
+                  role="button"
+                  tabindex="0"
+                >
+                  <img
+                    class="demo-image-laptop"
+                    src="dashboard-laptop.png"
+                  />
+                </li>
+              </ul>
+              <button
+                aria-label="next slide / item"
+                class="control-arrow control-next control-disabled"
+                type="button"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3
+        class="copyrights"
+      >
+        Dreamlog © 2020
+      </h3>
     </div>
   </body>,
   "container": <div>
@@ -44,12 +719,687 @@ Object {
         </h3>
       </a>
     </header>
-    <h1>
-      About page
-    </h1>
-    <p>
-      All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams. We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.   Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data. Join our Dream log family today and start your journey into understanding your subconscious psyche!
-    </p>
+    <div
+      class="carousel-phones"
+    >
+      <p
+        class="about-p"
+      >
+        All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams.
+      </p>
+      <img
+        class="dream-image"
+        src="dream.png"
+      />
+      <p
+        class="about-p"
+      >
+        We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.
+      </p>
+      <div>
+        <div
+          class="carousel carousel-slider"
+          style="width: 100%;"
+        >
+          <button
+            aria-label="previous slide / item"
+            class="control-arrow control-prev control-disabled"
+            type="button"
+          />
+          <div
+            class="slider-wrapper axis-horizontal"
+          >
+            <ul
+              class="slider animated"
+              style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+            >
+              <li
+                class="slide selected"
+              >
+                <img
+                  class="demo-image"
+                  src="dashboard.JPG"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <img
+                  class="demo-image"
+                  src="adddream.JPG"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <img
+                  class="demo-image"
+                  src="log.JPG"
+                />
+              </li>
+            </ul>
+          </div>
+          <button
+            aria-label="next slide / item"
+            class="control-arrow control-next"
+            type="button"
+          />
+          <ul
+            class="control-dots"
+          >
+            <li
+              aria-label="slide item 1"
+              class="dot selected"
+              role="button"
+              tabindex="0"
+              value="0"
+            />
+            <li
+              aria-label="slide item 2"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="1"
+            />
+            <li
+              aria-label="slide item 3"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="2"
+            />
+          </ul>
+          <p
+            class="carousel-status"
+          >
+            1 of 3
+          </p>
+        </div>
+        <div
+          class="carousel"
+        >
+          <div
+            class="thumbs-wrapper axis-vertical"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <ul
+              class="thumbs animated"
+              style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+            >
+              <li
+                aria-label="slide item 1"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="dashboard.JPG"
+                />
+              </li>
+              <li
+                aria-label="slide item 2"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="adddream.JPG"
+                />
+              </li>
+              <li
+                aria-label="slide item 3"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="log.JPG"
+                />
+              </li>
+            </ul>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next control-disabled"
+              type="button"
+            />
+          </div>
+        </div>
+      </div>
+      <p
+        class="about-p"
+      >
+        Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family. You can change the privacy of any dream, anytime.
+      </p>
+      <div>
+        <div
+          class="carousel carousel-slider"
+          style="width: 100%;"
+        >
+          <button
+            aria-label="previous slide / item"
+            class="control-arrow control-prev control-disabled"
+            type="button"
+          />
+          <div
+            class="slider-wrapper axis-horizontal"
+          >
+            <ul
+              class="slider animated"
+              style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+            >
+              <li
+                class="slide selected"
+              >
+                <img
+                  class="demo-image"
+                  src="blog.JPG"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <img
+                  class="demo-image"
+                  src="privacy.JPG"
+                />
+              </li>
+            </ul>
+          </div>
+          <button
+            aria-label="next slide / item"
+            class="control-arrow control-next"
+            type="button"
+          />
+          <ul
+            class="control-dots"
+          >
+            <li
+              aria-label="slide item 1"
+              class="dot selected"
+              role="button"
+              tabindex="0"
+              value="0"
+            />
+            <li
+              aria-label="slide item 2"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="1"
+            />
+          </ul>
+          <p
+            class="carousel-status"
+          >
+            1 of 2
+          </p>
+        </div>
+        <div
+          class="carousel"
+        >
+          <div
+            class="thumbs-wrapper axis-vertical"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <ul
+              class="thumbs animated"
+              style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+            >
+              <li
+                aria-label="slide item 1"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="blog.JPG"
+                />
+              </li>
+              <li
+                aria-label="slide item 2"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="privacy.JPG"
+                />
+              </li>
+            </ul>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next control-disabled"
+              type="button"
+            />
+          </div>
+        </div>
+      </div>
+      <p
+        class="about-p"
+      >
+        Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are. We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data.
+      </p>
+      <div>
+        <div
+          class="carousel carousel-slider"
+          style="width: 100%;"
+        >
+          <button
+            aria-label="previous slide / item"
+            class="control-arrow control-prev control-disabled"
+            type="button"
+          />
+          <div
+            class="slider-wrapper axis-horizontal"
+          >
+            <ul
+              class="slider animated"
+              style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+            >
+              <li
+                class="slide selected"
+              >
+                <img
+                  class="demo-image"
+                  src="statistics.JPG"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <img
+                  class="demo-image"
+                  src="statistics2.JPG"
+                />
+              </li>
+            </ul>
+          </div>
+          <button
+            aria-label="next slide / item"
+            class="control-arrow control-next"
+            type="button"
+          />
+          <ul
+            class="control-dots"
+          >
+            <li
+              aria-label="slide item 1"
+              class="dot selected"
+              role="button"
+              tabindex="0"
+              value="0"
+            />
+            <li
+              aria-label="slide item 2"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="1"
+            />
+          </ul>
+          <p
+            class="carousel-status"
+          >
+            1 of 2
+          </p>
+        </div>
+        <div
+          class="carousel"
+        >
+          <div
+            class="thumbs-wrapper axis-vertical"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <ul
+              class="thumbs animated"
+              style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+            >
+              <li
+                aria-label="slide item 1"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="statistics.JPG"
+                />
+              </li>
+              <li
+                aria-label="slide item 2"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image"
+                  src="statistics2.JPG"
+                />
+              </li>
+            </ul>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next control-disabled"
+              type="button"
+            />
+          </div>
+        </div>
+      </div>
+      <p
+        class="last-p"
+      >
+        Join our Dream log family today and start your journey into understanding your subconscious psyche!
+      </p>
+      <a
+        class="about-signup-link"
+        href="/signup"
+      >
+        Sign Up
+      </a>
+    </div>
+    <div
+      class="carousel-laptop"
+    >
+      <div>
+        <div
+          class="carousel carousel-slider"
+          style="width: 100%;"
+        >
+          <button
+            aria-label="previous slide / item"
+            class="control-arrow control-prev control-disabled"
+            type="button"
+          />
+          <div
+            class="slider-wrapper axis-horizontal"
+          >
+            <ul
+              class="slider animated"
+              style="transform: translate3d(0%,0,0); transition-duration: 350ms;"
+            >
+              <li
+                class="slide selected"
+              >
+                <p
+                  class="about-p"
+                >
+                  All of us have dreams. Dreams can be a powerful tool to understand oneself and are an infinite source of inspiration. The Dream log app is here to help you to keep track of your dreams.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="log-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <p
+                  class="about-p"
+                >
+                  We encourage you to write your dreams every morning as soon as you wake up. Give your dream a memorable title and write a short story about that adventure. You can categorize your dream as Lucid, Normal, or Nightmare.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="adddream-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <p
+                  class="about-p"
+                >
+                  Some dreams are worth sharing. Add your dreams to your dream blog by making them public and share the link with your friends and family.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="blog-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <p
+                  class="about-p"
+                >
+                  You can change the privacy of any dream, anytime.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="privacy-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <p
+                  class="about-p"
+                >
+                  Your dream statistics on the app will show the rate at which you have one type of dream over the others, how many hours of sleep you get, and what your average sleeping hours per dream type are.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="statistics-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <p
+                  class="about-p"
+                >
+                  We keep your personal dream statistics ready, right on your page any time you want to get a better understanding of your dream data.
+                </p>
+                <img
+                  class="demo-image-laptop"
+                  src="dashboard-laptop.png"
+                />
+              </li>
+              <li
+                class="slide"
+              >
+                <div
+                  class="dream-image"
+                >
+                  <img
+                    src="dream.png"
+                  />
+                </div>
+                <p
+                  class="last-p"
+                >
+                  Join our Dream log family today and start your journey into understanding your subconscious psyche!
+                </p>
+                <div
+                  class="about-signup-button"
+                >
+                  <a
+                    class="about-signup-link"
+                    href="/signup"
+                  >
+                    Sign Up
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button
+            aria-label="next slide / item"
+            class="control-arrow control-next"
+            type="button"
+          />
+          <ul
+            class="control-dots"
+          >
+            <li
+              aria-label="slide item 1"
+              class="dot selected"
+              role="button"
+              tabindex="0"
+              value="0"
+            />
+            <li
+              aria-label="slide item 2"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="1"
+            />
+            <li
+              aria-label="slide item 3"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="2"
+            />
+            <li
+              aria-label="slide item 4"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="3"
+            />
+            <li
+              aria-label="slide item 5"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="4"
+            />
+            <li
+              aria-label="slide item 6"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="5"
+            />
+            <li
+              aria-label="slide item 7"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="6"
+            />
+          </ul>
+          <p
+            class="carousel-status"
+          >
+            1 of 7
+          </p>
+        </div>
+        <div
+          class="carousel"
+        >
+          <div
+            class="thumbs-wrapper axis-vertical"
+          >
+            <button
+              aria-label="previous slide / item"
+              class="control-arrow control-prev control-disabled"
+              type="button"
+            />
+            <ul
+              class="thumbs animated"
+              style="transform: translate3d(NaNpx,0,0); transition-duration: 350ms;"
+            >
+              <li
+                aria-label="slide item 1"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="log-laptop.png"
+                />
+              </li>
+              <li
+                aria-label="slide item 2"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="adddream-laptop.png"
+                />
+              </li>
+              <li
+                aria-label="slide item 3"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="blog-laptop.png"
+                />
+              </li>
+              <li
+                aria-label="slide item 4"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="privacy-laptop.png"
+                />
+              </li>
+              <li
+                aria-label="slide item 5"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="statistics-laptop.png"
+                />
+              </li>
+              <li
+                aria-label="slide item 6"
+                class="thumb"
+                role="button"
+                tabindex="0"
+              >
+                <img
+                  class="demo-image-laptop"
+                  src="dashboard-laptop.png"
+                />
+              </li>
+            </ul>
+            <button
+              aria-label="next slide / item"
+              class="control-arrow control-next control-disabled"
+              type="button"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3
+      class="copyrights"
+    >
+      Dreamlog © 2020
+    </h3>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -158,7 +1508,7 @@ Object {
           max="20"
           min="1"
           name="hours_slept"
-          placeholder="How many hours"
+          placeholder="Hours slept"
           required=""
           type="number"
         />
@@ -248,7 +1598,7 @@ Object {
         max="20"
         min="1"
         name="hours_slept"
-        placeholder="How many hours"
+        placeholder="Hours slept"
         required=""
         type="number"
       />
