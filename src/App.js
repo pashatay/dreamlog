@@ -6,7 +6,7 @@ import Signup from "./pages/signup/Signup";
 import Logout from "./components/Logout";
 import About from "./pages/about/About";
 import Homepage from "./pages/homepage/Homepage";
-import Adddream from "./pages/adddream/Adddream";
+import AddDream from "./pages/adddream/AddDream";
 import Dreamlog from "./pages/dreamlog/Dreamlog";
 import Dreamblog from "./pages/dreamblog/Dreamblog";
 import Statistics from "./pages/statistics/Statistics";
@@ -32,7 +32,7 @@ function App() {
           <Homepage />
         </Route>
         <Route path="/adddream">
-          <Adddream />
+          <AddDream />
         </Route>
         <Route path="/dreamlog">
           <Dreamlog />

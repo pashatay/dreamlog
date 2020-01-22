@@ -9,10 +9,9 @@ import Header from "./components/header/Header";
 import Main from "./pages/main/Main";
 import Signup from "./pages/signup/Signup";
 import Login from "./components/Logout";
-import Logout from "./components/Logout";
 import About from "./pages/about/About";
 import Homepage from "./pages/homepage/Homepage";
-import Adddream from "./pages/adddream/Adddream";
+import AddDream from "./pages/adddream/AddDream";
 import Dreamlog from "./pages/dreamlog/Dreamlog";
 import Dreamblog from "./pages/dreamblog/Dreamblog";
 import Statistics from "./pages/statistics/Statistics";
@@ -72,7 +71,7 @@ describe("Rendering tests", () => {
     const div = render(
       <ContextProvider>
         <Router>
-          <Adddream />
+          <AddDream />
         </Router>
       </ContextProvider>
     );

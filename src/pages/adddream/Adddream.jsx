@@ -5,7 +5,7 @@ import "./styles.css";
 import DreamAddedModal from "../../components/modals/DreamAddedModal";
 import Header from "../../components/header/Header";
 
-function Adddream() {
+function AddDream() {
   const {
     handleNewDreamChange,
     handleSubmitNewDream,
@@ -66,4 +66,4 @@ function Adddream() {
   );
 }
 
-export default Adddream;
+export default AddDream;
