@@ -1,6 +1,6 @@
 input[type="checkbox"] {
   -webkit-appearance: checkbox;
-  -moz-appearance: initial;
+  -moz-appearance: checkbox;
 }
 
 .adddream-form {
@@ -41,7 +41,7 @@ input[type="checkbox"] {
   outline-offset: -1px;
   font-size: 1.3rem;
   margin: 5%;
-  background: none;
+  background: #020433;
   color: rgba(235, 235, 245, 0.692);
   border: 1px solid rgb(235, 235, 245);
   box-shadow: 0 0 10px rgb(235, 235, 245);
