@@ -18,14 +18,6 @@ function HoursPerDreamType() {
     nightmare: { totalHours: 0, times: 0 }
   };
 
-  //   const defaultValues = { totalHours: 0, times: 0 };
-
-  //   const clearCharData = () => {
-  //     chardata.lucid = defaultValues;
-  //     chardata.normal = defaultValues;
-  //     chardata.nightmare = defaultValues;
-  //   };
-
   const fillOutCharData = dream => {
     const type = dream.dream_type;
     const hours = parseInt(dream.hours_slept);
