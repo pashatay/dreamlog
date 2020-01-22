@@ -1,11 +1,12 @@
-/* #01021b */
+* {
+  font-family: "Fjalla One", sans-serif;
+}
 html,
 body {
   margin: 0;
   padding: 0;
   background: #020433;
   color: rgb(235, 235, 245);
-  font-family: "Fjalla One", sans-serif;
 }
 .div-main-page {
   display: flex;

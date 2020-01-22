@@ -406,7 +406,14 @@ Object {
         <p
           class="last-p"
         >
-          Join our Dream log family today and start your journey into understanding your subconscious psyche!
+          Try demo:
+          <br />
+          login: test@test.com 
+          <br />
+           password: testtest 
+          <br />
+          <br />
+          And join our Dream log family today and start your journey into understanding your subconscious psyche!
         </p>
         <a
           class="about-signup-link"
@@ -526,7 +533,14 @@ Object {
                   <p
                     class="last-p"
                   >
-                    Join our Dream log family today and start your journey into understanding your subconscious psyche!
+                    Try demo:
+                    <br />
+                    login: test@test.com 
+                    <br />
+                     password: testtest 
+                    <br />
+                    <br />
+                    And join our Dream log family today and start your journey into understanding your subconscious psyche!
                   </p>
                   <div
                     class="about-signup-button"
@@ -1105,7 +1119,14 @@ Object {
       <p
         class="last-p"
       >
-        Join our Dream log family today and start your journey into understanding your subconscious psyche!
+        Try demo:
+        <br />
+        login: test@test.com 
+        <br />
+         password: testtest 
+        <br />
+        <br />
+        And join our Dream log family today and start your journey into understanding your subconscious psyche!
       </p>
       <a
         class="about-signup-link"
@@ -1225,7 +1246,14 @@ Object {
                 <p
                   class="last-p"
                 >
-                  Join our Dream log family today and start your journey into understanding your subconscious psyche!
+                  Try demo:
+                  <br />
+                  login: test@test.com 
+                  <br />
+                   password: testtest 
+                  <br />
+                  <br />
+                  And join our Dream log family today and start your journey into understanding your subconscious psyche!
                 </p>
                 <div
                   class="about-signup-button"
