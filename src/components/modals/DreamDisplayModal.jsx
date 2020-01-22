@@ -19,7 +19,6 @@ function DreamDisplayModal(data) {
 
   if (result) {
     dream = result;
-    console.log(dream);
   }
   const privateDream = (
     <>
