@@ -41,6 +41,8 @@ To change your email or password you can do so by clicking the “edit page" but
 
 In order to delete your Dream Log and all your data saved to the app press the "delete button" on the dashboard.
 
+Techonologies I used to build this: React (Router, Context, Hooks), CSS, HTML.
+
 Excited to start using the dream log? Check out the [live page](https://dreamlog.now.sh/).
 
 The following are credentials for demoing the app:
