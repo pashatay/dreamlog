@@ -77,7 +77,11 @@ function About() {
             <img src={dream} />
           </div>
           <p className="last-p">
-            Join our Dream log family today and start your journey into
+            Try demo:
+            <br />
+            login: test@test.com <br /> password: testtest <br />
+            <br />
+            And join our Dream log family today and start your journey into
             understanding your subconscious psyche!
           </p>
           <div className="about-signup-button">
@@ -144,7 +148,11 @@ function About() {
         </>
       </Carousel>
       <p className="last-p">
-        Join our Dream log family today and start your journey into
+        Try demo:
+        <br />
+        login: test@test.com <br /> password: testtest <br />
+        <br />
+        And join our Dream log family today and start your journey into
         understanding your subconscious psyche!
       </p>
       <Link to="signup" className="about-signup-link">
